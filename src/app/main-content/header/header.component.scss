@@ -1,15 +1,18 @@
-section {
+header {
+  height: calc(100vh - 95px);
+}
+
+.section-name {
   display: flex;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .left-text {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   font-size: 90px;
-  padding-top: 20px;
-  margin-right: 20px;
+  padding: 20px 20px 0 0;
 }
 
 .right-text {
@@ -22,6 +25,26 @@ section {
       font-size: 64px;
       font-weight: 400;
       color: #9747ff;
+    }
+  }
+}
+
+.section-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  a {
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 23px;
+    background-color: #70e61c;
+    text-decoration: none;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+      padding: 20px 35px;
+      background-color: #9747ff;
     }
   }
 }
