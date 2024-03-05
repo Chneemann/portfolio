@@ -10,8 +10,10 @@ nav {
   justify-content: center;
   width: 250px;
   margin: 20px;
-  font-size: 36px;
-  font-weight: 800;
+  img {
+    width: 170px;
+    height: auto;
+  }
 }
 
 .links {
