@@ -1,0 +1,27 @@
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.left-text {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 90px;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+
+.right-text {
+  div {
+    &:first-child {
+      font-size: 114px;
+      font-weight: 700;
+    }
+    &:last-child {
+      font-size: 64px;
+      font-weight: 400;
+      color: #9747ff;
+    }
+  }
+}

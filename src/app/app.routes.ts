@@ -1,4 +1,4 @@
 import { Routes } from '@angular/router';
-import { LandingPageComponent } from './main-content/landing-page/landing-page.component';
+import { HeaderComponent } from './main-content/header/header.component';
 
-export const routes: Routes = [{ path: '', component: LandingPageComponent }];
+export const routes: Routes = [{ path: '', component: HeaderComponent }];
