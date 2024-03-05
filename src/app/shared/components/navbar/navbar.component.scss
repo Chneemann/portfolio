@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin: 20px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  width: 400px;
+  margin: 20px;
+  a {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: #70e71a;
+    }
+  }
+}
