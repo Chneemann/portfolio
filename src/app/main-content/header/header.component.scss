@@ -48,3 +48,21 @@ header {
     }
   }
 }
+
+.section-references {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  width: 370px;
+  .line {
+    width: 100px;
+    height: 4px;
+    background-color: #70e61c;
+  }
+  img {
+    width: 30px;
+    height: auto;
+  }
+}
