@@ -6,25 +6,23 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 200px;
-}
-
-.left-text {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  font-size: 90px;
-  padding: 20px 20px 0 0;
-}
-
-.right-text {
-  div {
-    &:first-child {
-      font-size: 114px;
-      font-weight: 700;
-    }
-    &:last-child {
-      font-size: 64px;
-      font-weight: 400;
-      color: #9747ff;
+  .left-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 90px;
+    padding: 20px 20px 0 0;
+  }
+  .right-text {
+    div {
+      &:first-child {
+        font-size: 114px;
+        font-weight: 700;
+      }
+      &:last-child {
+        font-size: 64px;
+        font-weight: 400;
+        color: #9747ff;
+      }
     }
   }
 }
