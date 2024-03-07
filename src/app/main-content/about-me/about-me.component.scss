@@ -1,0 +1,35 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #141d2f;
+}
+
+.section-left {
+  padding: 80px;
+  width: 50%;
+  .headline {
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 90px;
+    font-weight: 700;
+  }
+}
+
+.section-right {
+  width: 50%;
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+  }
+}
+
+.column-bulb,
+.column-puzzle {
+  display: flex;
+  padding-bottom: 20px;
+  img {
+    padding: 20px;
+  }
+}
