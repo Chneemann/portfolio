@@ -1,11 +1,26 @@
 header {
-  height: calc(100vh - 95px);
+  height: calc(100vh);
+  background-color: #141d2f;
+}
+
+.background-imgs {
+  img {
+    position: absolute;
+    &:first-child {
+      top: 95px;
+      left: 0;
+    }
+    &:last-child {
+      top: 0;
+      right: 0;
+    }
+  }
 }
 
 .section-name {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  padding-top: 200px;
   .left-text {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
