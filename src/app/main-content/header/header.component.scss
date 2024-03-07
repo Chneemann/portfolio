@@ -28,16 +28,14 @@ header {
     padding: 20px 20px 0 0;
   }
   .right-text {
-    div {
-      &:first-child {
-        font-size: 114px;
-        font-weight: 700;
-      }
-      &:last-child {
-        font-size: 64px;
-        font-weight: 400;
-        color: #9747ff;
-      }
+    h1 {
+      font-size: 114px;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 64px;
+      font-weight: 400;
+      color: #9747ff;
     }
   }
 }
