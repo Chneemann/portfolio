@@ -1,12 +1,14 @@
 section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #141d2f;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .section-left {
+  width: 35%;
   padding: 80px;
-  width: 50%;
   .headline {
     padding-bottom: 20px;
   }
@@ -24,12 +26,12 @@ section {
 }
 
 .section-right {
-  width: 50%;
+  display: flex;
+  justify-content: center;
   position: relative;
   .hero-img {
     object-fit: cover;
     height: 700px;
-    position: relative;
     z-index: 2;
   }
   .background-imgs {
@@ -38,13 +40,11 @@ section {
       z-index: 1;
       &:first-child {
         top: 0;
-        right: 0;
         left: -200px;
       }
       &:last-child {
         top: 100px;
-        left: 100px;
-        right: 0;
+        right: -90px;
       }
     }
   }

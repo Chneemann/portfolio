@@ -2,8 +2,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
+  max-width: 1440px;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   background-color: #141d2f;
   top: 0;
   left: 0;
