@@ -2,6 +2,7 @@ section {
   display: flex;
   justify-content: space-between;
   background-color: #141d2f;
+  width: 100%;
 }
 
 .section-left {
@@ -12,8 +13,8 @@ section {
     td {
       padding: 40px;
       img {
-        width: 88px;
-        height: 100px;
+        width: 150%;
+        height: auto;
       }
     }
   }
@@ -23,16 +24,17 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
   width: 50%;
+  padding-left: 80px;
   z-index: 3;
   h2 {
+    position: relative;
     font-size: 90px;
     font-weight: 700;
   }
   .line {
     position: absolute;
-    top: 180px;
+    top: 70px;
     right: 0;
     width: 290px;
     height: 4px;
