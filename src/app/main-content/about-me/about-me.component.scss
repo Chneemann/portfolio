@@ -27,20 +27,23 @@ section {
   width: 50%;
   position: relative;
   .hero-img {
-    width: 100%;
     object-fit: cover;
     height: 700px;
-    width: auto;
+    position: relative;
+    z-index: 2;
   }
   .background-imgs {
     img {
       position: absolute;
+      z-index: 1;
       &:first-child {
         top: 0;
-        left: 0;
+        right: 0;
+        left: -200px;
       }
       &:last-child {
-        top: 0;
+        top: 100px;
+        left: 100px;
         right: 0;
       }
     }
