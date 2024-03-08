@@ -25,10 +25,24 @@ section {
 
 .section-right {
   width: 50%;
-  img {
+  position: relative;
+  .hero-img {
     width: 100%;
     object-fit: cover;
     height: 700px;
     width: auto;
+  }
+  .background-imgs {
+    img {
+      position: absolute;
+      &:first-child {
+        top: 0;
+        left: 0;
+      }
+      &:last-child {
+        top: 0;
+        right: 0;
+      }
+    }
   }
 }
