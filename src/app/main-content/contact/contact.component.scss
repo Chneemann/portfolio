@@ -88,6 +88,13 @@ section {
     padding: 15px;
     margin: 15px;
     resize: none;
+    &:hover {
+      border-color: #70e61c;
+    }
+    &:focus {
+      border-color: #70e61c;
+      outline: none;
+    }
   }
 }
 
