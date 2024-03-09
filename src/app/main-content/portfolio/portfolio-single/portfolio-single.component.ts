@@ -16,15 +16,24 @@ export class PortfolioSingleComponent {
       code: 'JavaScript | HTML | CSS',
       description:
         'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.',
-      linkLiveTest: '',
-      linkGithub: '',
+      linkLiveTest: 'http://sharkie.andre-kempf.com',
+      linkGithub: 'https://github.com/Chneemann/sharkie',
     },
     {
       name: 'Join',
       imgPath: 'join.svg',
       code: 'Angular | TypeScript | HTML | CSS | Firebase',
       description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ',
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      linkLiveTest: '',
+      linkGithub: '',
+    },
+    {
+      name: 'Simple CRM',
+      imgPath: 'simple-crm.svg',
+      code: 'Angular | Firebase',
+      description:
+        'A very Simple Customer Relationship Management system working with CRUD functionality.',
       linkLiveTest: '',
       linkGithub: '',
     },
