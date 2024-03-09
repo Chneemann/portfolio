@@ -8,8 +8,9 @@ section {
 }
 
 .section-left {
-  width: 35%;
-  padding: 80px;
+  width: 40%;
+  height: auto;
+  padding: 40px 20px 80px 40px;
   .headline {
     padding-bottom: 20px;
   }
@@ -30,22 +31,26 @@ section {
   display: flex;
   justify-content: center;
   position: relative;
+  width: 60%;
   .hero-img {
     object-fit: cover;
-    height: 700px;
+    width: 100%;
+    max-width: 500px;
     z-index: 2;
   }
   .background-imgs {
     img {
       position: absolute;
+      width: 100%;
+      max-width: 500px;
       z-index: 1;
       &:first-child {
         top: 0;
-        left: -200px;
+        left: 0;
       }
       &:last-child {
         top: 100px;
-        right: -90px;
+        right: 0;
       }
     }
   }
