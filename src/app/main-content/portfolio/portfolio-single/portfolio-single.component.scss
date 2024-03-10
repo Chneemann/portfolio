@@ -1,6 +1,22 @@
 section {
   background-color: #141d2f;
+  max-width: 1440px;
   margin: auto;
+  position: relative;
+}
+
+.background-imgs {
+  img {
+    position: absolute;
+    &:first-child {
+      top: -200px;
+      right: 0;
+    }
+    &:last-child {
+      top: 400px;
+      left: 0;
+    }
+  }
 }
 
 .project {

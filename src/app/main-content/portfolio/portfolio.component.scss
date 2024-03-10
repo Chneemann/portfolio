@@ -22,18 +22,3 @@ section {
     background-color: #9747ff;
   }
 }
-
-.background-imgs {
-  img {
-    position: absolute;
-    z-index: 1;
-    &:first-child {
-      top: -200px;
-      right: 0;
-    }
-    &:last-child {
-      top: 400px;
-      left: 0;
-    }
-  }
-}
