@@ -11,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NavbarComponent {
   activeLink: string | null | undefined;
+  lineWidth: string = '0%'; // Startbreite der Linie
 
   constructor(private route: ActivatedRoute) {}
 
@@ -20,14 +21,18 @@ export class NavbarComponent {
     });
   }
 
+  changeLineWidth(width: string) {
+    this.lineWidth = width;
+  }
+
   getLeftPosition() {
     switch (this.activeLink) {
       case 'about-me':
-        return '41px';
+        return '7px';
       case 'skills':
-        return '184px';
+        return '149px';
       case 'portfolio':
-        return '265px';
+        return '232px';
       default:
         return 'initial';
     }

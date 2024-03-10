@@ -1,6 +1,12 @@
 <nav>
   <div class="logo">
-    <a href="#top"><img src="./assets/img/logo.png" alt="" /></a>
+    <a
+      href="#top"
+      (mouseenter)="changeLineWidth('100px')"
+      (mouseleave)="changeLineWidth('0%')"
+      ><img src="./assets/img/logo.png" alt=""
+    /></a>
+    <div class="line" [style.width]="lineWidth"></div>
   </div>
   <div class="links">
     <a href="#about-me" [ngClass]="{ selected: activeLink == 'about-me' }"
@@ -12,6 +18,12 @@
     <a href="#portfolio" [ngClass]="{ selected: activeLink == 'portfolio' }"
       >Portfolio</a
     >
+    <a href="" class="translateLink"
+      ><img
+        id="translateIcon"
+        src="../../../../assets/img/navbar/flag_english.png"
+        alt=""
+    /></a>
     <div
       class="line"
       [ngStyle]="{ left: getLeftPosition() }"

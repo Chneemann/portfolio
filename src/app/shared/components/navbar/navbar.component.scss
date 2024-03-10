@@ -15,12 +15,25 @@ nav {
 
 .logo {
   display: flex;
-  justify-content: center;
-  width: 250px;
+  justify-content: start;
+  position: relative;
+  width: 170px;
   margin: 20px;
   img {
     width: 170px;
     height: auto;
+  }
+  .line {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 0;
+    height: 4px;
+    background-color: #1cdae6;
+    transition: 125ms ease-in-out;
+    &:hover {
+      width: 100px;
+    }
   }
 }
 
@@ -53,5 +66,15 @@ nav {
   }
   .hidden {
     display: none;
+  }
+
+  .translateLink {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  #translateIcon {
+    width: 40px;
+    height: auto;
   }
 }

@@ -23,10 +23,14 @@ section {
     }
     a {
       &:last-child {
+        color: #fff;
         text-decoration: none;
         position: absolute;
         left: 13px;
         bottom: -10px;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
