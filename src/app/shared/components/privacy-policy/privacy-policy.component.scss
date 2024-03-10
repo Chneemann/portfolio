@@ -3,7 +3,9 @@ section {
   background-color: #141d2f;
   margin: auto;
   max-width: 1440px;
-  padding: 40px;
+  div {
+    padding: 40px;
+  }
 }
 
 #content0,
