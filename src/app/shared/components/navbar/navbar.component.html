@@ -3,8 +3,25 @@
     <a href="/"><img src="./assets/img/logo.png" alt="" /></a>
   </div>
   <div class="links">
-    <a href="#about-me">About me</a>
-    <a href="#skills">Skills</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#about-me" [ngClass]="{ selected: activeLink == 'about-me' }"
+      >About me</a
+    >
+    <a href="#skills" [ngClass]="{ selected: activeLink == 'skills' }"
+      >Skills</a
+    >
+    <a href="#portfolio" [ngClass]="{ selected: activeLink == 'portfolio' }"
+      >Portfolio</a
+    >
+    <div
+      class="line"
+      [ngStyle]="{ left: getLeftPosition() }"
+      [hidden]="
+        !(
+          activeLink === 'about-me' ||
+          activeLink === 'skills' ||
+          activeLink === 'portfolio'
+        )
+      "
+    ></div>
   </div>
 </nav>

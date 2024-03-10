@@ -27,6 +27,7 @@ nav {
 .links {
   display: flex;
   justify-content: center;
+  position: relative;
   gap: 28px;
   width: 400px;
   margin: 20px;
@@ -37,5 +38,20 @@ nav {
     &:hover {
       color: #70e71a;
     }
+  }
+  .line {
+    position: absolute;
+    top: 32px;
+    left: 42px;
+    width: 50px;
+    height: 4px;
+    background-color: #9747ff;
+    transition: 125ms ease-in-out;
+  }
+  .selected {
+    color: #70e71a;
+  }
+  .hidden {
+    display: none;
   }
 }
