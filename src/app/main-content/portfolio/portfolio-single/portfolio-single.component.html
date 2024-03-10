@@ -17,7 +17,7 @@
     <div class="description" [ngStyle]="getDescriptionStyle(i)">
       <h3>{{ project.name }}</h3>
       <h4>{{ project.code }}</h4>
-      <p>{{ project.description }}</p>
+      <p>{{ "portfolio.description" + i | translate }}</p>
       <div class="btns">
         <div class="btn btn-live-test">
           <a href="{{ project.linkLiveTest }}" target="_blank">Live test</a>

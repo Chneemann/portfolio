@@ -18,5 +18,29 @@
     "headline": "Skills",
     "description": "I have gained experience in building projects with various front end technologies and concepts.",
     "btn": "Get in touch"
+  },
+  "portfolio": {
+    "headline": "Portfolio",
+    "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "description0": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
+    "description1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "description2": "A very Simple Customer Relationship Management system working with CRUD functionality."
+  },
+  "contact": {
+    "headline": "Contact",
+    "problem": "Got a problem to solve?",
+    "description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "need": "Need a frontend developer?",
+    "contact": "Contact me!",
+    "name": "Your name",
+    "email": "Your email",
+    "msg": "Your message",
+    "privat-policy-firsttext": "I've read the",
+    "privat-policy-link": "privacy policy ",
+    "privat-policy-lasttext": "and agree to the processing of my data as outlined.",
+    "btn": "Send message :)"
+  },
+  "footer": {
+    "imprint": "Imprint"
   }
 }

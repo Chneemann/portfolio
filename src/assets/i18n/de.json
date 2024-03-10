@@ -18,5 +18,29 @@
     "headline": "Fähigkeiten",
     "description": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
     "btn": "Kontakt aufnehmen"
+  },
+  "portfolio": {
+    "headline": "Portfolio",
+    "description": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "description0": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
+    "description1": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "description2": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet."
+  },
+  "contact": {
+    "headline": "Kontakt",
+    "problem": "Haben Sie ein Problem zu lösen?",
+    "description": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "need": "Brauchen Sie einen Frontend-Entwickler?",
+    "contact": "Kontaktieren Sie mich!",
+    "name": "Ihr Name",
+    "email": "Ihre Email",
+    "msg": "Ihre Nachricht",
+    "privat-policy-firsttext": "Ich habe die",
+    "privat-policy-link": "Datenschutzbestimmungen",
+    "privat-policy-lasttext": "gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
+    "btn": "Nachricht senden :)"
+  },
+  "footer": {
+    "imprint": "Impressum"
   }
 }
