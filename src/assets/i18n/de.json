@@ -1,3 +1,5 @@
 {
-  "about": "Über mich"
+  "header": {
+    "about": "Über mich"
+  }
 }

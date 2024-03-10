@@ -9,19 +9,21 @@
     <div class="line" [style.width]="lineWidth"></div>
   </div>
   <div class="links">
-    <a href="#about-me" [ngClass]="{ selected: activeLink == 'about-me' }"
-      >About me</a
-    >
+    <a href="#about-me" [ngClass]="{ selected: activeLink == 'about-me' }">{{
+      "header.about" | translate
+    }}</a>
     <a href="#skills" [ngClass]="{ selected: activeLink == 'skills' }"
       >Skills</a
     >
     <a href="#portfolio" [ngClass]="{ selected: activeLink == 'portfolio' }"
       >Portfolio</a
     >
-    <a href="" class="translateLink"
+    <a (click)="langService.switchLanguage()" class="translateLink"
       ><img
         id="translateIcon"
-        src="../../../../assets/img/navbar/flag_english.png"
+        src="../../../../assets/img/navbar/flag_{{
+          langService.currentFlag
+        }}.png"
         alt=""
     /></a>
     <div
