@@ -28,6 +28,7 @@ header {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-size: 90px;
+    width: 100px;
     padding: 20px 20px 0 0;
   }
   .right-text {
@@ -39,6 +40,7 @@ header {
       font-size: 64px;
       font-weight: 400;
       color: #9747ff;
+      text-transform: uppercase;
     }
   }
 }
@@ -105,13 +107,6 @@ header {
   animation: 2s anim-UpAndDown ease infinite;
   p {
     font-size: 28px;
-  }
-  img {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-    width: 16px;
-    height: 16px;
   }
 }
 

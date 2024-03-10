@@ -4,29 +4,35 @@
     <img src="./assets/img/azure-blob.svg" alt="" />
   </div>
   <section class="section-name">
-    <div class="left-text">I am</div>
+    <div
+      class="left-text"
+      [ngStyle]="{
+        fontSize: langService.currentLang == 'en' ? '90px' : '62px'
+      }"
+    >
+      {{ "header.iam" | translate }}
+    </div>
     <div class="right-text">
       <h1>Andre Kempf</h1>
-      <h2>FRONTEND DEVELOPER</h2>
+      <h2>{{ "header.dev" | translate }}</h2>
     </div>
   </section>
   <section class="section-btn">
-    <a href="#mail">Let’s talk!</a>
+    <a href="#mail">{{ "header.talk" | translate }}</a>
   </section>
   <section class="section-references">
     <div class="line"></div>
     <a href="https://github.com/Chneemann" target="_blank"
       ><img src="./assets/img/github.svg" alt=""
     /></a>
-    <a href="#mail" target="_blank"
+    <a href="mailto:mail@andre-kempf.com"
       ><img src="./assets/img/mail.svg" alt=""
     /></a>
-    <a href="https://www.linkedin.com/in/andre-kempf-6708b6292/" target="_blank"
+    <a href="https://www.linkedin.com/in/andre-kempf/" target="_blank"
       ><img src="./assets/img/linkedin.svg" alt=""
     /></a>
   </section>
   <section class="section-scroll-down">
-    <p>scroll down</p>
-    <img src="./assets/img/arrow-down.svg" alt="" />
+    <p>{{ "header.scroll" | translate }}</p>
   </section>
 </header>

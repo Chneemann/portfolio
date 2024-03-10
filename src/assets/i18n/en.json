@@ -1,5 +1,22 @@
 {
-  "header": {
+  "navbar": {
     "about": "About me"
+  },
+  "header": {
+    "iam": "I am",
+    "dev": "Frontend Developer",
+    "talk": "Let’s talk!",
+    "scroll": "scroll down >>>"
+  },
+  "about-me": {
+    "headline": "About me",
+    "description": "Hi, I am a frontend deverloper based in Karlsruhe, Germany(....)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor sem non tempus convallis. Integer et justo vitae urna finibus eleifend sit amet porttitor sapien. Donec sollicitudin massa vel lorem vestibulum efficitur.",
+    "bulb": "Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+    "puzzle": "Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+  },
+  "skills": {
+    "headline": "Skills",
+    "description": "I have gained experience in building projects with various front end technologies and concepts.",
+    "btn": "Get in touch"
   }
 }
