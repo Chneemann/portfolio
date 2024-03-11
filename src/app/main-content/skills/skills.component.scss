@@ -9,12 +9,15 @@ section {
 
 .section-left {
   z-index: 3;
+  width: 50%;
+  margin-bottom: 45px;
   table {
-    padding-left: 40px;
+    margin-left: 40px;
     td {
-      padding: 40px;
+      padding: 5%;
+      width: 10%;
       img {
-        width: 150%;
+        width: 100%;
         min-width: 44px;
         height: auto;
       }
