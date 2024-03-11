@@ -27,9 +27,12 @@ header {
   .left-text {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: 90px;
+    font-size: 62px;
     width: 100px;
-    padding: 20px 20px 0 0;
+    padding-top: 20px;
+  }
+  .left-text.english {
+    font-size: 90px;
   }
   .right-text {
     h1 {
@@ -117,5 +120,25 @@ header {
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-name {
+    .left-text {
+      font-size: 34px;
+      padding-top: 12px;
+    }
+    .left-text.english {
+      font-size: 48px;
+    }
+    .right-text {
+      h1 {
+        font-size: 64px;
+      }
+      h2 {
+        font-size: 34px;
+      }
+    }
   }
 }

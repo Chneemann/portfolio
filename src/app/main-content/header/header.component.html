@@ -6,9 +6,7 @@
   <section class="section-name">
     <div
       class="left-text"
-      [ngStyle]="{
-        fontSize: langService.currentLang == 'en' ? '90px' : '62px'
-      }"
+      [ngClass]="{ english: langService.currentLang == 'en' }"
     >
       {{ "header.iam" | translate }}
     </div>
