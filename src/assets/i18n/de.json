@@ -1,6 +1,7 @@
 {
   "navbar": {
-    "about": "Über mich"
+    "about": "Über mich",
+    "contact": "Kontakt"
   },
   "header": {
     "iam": "Ich bin",

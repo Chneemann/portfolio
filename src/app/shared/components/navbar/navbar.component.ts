@@ -54,6 +54,8 @@ export class NavbarComponent {
         return this.mobileMenu ? '136px' : '149px';
       case 'portfolio':
         return this.mobileMenu ? '197px' : '232px';
+      case 'contact':
+        return this.mobileMenu ? '260px' : '315px';
       default:
         return 'initial';
     }

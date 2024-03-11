@@ -27,6 +27,14 @@
       <a href="#portfolio" [ngClass]="{ selected: activeLink == 'portfolio' }"
         >Portfolio</a
       >
+      <a
+        href="#contact"
+        [ngClass]="{
+          selected: activeLink == 'contact',
+        }"
+        [ngStyle]="{ display: mobileMenu ? 'block' : 'none' }"
+        >{{ "navbar.contact" | translate }}</a
+      >
       <a (click)="langService.switchLanguage()" class="translateLink"
         ><img
           id="translateIcon"
@@ -46,7 +54,8 @@
           !(
             activeLink === 'about-me' ||
             activeLink === 'skills' ||
-            activeLink === 'portfolio'
+            activeLink === 'portfolio' ||
+            (activeLink === 'contact' && mobileMenu)
           )
         "
       ></div>
