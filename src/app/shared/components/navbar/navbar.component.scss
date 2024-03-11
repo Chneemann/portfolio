@@ -37,7 +37,7 @@ section {
   }
 }
 
-.nav {
+nav {
   display: flex;
   justify-content: center;
   position: relative;
@@ -55,7 +55,6 @@ section {
   .nav-line {
     position: absolute;
     top: 32px;
-    left: 42px;
     width: 50px;
     height: 4px;
     background-color: #9747ff;
@@ -67,7 +66,6 @@ section {
   .hidden {
     display: none;
   }
-
   .translateLink {
     display: flex;
     align-items: center;
@@ -80,8 +78,49 @@ section {
   }
 }
 
+.burgericon {
+  position: absolute;
+  display: none;
+  top: 29px;
+  right: 40px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+  div {
+    width: 100%;
+    margin: 7px 5%;
+    height: 3px;
+    background-color: white;
+  }
+}
+
+#navigation {
+  opacity: 0;
+}
+
+#navigation:checked ~ nav {
+  display: flex;
+}
+
+#navigation:checked ~ label .burgericon {
+  margin-top: 10px;
+}
+#navigation:checked ~ label .burgericon div:first-of-type {
+  rotate: 45deg;
+  transition: 125ms ease-in-out;
+}
+#navigation:checked ~ label .burgericon div:last-child {
+  rotate: -45deg;
+  margin-top: -10px;
+  transition: 125ms ease-in-out;
+}
+#navigation:checked ~ label .burgericon div:nth-child(2) {
+  display: none;
+}
+
 @media (max-width: 700px) {
-  .nav {
+  nav {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -95,5 +134,8 @@ section {
     margin: 0;
     padding-top: 40px;
     background-color: rgba(40, 40, 40, 0.5);
+  }
+  .burgericon {
+    display: block;
   }
 }

@@ -8,38 +8,48 @@
     /></a>
     <div class="line" [style.width]="lineWidth"></div>
   </div>
-  <div class="nav">
-    <a href="#about-me" [ngClass]="{ selected: activeLink == 'about-me' }">{{
-      "navbar.about" | translate
-    }}</a>
-    <a href="#skills" [ngClass]="{ selected: activeLink == 'skills' }"
-      >Skills</a
-    >
-    <a href="#portfolio" [ngClass]="{ selected: activeLink == 'portfolio' }"
-      >Portfolio</a
-    >
-    <a (click)="langService.switchLanguage()" class="translateLink"
-      ><img
-        id="translateIcon"
-        src="../../../../assets/img/navbar/flag_{{
-          langService.currentFlag
-        }}.png"
-        alt=""
-    /></a>
-    <div
-      id="nav-line"
-      class="nav-line"
-      [ngStyle]="{
-        left: !mobileMenu ? getPosition() : '50%',
-        top: mobileMenu ? getPosition() : ''
-      }"
-      [hidden]="
-        !(
-          activeLink === 'about-me' ||
-          activeLink === 'skills' ||
-          activeLink === 'portfolio'
-        )
-      "
-    ></div>
+  <div>
+    <input type="checkbox" id="navigation" />
+    <label for="navigation" title="Navigation öffnen">
+      <div class="burgericon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </label>
+    <nav id="nav">
+      <a href="#about-me" [ngClass]="{ selected: activeLink == 'about-me' }">{{
+        "navbar.about" | translate
+      }}</a>
+      <a href="#skills" [ngClass]="{ selected: activeLink == 'skills' }"
+        >Skills</a
+      >
+      <a href="#portfolio" [ngClass]="{ selected: activeLink == 'portfolio' }"
+        >Portfolio</a
+      >
+      <a (click)="langService.switchLanguage()" class="translateLink"
+        ><img
+          id="translateIcon"
+          src="../../../../assets/img/navbar/flag_{{
+            langService.currentFlag
+          }}.png"
+          alt=""
+      /></a>
+      <div
+        id="nav-line"
+        class="nav-line"
+        [ngStyle]="{
+          left: !mobileMenu ? getPosition() : 'calc(50% - 25px)',
+          top: mobileMenu ? getPosition() : ''
+        }"
+        [hidden]="
+          !(
+            activeLink === 'about-me' ||
+            activeLink === 'skills' ||
+            activeLink === 'portfolio'
+          )
+        "
+      ></div>
+    </nav>
   </div>
 </section>
