@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../../services/language.service';
@@ -14,11 +14,27 @@ import { LanguageService } from '../../../services/language.service';
 export class NavbarComponent {
   activeLink: string | null | undefined;
   lineWidth: string = '0%';
+  mobileMenu: boolean = false;
 
   constructor(
     public langService: LanguageService,
     private route: ActivatedRoute
-  ) {}
+  ) {
+    this.checkScreenWidth();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenWidth();
+  }
+
+  private checkScreenWidth() {
+    if (window.innerWidth <= 700) {
+      this.mobileMenu = true;
+    } else {
+      this.mobileMenu = false;
+    }
+  }
 
   ngOnInit(): void {
     this.route.fragment.subscribe((fragment) => {
@@ -30,14 +46,14 @@ export class NavbarComponent {
     this.lineWidth = width;
   }
 
-  getLeftPosition() {
+  getPosition() {
     switch (this.activeLink) {
       case 'about-me':
-        return '7px';
+        return this.mobileMenu ? '73px' : '7px';
       case 'skills':
-        return '149px';
+        return this.mobileMenu ? '136px' : '149px';
       case 'portfolio':
-        return '232px';
+        return this.mobileMenu ? '197px' : '232px';
       default:
         return 'initial';
     }

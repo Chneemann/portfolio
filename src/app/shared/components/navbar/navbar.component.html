@@ -29,7 +29,10 @@
     <div
       id="nav-line"
       class="nav-line"
-      [ngStyle]="{ left: getLeftPosition() }"
+      [ngStyle]="{
+        left: !mobileMenu ? getPosition() : '50%',
+        top: mobileMenu ? getPosition() : ''
+      }"
       [hidden]="
         !(
           activeLink === 'about-me' ||
