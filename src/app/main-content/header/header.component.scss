@@ -179,6 +179,9 @@ header {
 
   .section-scroll-down {
     right: 20px;
+    p {
+      font-size: 20px;
+    }
   }
 }
 
@@ -198,6 +201,15 @@ header {
       }
       h2 {
         font-size: 20px;
+      }
+    }
+  }
+
+  .section-btn {
+    a {
+      padding: 10px 15px;
+      &:hover {
+        padding: 15px 20px;
       }
     }
   }

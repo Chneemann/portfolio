@@ -26,14 +26,11 @@ section {
   .line {
     position: absolute;
     bottom: 5px;
-    left: 10px;
-    width: 0;
+    left: 8px;
+    max-width: 100px;
     height: 4px;
     background-color: #1cdae6;
     transition: 125ms ease-in-out;
-    &:hover {
-      width: 100px;
-    }
   }
 }
 
@@ -136,5 +133,17 @@ nav {
   }
   .burgericon {
     display: block;
+  }
+}
+
+@media (max-width: 390px) {
+  .logo {
+    img {
+      width: 140px;
+    }
+    .line {
+      left: 6px;
+      max-width: 83px;
+    }
   }
 }
