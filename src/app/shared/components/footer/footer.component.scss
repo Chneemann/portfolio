@@ -59,3 +59,24 @@ section {
     }
   }
 }
+
+@media (max-width: 950px) {
+  .content {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    flex-direction: column;
+  }
+  .copyright {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 390px) {
+  .content {
+    padding: 40px 20px;
+  }
+}
