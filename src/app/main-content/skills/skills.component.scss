@@ -10,6 +10,8 @@ section {
 
 .background-img {
   position: relative;
+  max-width: 1440px;
+  margin: auto;
   img {
     z-index: 2;
     position: absolute;
@@ -20,8 +22,8 @@ section {
 
 .section-left {
   z-index: 3;
-  width: 70%;
-  margin-bottom: 45px;
+  width: 50%;
+  margin: 40px 0;
   table {
     margin-left: 40px;
     td {
@@ -45,7 +47,8 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 80px;
+  padding-left: 40px;
+  width: 50%;
   z-index: 3;
   .headline {
     display: flex;
@@ -105,6 +108,9 @@ section {
 }
 
 @media (max-width: 1000px) {
+  .section-left {
+    margin: 20px 0;
+  }
   .section-right {
     .headline {
       h2 {
@@ -127,6 +133,7 @@ section {
     }
   }
   .section-right {
+    width: 100%;
     padding: 0px;
     .headline {
       h2 {
