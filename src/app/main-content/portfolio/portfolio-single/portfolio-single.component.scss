@@ -11,10 +11,12 @@ section {
     &:first-child {
       top: -200px;
       right: 0;
+      width: 34%;
     }
     &:last-child {
       top: 400px;
       left: 0;
+      width: 25%;
     }
   }
 }

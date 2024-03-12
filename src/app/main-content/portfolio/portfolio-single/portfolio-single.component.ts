@@ -22,15 +22,8 @@ export class PortfolioSingleComponent {
       name: 'Join',
       imgPath: 'join.svg',
       code: 'JavaScript | HTML | CSS',
-      linkLiveTest: '',
-      linkGithub: '',
-    },
-    {
-      name: 'Simple CRM',
-      imgPath: 'simple-crm.svg',
-      code: 'Angular | Firebase',
-      linkLiveTest: '',
-      linkGithub: '',
+      linkLiveTest: 'http://join.andre-kempf.com',
+      linkGithub: 'https://github.com/Chneemann/gruppenarbeit-join',
     },
   ];
 
