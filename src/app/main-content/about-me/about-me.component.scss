@@ -20,9 +20,15 @@ section {
   }
   .column {
     display: flex;
+    align-items: center;
     padding-bottom: 20px;
     img {
       padding: 20px;
+      height: 70px;
+      width: auto;
+    }
+    p {
+      padding-left: 10px;
     }
   }
 }
@@ -54,6 +60,58 @@ section {
         right: 0;
         width: 70%;
       }
+    }
+  }
+}
+
+@media (max-width: 1255px) {
+  .section-left {
+    h2 {
+      font-size: 70px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-left {
+    h2 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  section {
+    flex-direction: column;
+    padding: 40px;
+  }
+  .section-left,
+  .section-right {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 470px) {
+  .section-left {
+    h2 {
+      font-size: 45px;
+    }
+    .column {
+      img {
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  section {
+    padding: 20px;
+  }
+  .section-left {
+    h2 {
+      font-size: 40px;
     }
   }
 }
