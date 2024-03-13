@@ -24,7 +24,6 @@
       #email="ngModel"
       placeholder="{{ 'form.email' | translate }}"
       [(ngModel)]="contactData.email"
-      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
       required
     />
     @if (!email.valid && email.touched) {
@@ -37,7 +36,7 @@
       #msg="ngModel"
       minlength="10"
       placeholder="{{ 'form.msg' | translate }}"
-      [(ngModel)]="contactData.msg"
+      [(ngModel)]="contactData.message"
       required
     ></textarea>
     @if (!msg.valid && msg.touched) {
