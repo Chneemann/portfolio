@@ -10,7 +10,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './form.component.scss',
 })
 export class FormComponent {
-  checkbox = false;
+  checkboxState = false;
 
   contactData = {
     name: '',

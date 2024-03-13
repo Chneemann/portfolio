@@ -14,7 +14,7 @@
       [(ngModel)]="contactData.name"
       required
     />
-    @if (!name.valid && name.touched && !name.disabled) {
+    @if (!name.valid && name.touched) {
     <span>Your name is required!</span>
     }
     <input
@@ -27,7 +27,7 @@
       pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
       required
     />
-    @if (!email.valid && email.touched && !email.disabled) {
+    @if (!email.valid && email.touched) {
     <span>Your email is required!</span>
     }
     <textarea
@@ -35,11 +35,12 @@
       rows="6"
       name="msg"
       #msg="ngModel"
+      minlength="10"
       placeholder="{{ 'form.msg' | translate }}"
       [(ngModel)]="contactData.msg"
       required
     ></textarea>
-    @if (!msg.valid && msg.touched && !msg.disabled) {
+    @if (!msg.valid && msg.touched) {
     <span>Your message is empty!</span>
     }
     <div class="privacy-policy">
@@ -48,7 +49,7 @@
         id="checkbox"
         name="checkbox"
         #checkbox="ngModel"
-        [(ngModel)]="checkbox"
+        [(ngModel)]="checkboxState"
         required
       />
       <label for="confirm">
@@ -58,10 +59,10 @@
         }}</a>
         {{ "form.privacy-policy-lasttext" | translate }}</label
       >
-      @if (!checkbox.valid && checkbox.touched && !checkbox.disabled) {
-      <span>Please accept the privacy policy</span>
-      }
     </div>
+    @if (!checkbox.valid && checkbox.touched) {
+    <span>Please accept the privacy policy</span>
+    }
     <input class="btn" type="submit" value="{{ 'form.btn' | translate }}" />
   </form>
 </section>
