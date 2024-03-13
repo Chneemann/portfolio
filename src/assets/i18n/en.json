@@ -33,7 +33,9 @@
     "problem": "Got a problem to solve?",
     "description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
     "need": "Need a frontend developer?",
-    "contact": "Contact me!",
+    "contact": "Contact me!"
+  },
+  "form": {
     "name": "Your name",
     "email": "Your email",
     "msg": "Your message",

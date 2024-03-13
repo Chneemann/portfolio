@@ -33,10 +33,12 @@
     "problem": "Haben Sie ein Problem zu lösen?",
     "description": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
     "need": "Brauchen Sie einen Frontend-Entwickler?",
-    "contact": "Kontaktieren Sie mich!",
+    "contact": "Kontaktieren Sie mich!"
+  },
+  "form": {
     "name": "Ihr Name",
     "email": "Ihre Email",
-    "msg": "Ihre Nachricht",
+    "emsg": "Ihre Nachricht",
     "privacy-policy-firsttext": "Ich habe die",
     "privacy-policy-link": "Datenschutzbestimmungen",
     "privacy-policy-lasttext": "gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",

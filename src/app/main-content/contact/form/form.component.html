@@ -1,32 +1,40 @@
 <section>
-  <form action="" class="contact-formular">
+  <form
+    (ngSubmit)="onSubmit()"
+    onsubmit="return false"
+    class="contact-formular"
+  >
     <input
       id="name"
       type="text"
-      placeholder="{{ 'contact.name' | translate }}"
+      name="name"
+      placeholder="{{ 'form.name' | translate }}"
+      [(ngModel)]="contactData.name"
     />
     <input
-      id="mail"
+      id="email"
       type="text"
-      placeholder="{{ 'contact.mail' | translate }}"
+      name="email"
+      placeholder="{{ 'form.email' | translate }}"
+      [(ngModel)]="contactData.email"
     />
     <textarea
       id="msg"
       rows="6"
-      placeholder="{{ 'contact.msg' | translate }}"
+      name="msg"
+      placeholder="{{ 'form.msg' | translate }}"
+      [(ngModel)]="contactData.msg"
     ></textarea>
     <div class="privacy-policy">
       <input type="checkbox" id="checkbox" />
       <label for="confirm">
-        {{ "contact.privacy-policy-firsttext" | translate }}
+        {{ "form.privacy-policy-firsttext" | translate }}
         <a href="privacy-policy" target="_blank">{{
-          "contact.privacy-policy-link" | translate
+          "form.privacy-policy-link" | translate
         }}</a>
-        {{ "contact.privacy-policy-lasttext" | translate }}</label
+        {{ "form.privacy-policy-lasttext" | translate }}</label
       >
     </div>
+    <input class="btn" type="submit" value="{{ 'form.btn' | translate }}" />
   </form>
-  <div class="btn">
-    <span>{{ "contact.btn" | translate }}</span>
-  </div>
 </section>

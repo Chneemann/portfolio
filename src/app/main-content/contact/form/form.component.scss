@@ -24,6 +24,18 @@ section {
       border-color: #70e61c;
       outline: none;
     }
+    &:last-child {
+      width: 250px;
+      padding: 15px 30px;
+      border-radius: 10px;
+      border-color: black;
+      background-color: #b6b6b6;
+      font-size: 23px;
+      font-weight: 400;
+      &:hover {
+        border-color: none;
+      }
+    }
   }
 }
 
@@ -63,19 +75,5 @@ section {
         text-decoration: underline;
       }
     }
-  }
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  border-radius: 10px;
-  background-color: #b6b6b6;
-  cursor: not-allowed;
-  span {
-    font-size: 23px;
-    font-weight: 400;
   }
 }
