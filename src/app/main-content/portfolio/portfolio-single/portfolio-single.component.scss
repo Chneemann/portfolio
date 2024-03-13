@@ -24,7 +24,7 @@ section {
 .project {
   display: flex;
   justify-content: center;
-  padding: 80px;
+  padding: 40px 80px;
 }
 
 .img {
@@ -44,7 +44,7 @@ section {
   flex-direction: column;
   justify-content: center;
   width: 700px;
-  padding: 40px;
+  padding: 0 40px;
   z-index: 2;
   h3 {
     color: #9747ff;
