@@ -25,7 +25,8 @@
     "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
     "description0": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
     "description1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-    "description2": "A very Simple Customer Relationship Management system working with CRUD functionality."
+    "description3": "A very Simple Customer Relationship Management system working with CRUD functionality.",
+    "description-released-soon": "Coming soon."
   },
   "contact": {
     "headline": "Contact",

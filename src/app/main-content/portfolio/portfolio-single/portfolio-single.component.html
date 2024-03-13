@@ -17,8 +17,14 @@
     <div class="description" [ngStyle]="getDescriptionStyle(i)">
       <h3>{{ project.name }}</h3>
       <h4>{{ project.code }}</h4>
-      <p>{{ "portfolio.description" + i | translate }}</p>
-      <div class="btns">
+      <p>
+        {{
+          project.released === true
+            ? ("portfolio.description" + i | translate)
+            : ("portfolio.description-released-soon" | translate)
+        }}
+      </p>
+      <div *ngIf="project.released === true" class="btns">
         <div class="btn btn-live-test">
           <a href="{{ project.linkLiveTest }}" target="_blank">Live test</a>
         </div>

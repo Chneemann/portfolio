@@ -17,6 +17,7 @@ export class PortfolioSingleComponent {
       code: 'JavaScript | HTML | CSS',
       linkLiveTest: 'http://sharkie.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/sharkie',
+      released: true,
     },
     {
       name: 'Join',
@@ -24,6 +25,15 @@ export class PortfolioSingleComponent {
       code: 'JavaScript | HTML | CSS',
       linkLiveTest: 'http://join.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/gruppenarbeit-join',
+      released: true,
+    },
+    {
+      name: 'Simple CRM',
+      imgPath: 'simple-crm.svg',
+      code: 'Angular | Firebase',
+      linkLiveTest: '',
+      linkGithub: '',
+      released: false,
     },
   ];
 
