@@ -51,7 +51,7 @@
         [(ngModel)]="checkboxState"
         required
       />
-      <label for="confirm">
+      <label for="checkbox">
         {{ "form.privacy-policy-firsttext" | translate }}
         <a href="privacy-policy" target="_blank">{{
           "form.privacy-policy-link" | translate
@@ -62,6 +62,11 @@
     @if (!checkbox.valid && checkbox.touched) {
     <span>Please accept the privacy policy</span>
     }
-    <input class="btn" type="submit" value="{{ 'form.btn' | translate }}" />
+    <input
+      class="btn"
+      type="submit"
+      value="{{ 'form.btn' | translate }}"
+      [disabled]="!checkboxState"
+    />
   </form>
 </section>

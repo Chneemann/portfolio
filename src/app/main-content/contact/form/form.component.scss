@@ -36,11 +36,20 @@ span {
       padding: 15px 30px;
       border-radius: 10px;
       border-color: black;
-      background-color: #b6b6b6;
+      background-color: lightgray;
       font-size: 23px;
       font-weight: 400;
+      &:hover:not(:disabled) {
+        width: 270px;
+        padding: 20px 35px;
+        background-color: #9747ff !important;
+        cursor: pointer;
+      }
+      &:not(:disabled) {
+        background-color: #70e61c !important;
+      }
       &:hover {
-        border-color: none;
+        cursor: default;
       }
     }
   }
