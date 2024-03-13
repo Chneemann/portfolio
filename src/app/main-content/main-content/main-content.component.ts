@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
+import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { AboutMeComponent } from '../about-me/about-me.component';
 import { SkillsComponent } from '../skills/skills.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
@@ -9,7 +9,7 @@ import { ContactComponent } from '../contact/contact.component';
   selector: 'app-main-content',
   standalone: true,
   imports: [
-    HeaderComponent,
+    LandingPageComponent,
     AboutMeComponent,
     SkillsComponent,
     PortfolioComponent,

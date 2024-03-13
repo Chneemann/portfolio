@@ -4,12 +4,12 @@ import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-landing-page',
   standalone: true,
   imports: [CommonModule, TranslateModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  templateUrl: './landing-page.component.html',
+  styleUrl: './landing-page.component.scss',
 })
-export class HeaderComponent {
+export class LandingPageComponent {
   constructor(public langService: LanguageService) {}
 }
