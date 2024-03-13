@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,13 +10,17 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './form.component.scss',
 })
 export class FormComponent {
+  checkbox = false;
+
   contactData = {
     name: '',
     email: '',
     msg: '',
   };
 
-  onSubmit() {
-    console.log(this.contactData);
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.valid && ngForm.submitted) {
+      console.log(this.contactData);
+    }
   }
 }

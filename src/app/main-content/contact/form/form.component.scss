@@ -5,6 +5,13 @@ section {
   align-items: center;
 }
 
+span {
+  font-size: 14px;
+  font-weight: 400;
+  color: red;
+  padding: 0 0 10px 20px;
+}
+
 .contact-formular {
   display: flex;
   flex-direction: column;

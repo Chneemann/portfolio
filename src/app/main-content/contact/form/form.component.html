@@ -1,6 +1,7 @@
 <section>
   <form
-    (ngSubmit)="onSubmit()"
+    (ngSubmit)="onSubmit(contactForm)"
+    #contactForm="ngForm"
     onsubmit="return false"
     class="contact-formular"
   >
@@ -8,25 +9,48 @@
       id="name"
       type="text"
       name="name"
+      #name="ngModel"
       placeholder="{{ 'form.name' | translate }}"
       [(ngModel)]="contactData.name"
+      required
     />
+    @if (!name.valid && name.touched && !name.disabled) {
+    <span>Your name is required!</span>
+    }
     <input
       id="email"
       type="text"
       name="email"
+      #email="ngModel"
       placeholder="{{ 'form.email' | translate }}"
       [(ngModel)]="contactData.email"
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+      required
     />
+    @if (!email.valid && email.touched && !email.disabled) {
+    <span>Your email is required!</span>
+    }
     <textarea
       id="msg"
       rows="6"
       name="msg"
+      #msg="ngModel"
       placeholder="{{ 'form.msg' | translate }}"
       [(ngModel)]="contactData.msg"
+      required
     ></textarea>
+    @if (!msg.valid && msg.touched && !msg.disabled) {
+    <span>Your message is empty!</span>
+    }
     <div class="privacy-policy">
-      <input type="checkbox" id="checkbox" />
+      <input
+        type="checkbox"
+        id="checkbox"
+        name="checkbox"
+        #checkbox="ngModel"
+        [(ngModel)]="checkbox"
+        required
+      />
       <label for="confirm">
         {{ "form.privacy-policy-firsttext" | translate }}
         <a href="privacy-policy" target="_blank">{{
@@ -34,6 +58,9 @@
         }}</a>
         {{ "form.privacy-policy-lasttext" | translate }}</label
       >
+      @if (!checkbox.valid && checkbox.touched && !checkbox.disabled) {
+      <span>Please accept the privacy policy</span>
+      }
     </div>
     <input class="btn" type="submit" value="{{ 'form.btn' | translate }}" />
   </form>
