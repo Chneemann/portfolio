@@ -99,3 +99,35 @@ section {
     background-color: #70e61c;
   }
 }
+
+@media (max-width: 850px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .description {
+    width: 100%;
+    padding: 0px;
+    text-align: start !important;
+  }
+
+  .img {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .project {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .btn {
+    padding: 5px 15px;
+    a {
+      font-size: 18px;
+    }
+  }
+}
