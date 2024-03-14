@@ -22,7 +22,7 @@ section {
   }
 }
 
-.section-name {
+.iam {
   display: flex;
   justify-content: center;
   padding-top: 200px;
@@ -54,7 +54,7 @@ section {
   }
 }
 
-.section-btn {
+.btn {
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -75,7 +75,7 @@ section {
   }
 }
 
-.section-references {
+.references {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +106,7 @@ section {
   }
 }
 
-.section-scroll-down {
+.scroll-down {
   display: flex;
   align-items: center;
   position: absolute;
@@ -130,7 +130,7 @@ section {
 }
 
 @media (max-width: 1000px) {
-  .section-name {
+  .iam {
     .left-text {
       font-size: 34px;
       padding-top: 12px;
@@ -151,7 +151,7 @@ section {
 }
 
 @media (max-width: 550px) {
-  .section-name {
+  .iam {
     .left-text {
       font-size: 23px;
       padding-top: 10px;
@@ -169,14 +169,14 @@ section {
       }
     }
   }
-  .section-references {
+  .references {
     width: 200px;
     .line {
       width: 60px;
     }
   }
 
-  .section-scroll-down {
+  .scroll-down {
     right: 20px;
     p {
       font-size: 20px;
@@ -185,7 +185,7 @@ section {
 }
 
 @media (max-width: 390px) {
-  .section-name {
+  .iam {
     .left-text {
       font-size: 18px;
       padding-top: 7px;
@@ -204,7 +204,7 @@ section {
     }
   }
 
-  .section-btn {
+  .btn {
     a {
       padding: 10px 15px;
       font-size: 20px;
