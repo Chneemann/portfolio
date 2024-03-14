@@ -5,6 +5,7 @@ section {
   .headline {
     display: flex;
     align-items: center;
+    padding-top: 70px;
     h2 {
       position: relative;
       font-size: 90px;
@@ -46,7 +47,6 @@ section {
 @media (max-width: 850px) {
   section {
     .headline {
-      padding-top: 30px;
       .line {
         width: 20px;
       }

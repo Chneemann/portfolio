@@ -59,7 +59,6 @@ section {
   justify-content: center;
   margin-top: 100px;
   a {
-    z-index: 2;
     padding: 15px 30px;
     border: 0;
     border-radius: 10px;
@@ -208,6 +207,7 @@ section {
   .section-btn {
     a {
       padding: 10px 15px;
+      font-size: 20px;
       &:hover {
         padding: 15px 20px;
       }

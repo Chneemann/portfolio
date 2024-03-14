@@ -37,26 +37,31 @@ p {
       border-color: #70e61c;
       outline: none;
     }
-    &:last-child {
-      width: 250px;
-      padding: 15px 30px;
-      border-radius: 10px;
-      border-color: black;
-      background-color: lightgray;
-      font-size: 23px;
-      font-weight: 400;
-      &:hover:not(:disabled) {
-        width: 270px;
-        padding: 20px 35px;
-        background-color: #9747ff !important;
-        cursor: pointer;
-      }
-      &:not(:disabled) {
-        background-color: #70e61c !important;
-      }
-      &:hover {
-        cursor: default;
-      }
+  }
+}
+
+.btn {
+  height: 100px;
+  .submit-btn {
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 10px;
+    border-color: black;
+    background-color: lightgray;
+    font-size: 23px;
+    font-weight: 400;
+    transition: 200ms ease-in-out;
+    &:hover:not(:disabled) {
+      padding: 20px 35px;
+      background-color: #9747ff;
+      background-color: #9747ff !important;
+      cursor: pointer;
+    }
+    &:not(:disabled) {
+      background-color: #70e61c !important;
+    }
+    &:hover {
+      cursor: default;
     }
   }
 }
@@ -104,12 +109,25 @@ p {
 @media (max-width: 850px) {
   .contact-formular,
   p {
-    padding: 25px;
+    padding: 25px 25px 40px 25px;
   }
 }
 
 @media (max-width: 470px) {
   .contact-formular {
-    padding: 5px;
+    padding: 5px 5px 40px 5px;
+  }
+}
+
+@media (max-width: 390px) {
+  .btn {
+    height: 80px;
+    .submit-btn {
+      padding: 10px 15px;
+      font-size: 20px;
+      &:hover:not(:disabled) {
+        padding: 15px 20px;
+      }
+    }
   }
 }
