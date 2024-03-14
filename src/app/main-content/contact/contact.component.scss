@@ -9,10 +9,10 @@ section {
 .background-img {
   img {
     position: absolute;
+    width: 40%;
     z-index: 1;
-    bottom: -400px;
+    bottom: 0;
     right: 0;
-    clip: rect(0px 750px 395px 0px);
   }
 }
 
