@@ -25,7 +25,6 @@
       #email="ngModel"
       placeholder="{{ 'form.email' | translate }}"
       [(ngModel)]="contactData.email"
-      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
       autocomplete="on"
       required
     />
@@ -80,4 +79,10 @@
       "
     />
   </form>
+  @if (mailSend) {
+  <p>
+    Deine Nachricht wurde erfolgreich gesendet<br />Ich werde mich in kürze bei
+    dir melden.
+  </p>
+  }
 </section>

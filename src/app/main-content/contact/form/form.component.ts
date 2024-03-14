@@ -14,6 +14,7 @@ export class FormComponent {
   http = inject(HttpClient);
 
   mailTest = true;
+  mailSend = false;
   checkboxState = false;
 
   contactData = {
@@ -39,6 +40,7 @@ export class FormComponent {
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.mailSendComplete();
             ngForm.resetForm();
           },
           error: (error) => {
@@ -47,7 +49,12 @@ export class FormComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      this.mailSendComplete();
       ngForm.resetForm();
     }
+  }
+
+  mailSendComplete() {
+    this.mailSend = true;
   }
 }
