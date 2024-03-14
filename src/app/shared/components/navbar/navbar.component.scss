@@ -34,6 +34,11 @@ section {
   }
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -128,7 +133,9 @@ nav {
     right: -100vw;
     margin: 0;
     padding-top: 40px;
-    background-color: rgba(40, 40, 40, 0.5);
+    background-color: rgba(40, 40, 40, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     transition: 125ms ease-in-out;
   }
   .burgericon {
@@ -145,5 +152,8 @@ nav {
       left: 6px;
       max-width: 83px;
     }
+  }
+  .burgericon {
+    top: 24px;
   }
 }
