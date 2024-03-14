@@ -12,6 +12,7 @@
       #name="ngModel"
       placeholder="{{ 'form.name' | translate }}"
       [(ngModel)]="contactData.name"
+      autocomplete="on"
       required
     />
     @if (!name.valid && name.touched) {
@@ -19,11 +20,13 @@
     }
     <input
       id="email"
-      type="text"
+      type="email"
       name="email"
       #email="ngModel"
       placeholder="{{ 'form.email' | translate }}"
       [(ngModel)]="contactData.email"
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+      autocomplete="on"
       required
     />
     @if (!email.valid && email.touched) {
@@ -40,7 +43,7 @@
       required
     ></textarea>
     @if (!msg.valid && msg.touched) {
-    <span>Your message is empty!</span>
+    <span>More than 10 letters are required!</span>
     }
     <div class="privacy-policy">
       <input
@@ -66,7 +69,15 @@
       class="btn"
       type="submit"
       value="{{ 'form.btn' | translate }}"
-      [disabled]="!checkboxState"
+      [disabled]="
+        name.invalid ||
+        !contactData.name ||
+        email.invalid ||
+        !contactData.email ||
+        msg.invalid ||
+        !contactData.message ||
+        !checkboxState
+      "
     />
   </form>
 </section>
