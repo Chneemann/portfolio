@@ -11,27 +11,27 @@
   },
   "about-me": {
     "headline": "Über mich",
-    "description": "Hallo, ich bin ein Frontend-Entwickler aus Karlsruhe, Deutschland(....)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor sem non tempus convallis. Integer et justo vitae urna finibus eleifend sit amet porttitor sapien. Donec sollicitudin massa vel lorem vestibulum efficitur.",
-    "bulb": "Etwas Persönliches zu teilen(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "puzzle": "Etwas Persönliches zu teilen(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+    "description": "Hallo! Ich bin Andre, ein Frontend-Entwickler aus Karlsruhe. Schon seit meiner Kindheit faszinieren mich Computer und die Technik dahinter. Deshalb habe ich meine Ausbildung an der Developer Academy absolviert.",
+    "bulb": "Während meiner Zeit dort sammelte ich wertvolle praktische Erfahrungen durch die Umsetzung eigener Projekte und erfolgreiche Teamarbeit. Besonders wichtig ist mir dabei, Designs präzise umzusetzen und dabei stets auf die Details zu achten.",
+    "puzzle": "Lassen Sie sich von meinen bisherigen Arbeiten inspirieren und gewinnen Sie einen Eindruck von meiner Hingabe und den Fähigkeiten, die ich in jedes Projekt einbringe. Ich lade Sie herzlich ein, einen Blick auf meine Portfolio zu werfen."
   },
   "skills": {
     "headline": "Fähigkeiten",
-    "description": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+    "description": "Durch die Arbeit an einer Vielzahl von Projekten konnte ich mein Wissen und meine Fähigkeiten in der Frontend-Entwicklung kontinuierlich ausbauen und verfeinern. Dies umfasst unter anderem die Verwendung von HTML, CSS und JavaScript sowie modernen Frameworks wie Angular",
     "btn": "Kontakt aufnehmen"
   },
   "portfolio": {
     "headline": "Portfolio",
-    "description": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
-    "description0": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.",
-    "description1": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "description": "Hier finden Sie eine Auswahl meiner Projekte – erleben Sie sie interaktiv, um meine Fähigkeiten in Aktion zu erleben. Stöbern Sie durch meine Arbeiten und tauchen Sie ein in die Welt der Frontend-Entwicklung.",
+    "description0": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um sich dem furchterregenden Killerwal entgegenzustellen.",
+    "description1": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu, um eine effiziente Verwaltung zu gewährleisten.",
     "description2": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
     "description-released-soon": "Demnächst verfügbar."
   },
   "contact": {
     "headline": "Kontakt",
     "problem": "Haben Sie ein Problem zu lösen?",
-    "description": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "description": "Bitte nutzen Sie dieses Formular, um mit mir in Kontakt zu treten. Ich freue mich darauf, von Ihnen zu hören, Ihre Gedanken kennenzulernen und einen Beitrag zu Ihren Projekten zu leisten.",
     "need": "Brauchen Sie einen Frontend-Entwickler?",
     "contact": "Kontaktieren Sie mich!"
   },

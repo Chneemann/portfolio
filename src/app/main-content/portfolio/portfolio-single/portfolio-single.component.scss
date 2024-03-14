@@ -9,7 +9,7 @@ section {
   img {
     position: absolute;
     &:first-child {
-      top: -200px;
+      top: -100px;
       right: 0;
       width: 34%;
     }
@@ -32,6 +32,7 @@ section {
   align-items: center;
   height: 340px;
   width: auto;
+  z-index: 2;
   img {
     width: 100%;
     border: 2px solid #fff;

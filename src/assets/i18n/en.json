@@ -11,27 +11,27 @@
   },
   "about-me": {
     "headline": "About me",
-    "description": "Hi, I am a frontend deverloper based in Karlsruhe, Germany(....)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor sem non tempus convallis. Integer et justo vitae urna finibus eleifend sit amet porttitor sapien. Donec sollicitudin massa vel lorem vestibulum efficitur.",
-    "bulb": "Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-    "puzzle": "Some personal thing to share(...) Donec ut imperdiet diam, et convallis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+    "description": "Hi there! I'm Andre, a front-end developer from Karlsruhe. I've been fascinated by computers and the technology behind them since I was a child. That's why I completed my training at the Developer Academy.",
+    "bulb": "During my time there, I gained valuable practical experience through the implementation of my own projects and successful teamwork. It is particularly important to me to implement designs precisely and always pay attention to the details.",
+    "puzzle": "Be inspired by my previous work and gain an impression of my dedication and the skills I bring to each project. I cordially invite you to take a look at my portfolio."
   },
   "skills": {
     "headline": "Skills",
-    "description": "I have gained experience in building projects with various front end technologies and concepts.",
+    "description": "Through working on a variety of projects, I have been able to continuously expand and refine my knowledge and skills in front-end development. This includes the use of HTML, CSS and JavaScript as well as modern frameworks such as Angular",
     "btn": "Get in touch"
   },
   "portfolio": {
     "headline": "Portfolio",
-    "description": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-    "description0": "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.",
-    "description1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "description": "Here you will find a selection of my projects - experience them interactively to see my skills in action. Browse through my work and immerse yourself in the world of front-end development.",
+    "description0": "A simple jump-and-run game based on an object-oriented approach. Help Sharkie find coins and poison bottles to face the fearsome killer whale.",
+    "description1": "Task manager modeled on the Kanban system. Create and organize tasks using drag-and-drop functions, assign users and categories to ensure efficient management.",
     "description3": "A very Simple Customer Relationship Management system working with CRUD functionality.",
     "description-released-soon": "Coming soon."
   },
   "contact": {
     "headline": "Contact",
     "problem": "Got a problem to solve?",
-    "description": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.",
+    "description": "Please use this form to get in touch with me. I look forward to hearing from you, learning your thoughts and contributing to your projects.",
     "need": "Need a frontend developer?",
     "contact": "Contact me!"
   },
