@@ -9,6 +9,24 @@ body {
   background-color: #000;
 }
 
+/*------------- SCROLLBAR -------------*/
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #141d2f;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #9746ff;
+  border-radius: 10px;
+  border: 3px solid #000;
+}
+
+/*------------- FONTS -------------*/
+
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
