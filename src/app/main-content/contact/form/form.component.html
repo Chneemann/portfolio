@@ -16,7 +16,7 @@
       required
     />
     @if (!name.valid && name.touched) {
-    <span>Your name is required!</span>
+    <span>{{ "form.invalid-name" | translate }}</span>
     }
     <input
       id="email"
@@ -29,7 +29,7 @@
       required
     />
     @if (!email.valid && email.touched) {
-    <span>Your email is required!</span>
+    <span>{{ "form.invalid-email" | translate }}</span>
     }
     <textarea
       id="msg"
@@ -42,7 +42,7 @@
       required
     ></textarea>
     @if (!msg.valid && msg.touched) {
-    <span>More than 10 letters are required!</span>
+    <span>{{ "form.invalid-msg" | translate }}</span>
     }
     <div class="privacy-policy">
       <input
@@ -62,7 +62,7 @@
       >
     </div>
     @if (!checkbox.valid && checkbox.touched) {
-    <span>Please accept the privacy policy</span>
+    <span>{{ "form.invalid-checkbox" | translate }}</span>
     }
     <input
       class="btn"
@@ -81,8 +81,8 @@
   </form>
   @if (mailSend) {
   <p>
-    Deine Nachricht wurde erfolgreich gesendet<br />Ich werde mich in kürze bei
-    dir melden.
+    {{ "form.msg-send0" | translate }}<br />
+    {{ "form.msg-send1" | translate }}
   </p>
   }
 </section>

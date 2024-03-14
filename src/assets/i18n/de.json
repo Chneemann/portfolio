@@ -42,7 +42,13 @@
     "privacy-policy-firsttext": "Ich habe die",
     "privacy-policy-link": "Datenschutzbestimmungen",
     "privacy-policy-lasttext": "gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
-    "btn": "Nachricht senden :)"
+    "btn": "Nachricht senden :)",
+    "invalid-name": "Ihr Name ist erforderlich!",
+    "invalid-email": "Ihre E-Mail ist erforderlich!",
+    "invalid-msg": "Es sind mehr als 10 Buchstaben erforderlich!",
+    "invalid-checkbox": "Bitte akzeptieren Sie die Datenschutzbestimmungen!",
+    "msg-send0": "Deine Nachricht wurde erfolgreich gesendet.",
+    "msg-send1": "Ich werde mich in kürze bei dir melden."
   },
   "footer": {
     "imprint": "Impressum"
