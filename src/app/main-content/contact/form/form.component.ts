@@ -13,7 +13,6 @@ import { TranslateModule } from '@ngx-translate/core';
 export class FormComponent {
   http = inject(HttpClient);
 
-  mailTest = true;
   mailSend = false;
   checkboxState = false;
 
@@ -35,7 +34,7 @@ export class FormComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -48,9 +47,6 @@ export class FormComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      this.mailSendComplete();
-      ngForm.resetForm();
     }
   }
 

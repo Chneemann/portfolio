@@ -64,27 +64,27 @@
     @if (!checkbox.valid && checkbox.touched) {
     <span>{{ "form.invalid-checkbox" | translate }}</span>
     }
+    <div class="btn">
+      <input
+        class="submit-btn"
+        type="submit"
+        value="{{ 'form.btn' | translate }}"
+        [disabled]="
+          name.invalid ||
+          !contactData.name ||
+          email.invalid ||
+          !contactData.email ||
+          msg.invalid ||
+          !contactData.message ||
+          !checkboxState
+        "
+      />
+      @if (mailSend) {
+      <p>
+        {{ "form.msg-send0" | translate }}<br />
+        {{ "form.msg-send1" | translate }}
+      </p>
+      }
+    </div>
   </form>
-  <div class="btn">
-    <input
-      class="submit-btn"
-      type="submit"
-      value="{{ 'form.btn' | translate }}"
-      [disabled]="
-        name.invalid ||
-        !contactData.name ||
-        email.invalid ||
-        !contactData.email ||
-        msg.invalid ||
-        !contactData.message ||
-        !checkboxState
-      "
-    />
-    @if (mailSend) {
-    <p>
-      {{ "form.msg-send0" | translate }}<br />
-      {{ "form.msg-send1" | translate }}
-    </p>
-    }
-  </div>
 </section>
