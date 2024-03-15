@@ -9,12 +9,12 @@ section {
   img {
     position: absolute;
     &:first-child {
-      top: -100px;
+      top: 10%;
       right: 0;
       width: 34%;
     }
     &:last-child {
-      top: 400px;
+      top: 25%;
       left: 0;
       width: 20%;
     }
@@ -110,6 +110,18 @@ section {
     flex-direction: column;
   }
 
+  .background-imgs {
+    img {
+      &:first-child {
+        top: 0%;
+        width: 54%;
+      }
+      &:last-child {
+        width: 40%;
+      }
+    }
+  }
+
   .description {
     width: 100%;
     padding: 0px;
@@ -137,6 +149,18 @@ section {
     padding: 5px 15px;
     a {
       font-size: 18px;
+    }
+  }
+
+  .background-imgs {
+    img {
+      &:first-child {
+        top: 0%;
+        width: 74%;
+      }
+      &:last-child {
+        width: 60%;
+      }
     }
   }
 }
