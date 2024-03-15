@@ -13,7 +13,7 @@ export class PortfolioSingleComponent {
   projects = [
     {
       name: 'Sharkie',
-      imgPath: 'sharkie.svg',
+      imgPath: 'sharkie.jpg',
       code: 'JavaScript | HTML | CSS',
       linkLiveTest: 'http://sharkie.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/sharkie',
@@ -21,7 +21,7 @@ export class PortfolioSingleComponent {
     },
     {
       name: 'Join',
-      imgPath: 'join.svg',
+      imgPath: 'join.jpg',
       code: 'JavaScript | HTML | CSS',
       linkLiveTest: 'http://join.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/gruppenarbeit-join',
@@ -29,7 +29,7 @@ export class PortfolioSingleComponent {
     },
     {
       name: 'Simple CRM',
-      imgPath: 'simple-crm.svg',
+      imgPath: 'simple-crm.jpg',
       code: 'Angular | Firebase',
       linkLiveTest: '',
       linkGithub: '',
