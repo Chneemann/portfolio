@@ -63,6 +63,11 @@
     </div>
     @if (!checkbox.valid && checkbox.touched) {
     <span>{{ "form.invalid-checkbox" | translate }}</span>
+    } @if (mailSend) {
+    <p>
+      {{ "form.msg-send0" | translate }}<br />
+      {{ "form.msg-send1" | translate }}
+    </p>
     }
     <div class="btn">
       <input
@@ -79,12 +84,6 @@
           !checkboxState
         "
       />
-      @if (mailSend) {
-      <p>
-        {{ "form.msg-send0" | translate }}<br />
-        {{ "form.msg-send1" | translate }}
-      </p>
-      }
     </div>
   </form>
 </section>

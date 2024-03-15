@@ -6,14 +6,14 @@
   "header": {
     "iam": "I am",
     "dev": "Frontend Developer",
-    "talk": "Let’s talk!",
+    "talk": "Let´s talk!",
     "scroll": "scroll down >>>"
   },
   "about-me": {
     "headline": "About me",
-    "description": "Hi there! I'm Andre, a front-end developer from Karlsruhe. I've been fascinated by computers and the technology behind them since I was a child. That's why I completed my training at the Developer Academy.",
-    "bulb": "During my time there, I gained valuable practical experience through the implementation of my own projects and successful teamwork. It is particularly important to me to implement designs precisely and always pay attention to the details.",
-    "puzzle": "Be inspired by my previous work and gain an impression of my dedication and the skills I bring to each project. I cordially invite you to take a look at my portfolio."
+    "description": "Hey! I'm Andre, a frontend developer from Karlsruhe, with a real passion for coding and design. I've been fascinated by computers and their technology since I was a kid, and now I've turned my hobby into my profession. ",
+    "bulb": "During my training at the Developer Academy, I not only learned, but also gained a lot of practical experience, whether through my own projects or successful teamwork. I am particularly interested in implementing designs precisely and paying attention to every detail.",
+    "puzzle": "If you are curious, please take a look at my previous work to get an impression of my dedication and skills. I cordially invite you to take a look at my portfolio."
   },
   "skills": {
     "headline": "Skills",

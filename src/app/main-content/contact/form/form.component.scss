@@ -12,12 +12,6 @@ span {
   padding: 0 0 10px 20px;
 }
 
-p {
-  text-align: center;
-  padding: 0 40px 40px 40px;
-  font-weight: 700;
-}
-
 .contact-formular {
   display: flex;
   flex-direction: column;
@@ -37,6 +31,11 @@ p {
       border-color: #70e61c;
       outline: none;
     }
+  }
+  p {
+    text-align: center;
+    padding: 20px;
+    font-weight: 700;
   }
 }
 

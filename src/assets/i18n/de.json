@@ -11,9 +11,9 @@
   },
   "about-me": {
     "headline": "Über mich",
-    "description": "Hallo! Ich bin Andre, ein Frontend-Entwickler aus Karlsruhe. Schon seit meiner Kindheit faszinieren mich Computer und die Technik dahinter. Deshalb habe ich meine Ausbildung an der Developer Academy absolviert.",
-    "bulb": "Während meiner Zeit dort sammelte ich wertvolle praktische Erfahrungen durch die Umsetzung eigener Projekte und erfolgreiche Teamarbeit. Besonders wichtig ist mir dabei, Designs präzise umzusetzen und dabei stets auf die Details zu achten.",
-    "puzzle": "Lassen Sie sich von meinen bisherigen Arbeiten inspirieren und gewinnen Sie einen Eindruck von meiner Hingabe und den Fähigkeiten, die ich in jedes Projekt einbringe. Ich lade Sie herzlich ein, einen Blick auf meine Portfolio zu werfen."
+    "description": "Hey! Ich bin Andre, ein Frontend Entwickler aus Karlsruhe, mit einer echten Leidenschaft fürs Coden und Design. Schon seit meiner Kindheit bin ich von Computern und ihrer Technik fasziniert, jetzt habe ich mein Hobby zum Beruf gemacht. ",
+    "bulb": "Während meiner Ausbildung an der Developer Academy habe ich nicht nur gelernt, sondern auch jede Menge praktische Erfahrungen gesammelt, sei es durch eigene Projekte oder erfolgreiche Teamarbeit. Mir liegt besonders daran, Designs genau umzusetzen und dabei auf jedes Detail zu achten.",
+    "puzzle": "Wenn Sie neugierig sind, schauen Sie sich gerne meine bisherigen Arbeiten an, um einen Eindruck von meiner Hingabe und meinen Fähigkeiten zu gewinnen. Ich lade Sie herzlich ein, einen Blick auf mein Portfolio zu werfen."
   },
   "skills": {
     "headline": "Fähigkeiten",
@@ -22,7 +22,7 @@
   },
   "portfolio": {
     "headline": "Portfolio",
-    "description": "Hier finden Sie eine Auswahl meiner Projekte – erleben Sie sie interaktiv, um meine Fähigkeiten in Aktion zu erleben. Stöbern Sie durch meine Arbeiten und tauchen Sie ein in die Welt der Frontend-Entwicklung.",
+    "description": "Hier finden Sie eine Auswahl meiner Projekte - erleben Sie sie interaktiv, um meine Fähigkeiten in Aktion zu erleben. Stöbern Sie durch meine Arbeiten und tauchen Sie ein in die Welt der Frontend-Entwicklung.",
     "description0": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um sich dem furchterregenden Killerwal entgegenzustellen.",
     "description1": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu, um eine effiziente Verwaltung zu gewährleisten.",
     "description2": "Ein sehr einfaches Customer Relationship Management System, das mit CRUD-Funktionalität arbeitet.",
