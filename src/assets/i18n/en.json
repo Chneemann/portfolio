@@ -11,13 +11,13 @@
   },
   "about-me": {
     "headline": "About me",
-    "description": "Hey! I'm Andre, a frontend developer from Karlsruhe, with a real passion for coding and design. I've been fascinated by computers and their technology since I was a kid, and now I've turned my hobby into my profession. ",
-    "bulb": "During my training at the Developer Academy, I not only learned, but also gained a lot of practical experience, whether through my own projects or successful teamwork. I am particularly interested in implementing designs precisely and paying attention to every detail.",
+    "description": "Hey! I'm Andre, a front-end developer from Karlsruhe, with a real passion for coding and design. I've been fascinated by computers and their technology since I was a kid, and now I've turned my hobby into my profession.",
+    "bulb": "During my training at the Developer Academy, I not only learned but also gained a lot of practical experience, whether through my projects or successful teamwork. I am particularly interested in implementing designs precisely and paying attention to every detail.",
     "puzzle": "If you are curious, please take a look at my previous work to get an impression of my dedication and skills. I cordially invite you to take a look at my portfolio."
   },
   "skills": {
     "headline": "Skills",
-    "description": "Through working on a variety of projects, I have been able to continuously expand and refine my knowledge and skills in front-end development. This includes the use of HTML, CSS and JavaScript as well as modern frameworks such as Angular",
+    "description": "Through working on a variety of projects, I have been able to continuously expand and refine my knowledge and skills in front-end development. This includes the use of HTML, CSS, and JavaScript as well as modern frameworks such as Angular",
     "btn": "Get in touch"
   },
   "portfolio": {
@@ -31,7 +31,7 @@
   "contact": {
     "headline": "Contact",
     "problem": "Got a problem to solve?",
-    "description": "Please use this form to get in touch with me. I look forward to hearing from you, learning your thoughts and contributing to your projects.",
+    "description": "Please use this form to get in touch with me. I look forward to hearing from you, learning your thoughts, and contributing to your projects.",
     "need": "Need a frontend developer?",
     "contact": "Contact me!"
   },
