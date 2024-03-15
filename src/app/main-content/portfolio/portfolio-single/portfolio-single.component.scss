@@ -27,11 +27,16 @@ section {
   padding: 40px 80px;
 }
 
+.spacer {
+  padding: 20px;
+}
+
 .img {
   display: flex;
   align-items: center;
   z-index: 2;
   width: 100%;
+  max-width: 500px;
   img {
     width: 100%;
     height: auto;
@@ -45,7 +50,6 @@ section {
   flex-direction: column;
   justify-content: center;
   width: 700px;
-  padding: 0 40px;
   z-index: 2;
   h3 {
     color: #9747ff;
@@ -113,8 +117,12 @@ section {
   }
 
   .img {
-    height: 100%;
+    max-width: 100%;
     padding-bottom: 20px;
+  }
+
+  .spacer {
+    padding: 0px;
   }
 }
 
