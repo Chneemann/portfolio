@@ -4,7 +4,11 @@ import { ImprintComponent } from './shared/components/imprint/imprint.component'
 import { PrivacyPolicyComponent } from './shared/components/privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
-  { path: '', component: MainContentComponent },
-  { path: 'imprint', component: ImprintComponent },
-  { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: '', title: 'Andre Kempf', component: MainContentComponent },
+  { path: 'imprint', title: 'Imprint', component: ImprintComponent },
+  {
+    path: 'privacy-policy',
+    title: 'Privacy policy',
+    component: PrivacyPolicyComponent,
+  },
 ];
