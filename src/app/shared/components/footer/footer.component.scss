@@ -18,7 +18,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 80px;
+  padding: 40px 20px;
   .logo {
     position: relative;
     img {
@@ -64,23 +64,11 @@ section {
   }
 }
 
-@media (max-width: 950px) {
-  .content {
-    padding: 40px 60px;
-  }
-}
-
 @media (max-width: 750px) {
   .content {
     flex-direction: column;
   }
   .copyright {
     padding: 30px;
-  }
-}
-
-@media (max-width: 390px) {
-  .content {
-    padding: 40px 20px;
   }
 }
