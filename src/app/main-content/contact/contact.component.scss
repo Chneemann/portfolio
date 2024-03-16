@@ -68,6 +68,13 @@ section {
   }
 }
 
+.btn-up {
+  display: flex;
+  justify-content: end;
+  margin: 0 60px 60px 0;
+  cursor: pointer;
+}
+
 @media (max-width: 1255px) {
   .headline {
     h2 {
