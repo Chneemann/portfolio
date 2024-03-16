@@ -10,6 +10,13 @@ body {
   text-shadow: 1px 1px 2px #000;
 }
 
+/*------------- COOKIEBOT -------------*/
+
+#CookiebotWidget *,
+#CybotCookiebotDialog * {
+  text-shadow: none;
+}
+
 /*------------- SCROLLBAR -------------*/
 
 *::-webkit-scrollbar {

@@ -1,14 +1,13 @@
 section {
   background-color: #141d2f;
   margin: auto;
-}
-
-#landing-page {
-  height: calc(100vh);
-  margin: auto;
-  max-width: 1440px;
-  position: relative;
-  z-index: 2;
+  #landing-page {
+    height: calc(100vh);
+    margin: auto;
+    max-width: 1440px;
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .line-extended {
@@ -133,6 +132,8 @@ section {
   }
 }
 
+/*------------- ANIMATION -------------*/
+
 @keyframes anim-UpAndDown {
   0%,
   100% {
@@ -142,6 +143,8 @@ section {
     transform: translateY(-20px);
   }
 }
+
+/*------------- RESPONSIVE -------------*/
 
 @media (max-width: 1000px) {
   .iam {
@@ -183,6 +186,7 @@ section {
       }
     }
   }
+
   .references {
     width: 200px;
     .line {

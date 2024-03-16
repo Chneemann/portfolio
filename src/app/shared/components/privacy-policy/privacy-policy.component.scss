@@ -1,14 +1,11 @@
 section {
   background-color: #141d2f;
   word-wrap: break-word;
-  div {
+  #privacy-policy {
+    max-width: 1440px;
+    margin: auto;
     padding: 40px;
   }
-}
-
-#privacy-policy {
-  max-width: 1440px;
-  margin: auto;
 }
 
 #content0,
@@ -24,7 +21,7 @@ section {
 }
 
 h1 {
-  padding: 100px 0 20px 0;
+  padding: 80px 0 20px 0;
   font-size: 90px;
   font-weight: 700;
 }
@@ -62,13 +59,17 @@ a {
   }
 }
 
+/*------------- RESPONSIVE -------------*/
+
 @media (max-width: 1000px) {
   h1 {
     font-size: 64px;
   }
+
   h2 {
     font-size: 34px;
   }
+
   h3 {
     font-size: 26px;
   }
@@ -78,14 +79,17 @@ a {
   h1 {
     font-size: 45px;
   }
+
   h2 {
     font-size: 26px;
   }
+
   h3 {
     font-size: 22px;
   }
+
   section {
-    div {
+    #privacy-policy {
       padding: 20px;
     }
   }
@@ -95,9 +99,11 @@ a {
   h1 {
     font-size: 33px;
   }
+
   h2 {
     font-size: 20px;
   }
+
   h3 {
     font-size: 18px;
   }

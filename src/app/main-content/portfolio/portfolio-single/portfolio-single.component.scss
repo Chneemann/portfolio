@@ -3,11 +3,10 @@ section {
   margin: auto;
   position: relative;
   z-index: 2;
-}
-
-#portfolio-single {
-  max-width: 1440px;
-  margin: auto;
+  #portfolio-single {
+    max-width: 1440px;
+    margin: auto;
+  }
 }
 
 .background-imgs {
@@ -105,6 +104,7 @@ section {
     background-color: #70e61c;
   }
 }
+
 .btn-github {
   background-color: #141d2f;
   border: 1px solid #70e61c;
@@ -112,6 +112,8 @@ section {
     background-color: #70e61c;
   }
 }
+
+/*------------- ANIMATION -------------*/
 
 .animation-coming-in {
   animation: coming-in 1s ease-in-out;
@@ -124,6 +126,8 @@ section {
     scale: 0.1;
   }
 }
+
+/*------------- RESPONSIVE -------------*/
 
 @media (max-width: 850px) {
   .project {

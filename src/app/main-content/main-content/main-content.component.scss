@@ -28,6 +28,8 @@
   filter: invert(100%);
 }
 
+/*------------- RESPONSIVE -------------*/
+
 @media only screen and (max-device-width: 768px) and (orientation: landscape) {
   #rotateOverlay {
     display: flex;

@@ -2,11 +2,10 @@ section {
   background-color: #141d2f;
   margin: auto;
   position: relative;
-}
-
-#contact {
-  margin: auto;
-  max-width: 1440px;
+  #contact {
+    margin: auto;
+    max-width: 1440px;
+  }
 }
 
 .line-extended-headline {
@@ -110,6 +109,8 @@ section {
   }
 }
 
+/*------------- RESPONSIVE -------------*/
+
 @media (max-width: 1440px) {
   .headline {
     display: flex;
@@ -120,6 +121,7 @@ section {
       width: 35%;
     }
   }
+
   .content {
     .left {
       .line {
@@ -143,6 +145,7 @@ section {
       font-size: 60px;
     }
   }
+
   .content {
     .left {
       h3 {
