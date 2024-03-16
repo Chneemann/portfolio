@@ -114,8 +114,9 @@ span {
 
 @media (max-width: 850px) {
   .contact-formular {
-    padding: 0 40px;
+    padding: 0;
     margin-right: 0;
+    width: 90%;
   }
 
   p {
