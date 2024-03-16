@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { AnimationService } from '../../../services/animation.service';
 
 @Component({
   selector: 'app-portfolio-single',
@@ -10,6 +11,11 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './portfolio-single.component.scss',
 })
 export class PortfolioSingleComponent {
+  constructor(
+    private elementRef: ElementRef,
+    private animationService: AnimationService
+  ) {}
+
   projects = [
     {
       name: 'Sharkie',
@@ -36,6 +42,18 @@ export class PortfolioSingleComponent {
       released: false,
     },
   ];
+
+  ngAfterViewInit() {
+    this.animationService.observeIntersection(
+      'project',
+      'animation-coming-in',
+      this.elementRef
+    );
+  }
+
+  ngOnDestroy() {
+    this.animationService.disconnectObserver();
+  }
 
   getProjectStyle(i: number) {
     return {

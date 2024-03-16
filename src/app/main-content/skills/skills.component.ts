@@ -39,7 +39,7 @@ export class SkillsComponent implements AfterViewInit {
           'animation-coming-in',
           this.elementRef
         );
-      }, index * 50); // Ändere die Verzögerung je nach Bedarf
+      }, index * 50);
     });
   }
 

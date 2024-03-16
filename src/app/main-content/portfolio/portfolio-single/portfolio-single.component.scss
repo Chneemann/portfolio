@@ -33,6 +33,7 @@ section {
   display: flex;
   justify-content: center;
   padding: 40px 80px;
+  opacity: 0;
 }
 
 .spacer {
@@ -110,6 +111,18 @@ section {
   border: 1px solid #70e61c;
   &:hover {
     background-color: #70e61c;
+  }
+}
+
+.animation-coming-in {
+  animation: coming-in 1s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes coming-in {
+  0% {
+    opacity: 0.5;
+    scale: 0.1;
   }
 }
 
