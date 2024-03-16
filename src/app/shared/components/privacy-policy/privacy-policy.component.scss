@@ -1,12 +1,14 @@
 section {
-  min-height: calc(100vh);
   background-color: #141d2f;
-  margin: auto;
-  max-width: 1440px;
   word-wrap: break-word;
   div {
     padding: 40px;
   }
+}
+
+#privacy-policy {
+  max-width: 1440px;
+  margin: auto;
 }
 
 #content0,

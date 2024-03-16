@@ -1,12 +1,15 @@
 section {
-  min-height: calc(100vh);
+  min-height: calc(100vh - 163px);
   background-color: #141d2f;
-  margin: auto;
-  max-width: 1440px;
   word-wrap: break-word;
   div {
     padding: 40px;
   }
+}
+
+#imprint {
+  max-width: 1440px;
+  margin: auto;
 }
 
 h1 {
