@@ -1,27 +1,32 @@
 section {
   background-color: #141d2f;
+  margin: auto;
+}
+
+#portfolio {
   max-width: 1440px;
   margin: auto;
-  .headline {
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
-    h2 {
-      position: relative;
-      font-size: 90px;
-      font-weight: 700;
-    }
-    .line {
-      width: 60px;
-      margin-right: 20px;
-      height: 4px;
-      background-color: #9747ff;
-    }
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  h2 {
+    position: relative;
+    font-size: 90px;
+    font-weight: 700;
   }
-  p {
-    padding-left: 80px;
-    z-index: 2;
+  .line {
+    width: 60px;
+    margin-right: 20px;
+    height: 4px;
+    background-color: #9747ff;
   }
+}
+p {
+  padding-left: 80px;
+  z-index: 2;
 }
 
 @media (max-width: 1255px) {

@@ -1,20 +1,26 @@
 section {
   background-color: #141d2f;
-  max-width: 1440px;
   margin: auto;
   position: relative;
+}
+
+#portfolio-single {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .background-imgs {
   img {
     position: absolute;
     &:first-child {
-      top: 10%;
+      top: 50px;
       right: 0;
       width: 34%;
+      max-width: 570px;
     }
     &:last-child {
-      top: 25%;
+      z-index: 2;
+      top: 200px;
       left: 0;
       width: 20%;
     }

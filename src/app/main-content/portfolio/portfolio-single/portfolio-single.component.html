@@ -3,34 +3,36 @@
     <img src="./assets/img/portfolio/azure-blob.svg" alt="" />
     <img src="./assets/img/portfolio/green-blob.svg" alt="" />
   </div>
-  <div
-    class="project"
-    *ngFor="let project of projects; let i = index"
-    [ngStyle]="getProjectStyle(i)"
-  >
-    <div class="img" [ngStyle]="getProjectStyle(i)">
-      <img
-        src="../../../../assets/img/portfolio/{{ project.imgPath }}"
-        alt="{{ project.name }}"
-      />
-    </div>
-    <div class="spacer"></div>
-    <div class="description" [ngStyle]="getDescriptionStyle(i)">
-      <h3>{{ project.name }}</h3>
-      <h4>{{ project.code }}</h4>
-      <p>
-        {{
-          project.released === true
-            ? ("portfolio.description" + i | translate)
-            : ("portfolio.description-released-soon" | translate)
-        }}
-      </p>
-      <div *ngIf="project.released === true" class="btns">
-        <div class="btn btn-live-test">
-          <a href="{{ project.linkLiveTest }}" target="_blank">Live test</a>
-        </div>
-        <div class="btn btn-github">
-          <a href="{{ project.linkGithub }}" target="_blank">Github</a>
+  <div id="portfolio-single">
+    <div
+      class="project"
+      *ngFor="let project of projects; let i = index"
+      [ngStyle]="getProjectStyle(i)"
+    >
+      <div class="img" [ngStyle]="getProjectStyle(i)">
+        <img
+          src="../../../../assets/img/portfolio/{{ project.imgPath }}"
+          alt="{{ project.name }}"
+        />
+      </div>
+      <div class="spacer"></div>
+      <div class="description" [ngStyle]="getDescriptionStyle(i)">
+        <h3>{{ project.name }}</h3>
+        <h4>{{ project.code }}</h4>
+        <p>
+          {{
+            project.released === true
+              ? ("portfolio.description" + i | translate)
+              : ("portfolio.description-released-soon" | translate)
+          }}
+        </p>
+        <div *ngIf="project.released === true" class="btns">
+          <div class="btn btn-live-test">
+            <a href="{{ project.linkLiveTest }}" target="_blank">Live test</a>
+          </div>
+          <div class="btn btn-github">
+            <a href="{{ project.linkGithub }}" target="_blank">Github</a>
+          </div>
         </div>
       </div>
     </div>

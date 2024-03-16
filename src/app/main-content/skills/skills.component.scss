@@ -122,7 +122,7 @@ section {
 }
 
 @media (max-width: 850px) {
-  section {
+  #skills {
     flex-direction: column-reverse;
     padding: 40px 0 40px 40px;
   }
@@ -155,7 +155,7 @@ section {
 }
 
 @media (max-width: 470px) {
-  section {
+  #skills {
     padding: 20px 0 20px 20px;
   }
   .section-left {

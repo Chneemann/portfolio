@@ -1,8 +1,12 @@
 section {
   background-color: #141d2f;
   margin: auto;
-  max-width: 1440px;
   position: relative;
+}
+
+#contact {
+  margin: auto;
+  max-width: 1440px;
 }
 
 .background-img {
@@ -12,6 +16,7 @@ section {
     z-index: 1;
     bottom: 0;
     right: 0;
+    max-width: 570px;
   }
 }
 
