@@ -8,6 +8,16 @@ section {
   margin: auto;
   max-width: 1440px;
   position: relative;
+  z-index: 2;
+}
+
+.line-extended {
+  position: absolute;
+  bottom: 68px;
+  width: calc((100vw - 1440px) / 2);
+  height: 4px;
+  background-color: #70e61c;
+  z-index: 2;
 }
 
 .background-imgs {

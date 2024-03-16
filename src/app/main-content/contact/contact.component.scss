@@ -9,6 +9,24 @@ section {
   max-width: 1440px;
 }
 
+.line-extended-headline {
+  position: absolute;
+  top: 106px;
+  right: 0;
+  width: calc((100vw - 1440px) / 2);
+  height: 4px;
+  background-color: #70e61c;
+}
+
+.line-extended-content {
+  position: absolute;
+  top: 237px;
+  left: 0;
+  width: calc((100vw - 1440px) / 2 + 50px);
+  height: 4px;
+  background-color: #1cdae6;
+}
+
 .background-img {
   img {
     position: absolute;
@@ -27,6 +45,7 @@ section {
   width: 100%;
   padding-top: 40px;
   z-index: 3;
+  position: relative;
   h2 {
     width: 65%;
     text-align: end;
@@ -34,7 +53,10 @@ section {
     font-weight: 700;
   }
   .line {
-    width: 35%;
+    position: absolute;
+    top: 106px;
+    right: 0;
+    width: 34%;
     margin-left: 20px;
     height: 4px;
     background-color: #70e61c;
@@ -58,7 +80,7 @@ section {
       position: absolute;
       top: 62px;
       left: 0;
-      width: 50px;
+      width: 0;
       height: 4px;
       background-color: #1cdae6;
     }
@@ -82,6 +104,25 @@ section {
     &:hover {
       filter: invert(0%) sepia(61%) saturate(1638%) hue-rotate(34deg)
         brightness(89%) contrast(102%);
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .headline {
+    display: flex;
+    align-items: center;
+    .line {
+      position: relative;
+      top: 0;
+      width: 35%;
+    }
+  }
+  .content {
+    .left {
+      .line {
+        width: 50px;
+      }
     }
   }
 }
@@ -142,6 +183,12 @@ section {
 
   .btn-up {
     margin: 0 0 40px 0;
+  }
+
+  .background-img {
+    img {
+      width: 80%;
+    }
   }
 }
 

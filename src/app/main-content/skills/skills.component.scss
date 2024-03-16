@@ -1,6 +1,8 @@
 section {
   background-color: #141d2f;
   margin: auto;
+  position: relative;
+  display: flex;
 }
 
 #skills {
@@ -10,7 +12,15 @@ section {
   margin: auto;
   max-width: 1440px;
   padding-bottom: 40px;
-  position: relative;
+}
+
+.line-extended {
+  position: absolute;
+  top: 232px;
+  right: 0;
+  width: calc((100vw - 1440px) / 2);
+  height: 4px;
+  background-color: #1cdae6;
 }
 
 .background-img {
@@ -53,15 +63,17 @@ section {
   padding-left: 40px;
   width: 50%;
   z-index: 3;
+  position: relative;
   .headline {
-    display: flex;
-    align-items: center;
     h2 {
       font-size: 90px;
       font-weight: 700;
     }
     .line {
-      width: 100%;
+      position: absolute;
+      top: 232px;
+      right: 0;
+      width: 430px;
       margin-left: 20px;
       height: 4px;
       background-color: #1cdae6;
@@ -96,6 +108,20 @@ section {
 }
 .btn-bottom {
   display: none;
+}
+
+@media (max-width: 1440px) {
+  .section-right {
+    .headline {
+      display: flex;
+      align-items: center;
+      .line {
+        position: relative;
+        top: 0;
+        width: 100% !important;
+      }
+    }
+  }
 }
 
 @media (max-width: 1255px) {

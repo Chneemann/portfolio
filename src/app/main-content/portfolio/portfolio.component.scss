@@ -1,6 +1,7 @@
 section {
   background-color: #141d2f;
   margin: auto;
+  position: relative;
 }
 
 #portfolio {
@@ -8,16 +9,24 @@ section {
   margin: auto;
 }
 
+.line-extended {
+  position: absolute;
+  top: 66px;
+  width: calc((100vw - 1440px) / 2);
+  height: 4px;
+  background-color: #9747ff;
+  z-index: 2;
+}
+
 .headline {
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
   h2 {
-    position: relative;
     font-size: 90px;
     font-weight: 700;
+    margin-left: 80px;
   }
   .line {
+    position: absolute;
+    top: 66px;
     width: 60px;
     margin-right: 20px;
     height: 4px;
@@ -27,6 +36,20 @@ section {
 p {
   padding-left: 80px;
   z-index: 2;
+}
+
+@media (max-width: 1440px) {
+  .headline {
+    display: flex;
+    align-items: center;
+    h2 {
+      margin-left: 0;
+    }
+    .line {
+      position: relative;
+      top: 0;
+    }
+  }
 }
 
 @media (max-width: 1255px) {
