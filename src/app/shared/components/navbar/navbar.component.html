@@ -9,8 +9,8 @@
     <div class="line" [style.width]="lineWidth"></div>
   </div>
   <div class="navbar">
-    <input type="checkbox" id="navigation" />
-    <label for="navigation" title="Navigation öffnen">
+    <input type="checkbox" id="navigation" #navigationCheckbox />
+    <label for="navigation" title="open navigation">
       <div class="burgericon">
         <div></div>
         <div></div>
@@ -18,13 +18,22 @@
       </div>
     </label>
     <nav id="nav">
-      <a href="#about-me" [ngClass]="{ selected: activeLink == 'about-me' }">{{
-        "navbar.about" | translate
-      }}</a>
-      <a href="#skills" [ngClass]="{ selected: activeLink == 'skills' }"
+      <a
+        href="#about-me"
+        [ngClass]="{ selected: activeLink == 'about-me' }"
+        (click)="updateNavigationCheckbox()"
+        >{{ "navbar.about" | translate }}</a
+      >
+      <a
+        href="#skills"
+        [ngClass]="{ selected: activeLink == 'skills' }"
+        (click)="updateNavigationCheckbox()"
         >Skills</a
       >
-      <a href="#portfolio" [ngClass]="{ selected: activeLink == 'portfolio' }"
+      <a
+        href="#portfolio"
+        [ngClass]="{ selected: activeLink == 'portfolio' }"
+        (click)="updateNavigationCheckbox()"
         >Portfolio</a
       >
       <a
@@ -33,9 +42,12 @@
           selected: activeLink == 'contact',
         }"
         [ngStyle]="{ display: mobileMenu ? 'block' : 'none' }"
+        (click)="updateNavigationCheckbox()"
         >{{ "navbar.contact" | translate }}</a
       >
-      <a (click)="langService.switchLanguage()" class="translateLink"
+      <a
+        (click)="langService.switchLanguage(); updateNavigationCheckbox()"
+        class="translateLink"
         ><img
           id="translateIcon"
           src="../../../../assets/img/navbar/flag_{{

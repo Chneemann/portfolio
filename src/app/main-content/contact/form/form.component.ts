@@ -53,4 +53,8 @@ export class FormComponent {
   mailSendComplete() {
     this.mailSend = true;
   }
+
+  mailSendTextReset() {
+    this.mailSend = false;
+  }
 }

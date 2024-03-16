@@ -72,7 +72,13 @@ section {
   display: flex;
   justify-content: end;
   margin: 0 60px 60px 0;
-  cursor: pointer;
+  img {
+    cursor: pointer;
+    &:hover {
+      filter: invert(0%) sepia(61%) saturate(1638%) hue-rotate(34deg)
+        brightness(89%) contrast(102%);
+    }
+  }
 }
 
 @media (max-width: 1255px) {

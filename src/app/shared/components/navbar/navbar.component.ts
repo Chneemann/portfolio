@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '../../../services/language.service';
@@ -12,6 +12,8 @@ import { LanguageService } from '../../../services/language.service';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
+  @ViewChild('navigationCheckbox') navigationCheckbox: ElementRef | undefined;
+
   activeLink: string | null | undefined;
   lineWidth: string = '0%';
   mobileMenu: boolean = false;
@@ -26,6 +28,14 @@ export class NavbarComponent {
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.checkScreenWidth();
+  }
+
+  updateNavigationCheckbox() {
+    setTimeout(() => {
+      if (this.navigationCheckbox && this.navigationCheckbox.nativeElement) {
+        this.navigationCheckbox.nativeElement.checked = false;
+      }
+    }, 10);
   }
 
   private checkScreenWidth() {

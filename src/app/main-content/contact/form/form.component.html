@@ -13,6 +13,7 @@
       placeholder="{{ 'form.name' | translate }}"
       [(ngModel)]="contactData.name"
       autocomplete="on"
+      (click)="mailSendTextReset()"
       required
     />
     @if (!name.valid && name.touched) {
@@ -26,6 +27,7 @@
       placeholder="{{ 'form.email' | translate }}"
       [(ngModel)]="contactData.email"
       autocomplete="on"
+      (click)="mailSendTextReset()"
       required
     />
     @if (!email.valid && email.touched) {
@@ -39,6 +41,7 @@
       minlength="10"
       placeholder="{{ 'form.msg' | translate }}"
       [(ngModel)]="contactData.message"
+      (click)="mailSendTextReset()"
       required
     ></textarea>
     @if (!msg.valid && msg.touched) {
@@ -51,6 +54,7 @@
         name="checkbox"
         #checkbox="ngModel"
         [(ngModel)]="checkboxState"
+        (click)="mailSendTextReset()"
         required
       />
       <label for="checkbox">
