@@ -5,7 +5,7 @@
   </div>
   <div id="skills">
     <div class="section-left">
-      <table #skillsContainer>
+      <table>
         <tr>
           <td class="skill1">
             <img src="./assets/img/skills/angular.svg" alt="angular" />
@@ -55,7 +55,12 @@
         <h2>
           {{ "skills.headline" | translate }}
         </h2>
-        <div class="line"></div>
+        <div
+          class="line"
+          [ngStyle]="{
+            width: this.langService.currentLang == 'en' ? '430px' : '125px'
+          }"
+        ></div>
       </div>
       <p>
         {{ "skills.description" | translate }}

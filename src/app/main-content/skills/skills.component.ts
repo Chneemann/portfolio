@@ -46,4 +46,8 @@ export class SkillsComponent implements AfterViewInit {
   ngOnDestroy() {
     this.animationService.disconnectObserver();
   }
+
+  getLineStyle() {
+    this.langService.currentLang = 'en';
+  }
 }
