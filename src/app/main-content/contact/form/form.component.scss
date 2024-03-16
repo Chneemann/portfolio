@@ -16,13 +16,14 @@ span {
   display: flex;
   flex-direction: column;
   padding: 40px;
+  margin-right: 25px;
   input,
   textarea {
     background-color: #141d2f;
     border: 1px solid #9747ff;
     border-radius: 10px;
     padding: 15px;
-    margin: 15px;
+    margin: 15px 0;
     resize: none;
     &:hover {
       border-color: #70e61c;
@@ -112,7 +113,11 @@ span {
 /*------------- RESPONSIVE -------------*/
 
 @media (max-width: 850px) {
-  .contact-formular,
+  .contact-formular {
+    padding: 0 40px;
+    margin-right: 0;
+  }
+
   p {
     padding: 25px 25px 40px 25px;
   }
@@ -120,7 +125,7 @@ span {
 
 @media (max-width: 470px) {
   .contact-formular {
-    padding: 5px 5px 40px 5px;
+    width: 100%;
   }
 }
 
