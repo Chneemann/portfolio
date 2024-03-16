@@ -42,8 +42,11 @@ section {
       padding: 5%;
       width: 10%;
       img {
+        transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
+        transition: 0.6s ease all;
         &:hover {
-          filter: drop-shadow(0 0 5px);
+          transform: perspective(800px) rotateY(-15deg) translateY(-20px)
+            rotateX(10deg) scale(1.2);
         }
       }
       img {
@@ -126,20 +129,13 @@ section {
 
 .animation-coming-in {
   animation: coming-in 1s ease-in-out;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 @keyframes coming-in {
   0% {
     opacity: 0;
-    transform: translateX(-100vw);
-  }
-  80% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
+    transform: scale(0) rotate(-0.1turn);
   }
 }
 

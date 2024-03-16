@@ -32,14 +32,12 @@ export class SkillsComponent implements AfterViewInit {
       'skill10',
     ];
 
-    skills.forEach((skill, index) => {
-      setTimeout(() => {
-        this.animationService.observeIntersection(
-          skill,
-          'animation-coming-in',
-          this.elementRef
-        );
-      }, index * 50);
+    skills.forEach((skill) => {
+      this.animationService.observeIntersection(
+        skill,
+        'animation-coming-in',
+        this.elementRef
+      );
     });
   }
 

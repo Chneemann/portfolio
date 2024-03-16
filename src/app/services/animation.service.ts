@@ -21,10 +21,14 @@ export class AnimationService {
             entry.target.classList.contains(className)
           ) {
             entry.target.classList.add(animationClass);
+          } else {
+            entry.target.classList.remove(animationClass);
           }
         });
       },
-      { threshold: 0.2 }
+      {
+        threshold: 0.1,
+      }
     );
 
     let targetSections = elementRef.nativeElement.querySelectorAll(
