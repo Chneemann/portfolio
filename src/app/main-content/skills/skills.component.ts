@@ -19,18 +19,7 @@ export class SkillsComponent implements AfterViewInit {
   ) {}
 
   ngAfterViewInit() {
-    const skills = [
-      'skill1',
-      'skill2',
-      'skill3',
-      'skill4',
-      'skill5',
-      'skill6',
-      'skill7',
-      'skill8',
-      'skill9',
-      'skill10',
-    ];
+    const skills = Array.from({ length: 10 }, (_, i) => `skill${i + 1}`);
 
     skills.forEach((skill) => {
       this.animationService.observeIntersection(
