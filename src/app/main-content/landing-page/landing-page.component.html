@@ -3,34 +3,36 @@
     <img src="./assets/img/landing-page/purple-blob.svg" alt="" />
     <img src="./assets/img/landing-page/azure-blob.svg" alt="" />
   </div>
-  <div class="iam">
-    <div
-      class="left-text"
-      [ngClass]="{ english: langService.currentLang == 'en' }"
-    >
-      {{ "header.iam" | translate }}
+  <div id="landing-page">
+    <div class="iam">
+      <div
+        class="left-text"
+        [ngClass]="{ english: langService.currentLang == 'en' }"
+      >
+        {{ "header.iam" | translate }}
+      </div>
+      <div class="right-text">
+        <h1>Andre Kempf</h1>
+        <h2>{{ "header.dev" | translate }}</h2>
+      </div>
     </div>
-    <div class="right-text">
-      <h1>Andre Kempf</h1>
-      <h2>{{ "header.dev" | translate }}</h2>
+    <div class="btn">
+      <a href="#contact">{{ "header.talk" | translate }}</a>
     </div>
-  </div>
-  <div class="btn">
-    <a href="#contact">{{ "header.talk" | translate }}</a>
-  </div>
-  <div class="references">
-    <div class="line"></div>
-    <a href="https://github.com/Chneemann" target="_blank"
-      ><img src="./assets/img/github.svg" alt=""
-    /></a>
-    <a href="mailto:mail@andre-kempf.com"
-      ><img src="./assets/img/mail.svg" alt=""
-    /></a>
-    <a href="https://www.linkedin.com/in/andre-kempf/" target="_blank"
-      ><img src="./assets/img/linkedin.svg" alt=""
-    /></a>
-  </div>
-  <div class="scroll-down">
-    <p>{{ "header.scroll" | translate }}</p>
+    <div class="references">
+      <div class="line"></div>
+      <a href="https://github.com/Chneemann" target="_blank"
+        ><img src="./assets/img/github.svg" alt=""
+      /></a>
+      <a href="mailto:mail@andre-kempf.com"
+        ><img src="./assets/img/mail.svg" alt=""
+      /></a>
+      <a href="https://www.linkedin.com/in/andre-kempf/" target="_blank"
+        ><img src="./assets/img/linkedin.svg" alt=""
+      /></a>
+    </div>
+    <div class="scroll-down">
+      <p>{{ "header.scroll" | translate }}</p>
+    </div>
   </div>
 </section>

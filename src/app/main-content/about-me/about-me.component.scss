@@ -1,10 +1,15 @@
 section {
+  background-color: #141d2f;
+  margin: auto;
+}
+
+#about-me {
   display: flex;
   justify-content: space-around;
   align-items: end;
-  background-color: #141d2f;
   margin: auto;
   max-width: 1440px;
+  z-index: 2;
 }
 
 .section-left {
@@ -81,7 +86,7 @@ section {
 }
 
 @media (max-width: 850px) {
-  section {
+  #about-me {
     flex-direction: column;
     padding: 40px;
   }
@@ -106,7 +111,7 @@ section {
 }
 
 @media (max-width: 390px) {
-  section {
+  #about-me {
     padding: 20px;
   }
   .section-left {

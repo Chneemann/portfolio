@@ -1,4 +1,9 @@
 section {
+  background-color: #141d2f;
+  margin: auto;
+}
+
+#skills {
   display: flex;
   justify-content: space-around;
   background-color: #141d2f;
@@ -10,12 +15,10 @@ section {
 
 .background-img {
   position: relative;
-  max-width: 1440px;
-  margin: auto;
   img {
     z-index: 2;
     position: absolute;
-    top: -150px;
+    top: -250px;
     width: 100%;
   }
 }
