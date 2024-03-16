@@ -1,5 +1,8 @@
 <section>
   <div class="line-extended"></div>
+  <div class="background-img">
+    <img src="./assets/img/skills/bg.svg" alt="" />
+  </div>
   <div id="skills">
     <div class="section-left">
       <table>
@@ -38,12 +41,7 @@
         <h2>
           {{ "skills.headline" | translate }}
         </h2>
-        <div
-          class="line"
-          [ngStyle]="{
-            width: this.langService.currentLang === 'en' ? '430px' : '120px'
-          }"
-        ></div>
+        <div class="line"></div>
       </div>
       <p>
         {{ "skills.description" | translate }}

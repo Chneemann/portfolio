@@ -21,14 +21,14 @@ section {
   width: calc((100vw - 1440px) / 2);
   height: 4px;
   background-color: #1cdae6;
+  z-index: 3;
 }
 
 .background-img {
-  position: relative;
   img {
     z-index: 2;
     position: absolute;
-    top: -250px;
+    top: calc(-160px - ((100vw - 1440px) / 7));
     width: 100%;
   }
 }
