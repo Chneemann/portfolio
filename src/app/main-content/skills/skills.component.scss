@@ -110,6 +110,38 @@ section {
   display: none;
 }
 
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6,
+.skill7,
+.skill8,
+.skill9,
+.skill10 {
+  opacity: 0;
+}
+
+.animation-coming-in {
+  animation: coming-in 1s ease-in-out;
+  opacity: 1 !important;
+}
+
+@keyframes coming-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 1440px) {
   .section-right {
     .headline {
