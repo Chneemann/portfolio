@@ -134,6 +134,54 @@ section {
 
 /*------------- ANIMATION -------------*/
 
+.animation-coming-in-iam {
+  animation: coming-in-iam 1s ease-in-out;
+  opacity: 1;
+}
+
+.animation-coming-in-name {
+  animation: coming-in-name 1.25s ease-in-out;
+  opacity: 1;
+}
+
+.animation-coming-in-profession {
+  animation: coming-in-profession 1.5s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes coming-in-iam {
+  0% {
+    opacity: 0;
+    transform: translateX(20vw);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes coming-in-name {
+  0% {
+    opacity: 0;
+    transform: translateY(-10vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes coming-in-profession {
+  0% {
+    opacity: 0;
+    transform: translateY(10vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes anim-UpAndDown {
   0%,
   100% {
