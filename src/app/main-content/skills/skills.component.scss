@@ -42,17 +42,15 @@ section {
       padding: 5%;
       width: 10%;
       img {
+        width: 100%;
+        min-width: 44px;
+        height: auto;
         transform: perspective(800px) rotateY(25deg) scale(0.9) rotateX(10deg);
         transition: 0.6s ease all;
         &:hover {
           transform: perspective(800px) rotateY(-15deg) translateY(-20px)
             rotateX(10deg) scale(1.2);
         }
-      }
-      img {
-        width: 100%;
-        min-width: 44px;
-        height: auto;
       }
     }
   }
