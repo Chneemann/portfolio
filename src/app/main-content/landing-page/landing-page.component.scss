@@ -136,23 +136,20 @@ section {
 
 .animation-coming-in-iam {
   animation: coming-in-iam 1s ease-in-out;
-  opacity: 1;
 }
 
 .animation-coming-in-name {
-  animation: coming-in-name 1.25s ease-in-out;
-  opacity: 1;
+  animation: coming-in-name 1.2s ease-in-out;
 }
 
 .animation-coming-in-profession {
-  animation: coming-in-profession 1.5s ease-in-out;
-  opacity: 1;
+  animation: coming-in-profession 1.4s ease-in-out;
 }
 
 @keyframes coming-in-iam {
   0% {
     opacity: 0;
-    transform: rotate(270deg) scale(0.1);
+    transform: rotate(180deg) translate(2vw);
   }
 }
 
