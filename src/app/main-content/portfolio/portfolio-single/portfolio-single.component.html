@@ -20,11 +20,7 @@
         <h3>{{ project.name }}</h3>
         <h4>{{ project.code }}</h4>
         <p>
-          {{
-            project.released === true
-              ? ("portfolio.description" + i | translate)
-              : ("portfolio.description-released-soon" | translate)
-          }}
+          {{ "portfolio.description" + i | translate }}
         </p>
         <div *ngIf="project.released === true" class="btns">
           <div class="btn btn-live-test">
@@ -33,6 +29,9 @@
           <div class="btn btn-github">
             <a href="{{ project.linkGithub }}" target="_blank">Github</a>
           </div>
+        </div>
+        <div *ngIf="project.released === false" class="btns">
+          {{ "portfolio.description-released-soon" | translate }}
         </div>
       </div>
     </div>

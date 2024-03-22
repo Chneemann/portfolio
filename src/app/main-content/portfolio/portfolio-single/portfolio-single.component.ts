@@ -34,9 +34,9 @@ export class PortfolioSingleComponent {
       released: true,
     },
     {
-      name: 'Simple CRM',
-      imgPath: 'simple-crm.jpg',
-      code: 'Angular | Firebase',
+      name: 'DABubble',
+      imgPath: 'dabubble.png',
+      code: 'Angular | TypeScript | Firebase',
       linkLiveTest: '',
       linkGithub: '',
       released: false,
