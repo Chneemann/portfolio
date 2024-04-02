@@ -28,10 +28,10 @@ export class PortfolioSingleComponent {
     {
       name: 'Join',
       imgPath: 'join.jpg',
-      code: 'JavaScript | HTML | CSS',
+      code: 'Angular | TypeScript | Firebase',
       linkLiveTest: 'http://join.andre-kempf.com',
-      linkGithub: 'https://github.com/Chneemann/gruppenarbeit-join',
-      released: true,
+      linkGithub: 'https://github.com/Chneemann/join',
+      released: false,
     },
     {
       name: 'DABubble',

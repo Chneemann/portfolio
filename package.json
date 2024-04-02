@@ -20,8 +20,11 @@
     "@angular/router": "^17.2.0",
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
+    "express": "~4.19.2",
+    "follow-redirects": "~1.15.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "webpack-dev-middleware": "~6.1.2",
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
