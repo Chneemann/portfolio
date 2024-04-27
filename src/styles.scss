@@ -19,18 +19,23 @@ body {
 
 /*------------- SCROLLBAR -------------*/
 
-*::-webkit-scrollbar {
-  width: 16px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #141d2f;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #9746ff;
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  border: 3px solid #000;
+  background-color: #141d2f;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #141d2f;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+  background-color: #9746ff;
+  border: 1px solid #000;
 }
 
 /*------------- FONTS -------------*/

@@ -31,7 +31,7 @@ export class PortfolioSingleComponent {
       code: 'Angular | TypeScript | Firebase',
       linkLiveTest: 'http://join.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/join',
-      released: false,
+      released: true,
     },
     {
       name: 'DABubble',
