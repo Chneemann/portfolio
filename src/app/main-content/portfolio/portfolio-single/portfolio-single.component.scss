@@ -75,6 +75,11 @@ section {
     font-weight: 400;
     padding-bottom: 10px;
   }
+  a {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .btns {
@@ -90,12 +95,10 @@ section {
   border: 0;
   border-radius: 10px;
   transition: 200ms ease-in-out;
+  font-size: 23px;
+  color: #fff;
+  text-decoration: none;
   cursor: pointer;
-  a {
-    font-size: 23px;
-    color: #fff;
-    text-decoration: none;
-  }
 }
 
 .btn-live-test {

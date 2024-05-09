@@ -23,12 +23,12 @@
           {{ "portfolio.description" + i | translate }}
         </p>
         <div *ngIf="project.released === true" class="btns">
-          <div class="btn btn-live-test">
-            <a href="{{ project.linkLiveTest }}" target="_blank">Live test</a>
-          </div>
-          <div class="btn btn-github">
-            <a href="{{ project.linkGithub }}" target="_blank">Github</a>
-          </div>
+          <a href="{{ project.linkLiveTest }}" target="_blank">
+            <div class="btn btn-live-test">Live test</div>
+          </a>
+          <a href="{{ project.linkGithub }}" target="_blank">
+            <div class="btn btn-github">Github</div>
+          </a>
         </div>
         <div *ngIf="project.released === false" class="btns">
           {{ "portfolio.description-released-soon" | translate }}

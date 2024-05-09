@@ -37,9 +37,9 @@ export class PortfolioSingleComponent {
       name: 'DABubble',
       imgPath: 'dabubble.png',
       code: 'Angular | TypeScript | Firebase',
-      linkLiveTest: '',
-      linkGithub: '',
-      released: false,
+      linkLiveTest: 'http://dabubble.andre-kempf.com',
+      linkGithub: 'https://github.com/Chneemann/dabubble',
+      released: true,
     },
   ];
 
