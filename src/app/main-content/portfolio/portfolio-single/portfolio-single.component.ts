@@ -18,14 +18,6 @@ export class PortfolioSingleComponent {
 
   projects = [
     {
-      name: 'Sharkie',
-      imgPath: 'sharkie.jpg',
-      code: 'JavaScript | HTML | CSS',
-      linkLiveTest: 'http://sharkie.andre-kempf.com',
-      linkGithub: 'https://github.com/Chneemann/sharkie',
-      released: true,
-    },
-    {
       name: 'Join',
       imgPath: 'join.jpg',
       code: 'Angular | TypeScript | Firebase',
@@ -39,6 +31,14 @@ export class PortfolioSingleComponent {
       code: 'Angular | TypeScript | Firebase',
       linkLiveTest: 'http://dabubble.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/dabubble',
+      released: true,
+    },
+    {
+      name: 'Sharkie',
+      imgPath: 'sharkie.jpg',
+      code: 'JavaScript | HTML | CSS',
+      linkLiveTest: 'http://sharkie.andre-kempf.com',
+      linkGithub: 'https://github.com/Chneemann/sharkie',
       released: true,
     },
   ];

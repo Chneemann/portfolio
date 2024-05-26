@@ -11,9 +11,9 @@
   },
   "about-me": {
     "headline": "About me",
-    "description": "Hey! I'm Andre, a front-end developer from Karlsruhe, with a real passion for coding and design. I've been fascinated by computers and their technology since I was a kid, and now I've turned my hobby into my profession.",
-    "bulb": "During my training at the Developer Akademie™, I not only learned but also gained a lot of practical experience, whether through my projects or successful teamwork. I am particularly interested in implementing designs precisely and paying attention to every detail.",
-    "puzzle": "If you are curious, please take a look at my previous work to get an impression of my dedication and skills. I cordially invite you to take a look at my portfolio."
+    "description": "Hey there! I'm Andre, a frontend developer from Karlsruhe. I've had a passion for coding since childhood when I first got my hands on a computer. Over the years, that fascination has grown into a genuine love for the craft. Now, I'm fortunate enough to have turned my hobby into a career, tackling exciting new challenges in web development every day.",
+    "bulb": "During my training at Developer Academy, I gained plenty of practical experience through projects and code reviews. I was able to deepen and implement this knowledge in many of my own projects as well as group projects.",
+    "puzzle": "In case I've piqued your curiosity, I warmly invite you to take a look at my previous works. This way, you can gain an impression of my skills."
   },
   "skills": {
     "headline": "Skills",
