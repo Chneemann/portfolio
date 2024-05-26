@@ -5,13 +5,6 @@ section {
   align-items: center;
 }
 
-span {
-  font-size: 14px;
-  font-weight: 400;
-  color: red;
-  padding: 0 0 10px 20px;
-}
-
 .contact-formular {
   display: flex;
   flex-direction: column;
@@ -22,8 +15,8 @@ span {
     background-color: #141d2f;
     border: 1px solid #9747ff;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px 0;
+    padding: 16px;
+    margin: 8px 0;
     resize: none;
     &:hover {
       border-color: #70e61c;
@@ -46,6 +39,7 @@ span {
   flex-direction: column;
   align-items: center;
   height: 100px;
+  padding-top: 12px;
   .submit-btn {
     padding: 15px 30px;
     border: 0;
@@ -73,7 +67,7 @@ span {
 .privacy-policy {
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
+  padding: 12px 0;
   input[type="checkbox"] {
     width: 15px;
     height: 15px;
@@ -107,6 +101,19 @@ span {
         text-decoration: underline;
       }
     }
+  }
+}
+
+.error-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  padding: 3px;
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    color: red;
   }
 }
 

@@ -16,9 +16,11 @@
       (click)="mailSendTextReset()"
       required
     />
-    @if (!name.valid && name.touched) {
-    <span>{{ "form.invalid-name" | translate }}</span>
-    }
+    <div class="error-msg">
+      @if (!name.valid && name.touched) {
+      <span>{{ "form.invalid-name" | translate }}</span>
+      }
+    </div>
     <input
       id="email"
       type="email"
@@ -30,9 +32,14 @@
       (click)="mailSendTextReset()"
       required
     />
-    @if (!email.valid && email.touched) {
-    <span>{{ "form.invalid-email" | translate }}</span>
-    }
+    <div class="error-msg">
+      @if (!email.valid && email.touched) {
+      <span>{{ "form.invalid-email0" | translate }}</span>
+      } @else { @if (email.touched &&
+      !checkIfUserEmailIsValid(contactData.email)) {
+      <span>{{ "form.invalid-email1" | translate }}</span>
+      } }
+    </div>
     <textarea
       id="msg"
       rows="6"
@@ -44,9 +51,11 @@
       (click)="mailSendTextReset()"
       required
     ></textarea>
-    @if (!msg.valid && msg.touched) {
-    <span>{{ "form.invalid-msg" | translate }}</span>
-    }
+    <div class="error-msg">
+      @if (!msg.valid && msg.touched) {
+      <span>{{ "form.invalid-msg" | translate }}</span>
+      }
+    </div>
     <div class="privacy-policy">
       <input
         type="checkbox"
@@ -65,9 +74,12 @@
         {{ "form.privacy-policy-lasttext" | translate }}</label
       >
     </div>
-    @if (!checkbox.valid && checkbox.touched) {
-    <span>{{ "form.invalid-checkbox" | translate }}</span>
-    } @if (mailSend) {
+    <div class="error-msg">
+      @if (!checkbox.valid && checkbox.touched) {
+      <span>{{ "form.invalid-checkbox" | translate }}</span>
+      }
+    </div>
+    @if (mailSend) {
     <p>
       {{ "form.msg-send0" | translate }}<br />
       {{ "form.msg-send1" | translate }}
@@ -85,7 +97,8 @@
           !contactData.email ||
           msg.invalid ||
           !contactData.message ||
-          !checkboxState
+          !checkboxState ||
+          !checkIfUserEmailIsValid(contactData.email)
         "
       />
     </div>

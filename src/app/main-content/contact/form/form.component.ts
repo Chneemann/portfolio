@@ -50,6 +50,15 @@ export class FormComponent {
     }
   }
 
+  checkIfUserEmailIsValid(emailValue: string) {
+    const emailRegex = /^[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,}$/;
+    if (emailRegex.test(emailValue)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   mailSendComplete() {
     this.mailSend = true;
   }
