@@ -11,13 +11,13 @@
   },
   "about-me": {
     "headline": "About me",
-    "description": "Hey there! I'm Andre, a frontend developer from Karlsruhe. I've had a passion for coding since childhood when I first got my hands on a computer. Over the years, that fascination has grown into a genuine love for the craft. Now, I'm fortunate enough to have turned my hobby into a career, tackling exciting new challenges in web development every day.",
-    "bulb": "During my training at Developer Academy, I gained plenty of practical experience through projects and code reviews. I was able to deepen and implement this knowledge in many of my own projects as well as group projects.",
+    "description": "Hey there! I'm Andre, a frontend developer from Karlsruhe. I had a passion for coding since childhood when I first got my hands on a computer. Over the years, that fascination has grown into a genuine love for the craft. Now, I'm fortunate enough to have turned my hobby into a career, tackling exciting new challenges in web development every day.",
+    "bulb": "During my training at Developer Akademie, I gained plenty of practical experience through projects and code reviews. I was able to deepen and implement this knowledge in many of my own projects as well as group projects.",
     "puzzle": "In case I've piqued your curiosity, I warmly invite you to take a look at my previous works. This way, you can gain an impression of my skills."
   },
   "skills": {
     "headline": "Skills",
-    "description": "Through working on a variety of projects, I have been able to continuously expand and refine my knowledge and skills in front-end development. This includes the use of HTML, CSS, and JavaScript as well as modern frameworks such as Angular",
+    "description": "Through working on a variety of projects, I was able to continuously expand and refine my knowledge and skills in front-end development. This includes the use of HTML, CSS, and JavaScript as well as modern frameworks such as Angular.",
     "btn": "Get in touch"
   },
   "portfolio": {
