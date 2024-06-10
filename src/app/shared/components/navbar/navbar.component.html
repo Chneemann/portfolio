@@ -39,10 +39,7 @@
         >
         <a
           href="#contact"
-          [ngClass]="{
-          selected: activeLink == 'contact',
-        }"
-          [ngStyle]="{ display: mobileMenu ? 'block' : 'none' }"
+          [ngClass]="{ selected: activeLink == 'contact' }"
           (click)="updateNavigationCheckbox()"
           >{{ "navbar.contact" | translate }}</a
         >
@@ -68,7 +65,7 @@
               activeLink === 'about-me' ||
               activeLink === 'skills' ||
               activeLink === 'portfolio' ||
-              (activeLink === 'contact' && mobileMenu)
+              activeLink === 'contact'
             )
           "
         ></div>

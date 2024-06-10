@@ -39,7 +39,7 @@ export class NavbarComponent {
   }
 
   private checkScreenWidth() {
-    if (window.innerWidth <= 700) {
+    if (window.innerWidth <= 820) {
       this.mobileMenu = true;
     } else {
       this.mobileMenu = false;
@@ -63,9 +63,9 @@ export class NavbarComponent {
       case 'skills':
         return this.mobileMenu ? '136px' : '149px';
       case 'portfolio':
-        return this.mobileMenu ? '199px' : '232px';
+        return this.mobileMenu ? '199px' : '230px';
       case 'contact':
-        return this.mobileMenu ? '262px' : '315px';
+        return this.mobileMenu ? '262px' : '352px';
       default:
         return 'initial';
     }
