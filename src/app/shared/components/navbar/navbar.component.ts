@@ -25,8 +25,26 @@ export class NavbarComponent {
     this.checkScreenWidth();
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const sections = Array.from(document.querySelectorAll('section'));
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+    for (const section of sections) {
+      const sectionId = section.getAttribute('id');
+      if (
+        section.offsetTop + section.offsetHeight > scrollPosition &&
+        sectionId
+      ) {
+        const lastDashIndex = sectionId.lastIndexOf('-');
+        this.activeLink = sectionId.slice(0, lastDashIndex);
+        break;
+      }
+    }
+  }
+
+  @HostListener('window:resize', [])
+  onResize() {
     this.checkScreenWidth();
   }
 
