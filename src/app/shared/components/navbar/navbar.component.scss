@@ -85,7 +85,7 @@ nav {
   }
 }
 
-.burgericon {
+.burgerIcon {
   position: absolute;
   display: none;
   top: 29px;
@@ -110,19 +110,19 @@ nav {
   right: 0;
 }
 
-#navigation:checked ~ label .burgericon {
+#navigation:checked ~ label .burgerIcon {
   margin-top: 10px;
 }
-#navigation:checked ~ label .burgericon div:first-of-type {
+#navigation:checked ~ label .burgerIcon div:first-of-type {
   rotate: 45deg;
   transition: 125ms ease-in-out;
 }
-#navigation:checked ~ label .burgericon div:last-child {
+#navigation:checked ~ label .burgerIcon div:last-child {
   rotate: -45deg;
   margin-top: -10px;
   transition: 125ms ease-in-out;
 }
-#navigation:checked ~ label .burgericon div:nth-child(2) {
+#navigation:checked ~ label .burgerIcon div:nth-child(2) {
   display: none;
 }
 
@@ -146,7 +146,7 @@ nav {
     transition: 125ms ease-in-out;
   }
 
-  .burgericon {
+  .burgerIcon {
     display: block;
   }
 }
@@ -162,7 +162,7 @@ nav {
     }
   }
 
-  .burgericon {
+  .burgerIcon {
     top: 24px;
   }
 }

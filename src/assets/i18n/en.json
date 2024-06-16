@@ -24,7 +24,7 @@
     "headline": "Portfolio",
     "description": "Here you will find a selection of my projects - experience them interactively to see my skills in action. Browse through my work and immerse yourself in the world of front-end development.",
     "description0": "A Task manager modeled on the Kanban system. Create and organize tasks using drag-and-drop functions, assign users and categories to ensure efficient management.",
-    "description1": "A powerful and user-friendly Slack / Discord clone that brings seamless team communication, collaboration, and organization to your fingertips.",
+    "description1": "A powerful and user-friendly Slack or Discord clone that enables seamless team communication, collaboration, and organization.",
     "description2": "A simple jump-and-run game based on an object-oriented approach. Help Sharkie find coins and poison bottles to face the fearsome killer whale.",
     "description-released-soon": "Coming soon."
   },
@@ -39,7 +39,7 @@
     "name": "Your name",
     "email": "Your email",
     "msg": "Your message",
-    "privacy-policy-firsttext": "I've read the",
+    "privacy-policy-firstText": "I've read the",
     "privacy-policy-link": "privacy policy",
     "privacy-policy-lasttext": "and agree to the processing of my data as outlined.",
     "btn": "Send message :)",

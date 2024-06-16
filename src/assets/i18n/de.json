@@ -13,7 +13,7 @@
     "headline": "Über mich",
     "description": "Hey! Mein Name ist Andre und ich bin ein Frontend-Entwickler aus Karlsruhe. Die Welt des Codens fasziniert mich seit meiner Kindheit, als ich zum ersten Mal einen Computer in die Hände bekam. Diese Faszination hat sich im Laufe der Jahre zu einer echten Leidenschaft entwickelt. Nun habe ich das Glück, mein Hobby zum Beruf machen zu können und jeden Tag neue spannende Herausforderungen im Bereich der Webentwicklung anzunehmen.",
     "bulb": "Während meiner Ausbildung an der Developer Akademie habe ich reichlich praktische Erfahrungen durch Projekte und Code-Reviews gesammelt. Dieses Wissen konnte ich in zahlreichen eigenen Projekten sowie Gruppenprojekten vertiefen und umsetzen.",
-    "puzzle": "Für den Fall, dass ich ihre Neugierede geweckt habe, lade ich Sie herzlich ein, einen Blick auf meine bisherigen Arbeiten zu werfen. Auf diese Weise können Sie einen Eindruck von meinen Fähigkeiten gewinnen."
+    "puzzle": "Für den Fall, dass ich ihre Neugierde geweckt habe, lade ich Sie herzlich ein, einen Blick auf meine bisherigen Arbeiten zu werfen. Auf diese Weise können Sie einen Eindruck von meinen Fähigkeiten gewinnen."
   },
   "skills": {
     "headline": "Fähigkeiten",
@@ -24,7 +24,7 @@
     "headline": "Portfolio",
     "description": "Hier finden Sie eine Auswahl meiner Projekte - erleben Sie sie interaktiv, um meine Fähigkeiten in Aktion zu erleben. Stöbern Sie durch meine Arbeiten und tauchen Sie ein in die Welt der Frontend-Entwicklung.",
     "description0": "Ein Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu, um eine effiziente Verwaltung zu gewährleisten.",
-    "description1": "Ein leistungsstarker und benutzerfreundlicher Slack- / Discord-Klon, der Ihnen nahtlose Teamkommunikation, Zusammenarbeit und Organisation ermöglicht.",
+    "description1": "Ein leistungsstarker und benutzerfreundlicher Slack- bzw. Discord-Klon, der Ihnen nahtlose Teamkommunikation, Zusammenarbeit und Organisation ermöglicht.",
     "description2": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Sharkie, Münzen und Giftflaschen zu finden, um sich dem furchterregenden Killerwal entgegenzustellen.",
     "description-released-soon": "Demnächst verfügbar."
   },
@@ -38,8 +38,8 @@
   "form": {
     "name": "Ihr Name",
     "email": "Ihre Email",
-    "emsg": "Ihre Nachricht",
-    "privacy-policy-firsttext": "Ich habe die",
+    "msg": "Ihre Nachricht",
+    "privacy-policy-firstText": "Ich habe die",
     "privacy-policy-link": "Datenschutzbestimmungen",
     "privacy-policy-lasttext": "gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
     "btn": "Nachricht senden :)",
