@@ -25,7 +25,7 @@ export default function Aboutme() {
             Hey! Ich bin Andre, ein Full-Stack-Entwickler aus Karlsruhe. 
             Schon seit meiner Kindheit habe ich mich fürs Programmieren begeistert, 
             als ich das erste Mal einen Computer in die Hände bekam. Diese Faszination 
-            hat sich im Laufe der Jahre zu einer echten Leidenschaft entwickelt.
+            hat sich im Laufe der Jahre zu einer echten Leidenschaft entwickelt. 
              */}
           </p>
           <p>
@@ -54,6 +54,52 @@ export default function Aboutme() {
         </div>
 
         {/* Right column */}
+        <div className="md:col-span-5">
+          <div className="relative group p-6 rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-sm space-y-6 hover:border-slate-700/80 transition-colors duration-300">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-full blur-2xl pointer-events-none group-hover:bg-blue-500/10 transition-colors duration-300" />
+
+            <h3 className="text-lg font-semibold text-white">Quick Facts</h3>
+
+            <ul className="space-y-4 text-sm">
+              <li className="flex items-center gap-3">
+                <span className="text-blue-500 font-mono">▸</span>
+                <span className="text-slate-400 font-medium">Location:</span>
+                <span className="text-slate-200 ml-auto">Germany</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-blue-500 font-mono">▸</span>
+                <span className="text-slate-400 font-medium">Languages:</span>
+                <span className="text-slate-200 ml-auto">German, English</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-blue-500 font-mono">▸</span>
+                <span className="text-slate-400 font-medium">Core Stack:</span>
+                <span className="text-slate-200 ml-auto text-right">
+                  Angular (TS), React (Next.js)
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-blue-500 font-mono">▸</span>
+                <span className="text-slate-400 font-medium">Core Focus:</span>
+                <span className="text-slate-200 ml-auto">
+                  Clean Code & Architecture
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-blue-500 font-mono">▸</span>
+                <span className="text-slate-400 font-medium">Status:</span>
+                <span className="text-emerald-400 font-medium ml-auto flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  Available for projects
+                </span>
+              </li>
+            </ul>
+
+            <div className="pt-4 border-t border-slate-800/80 text-xs text-slate-500 font-mono text-center">
+              `Keep it simple, keep it clean.`
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
