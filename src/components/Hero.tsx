@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative flex items-start pt-32 pb-12 px-6 md:px-12 max-w-5xl mx-auto overflow-hidden">
+    <section className="relative flex items-start pt-32 pb-2 px-6 md:px-12 max-w-5xl mx-auto overflow-hidden">
       {/* Blue background glow */}
       <div className="absolute top-2/4 left-1/6 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-2/4 right-2/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none" />
