@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative flex items-start pt-32 pb-2 px-6 md:px-12 max-w-5xl mx-auto overflow-hidden">
+    <section className="relative flex items-start pt-32 py-8 px-6 md:px-12 max-w-5xl mx-auto overflow-hidden">
       {/* Blue background glow */}
       <div className="absolute top-2/4 left-1/6 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-2/4 right-2/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none" />
@@ -38,13 +38,13 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 pt-4">
             <Link
               href="#contactme"
-              className="px-6 py-3 border border-blue-700/30 hover:bg-blue-500 active:bg-blue-700 text-white font-medium rounded-lg shadow-lg shadow-blue-500/40 transition-all hover:-translate-y-0.5 duration-200"
+              className="px-6 py-3 border border-blue-700/30 hover:bg-blue-500 active:bg-blue-700 text-white font-semibold rounded-lg shadow-lg shadow-blue-500/40 transition-all hover:-translate-y-0.5 duration-200"
             >
               Contact me
             </Link>
             <Link
               href="https://andre-kempf.com/assets/downloads/Andre_Kempf_Lebenslauf_2025.pdf"
-              className="px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 text-slate-200 font-medium rounded-lg transition-all hover:-translate-y-0.5 duration-200"
+              className="px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 text-slate-200 font-semibold rounded-lg transition-all hover:-translate-y-0.5 duration-200"
             >
               Download CV
             </Link>
