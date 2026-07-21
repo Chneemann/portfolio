@@ -16,40 +16,37 @@ export default function Aboutme() {
         {/* Left column */}
         <div className="md:col-span-7 space-y-6 text-slate-200 leading-relaxed text-base">
           <p>
-            Hey there! I'm André, a full-stack developer from Karlsruhe. I had a
-            passion for coding since childhood when I first got my hands on a
-            computer. Over the years, that fascination has grown into a genuine
-            love for the craft.
+            Hey there! André here—a full-stack developer based in Karlsruhe. A
+            childhood fascination with computers sparked this journey, which has
+            since evolved into a true passion for software development.
             {/* 
             German:
-            Hey! Ich bin Andre, ein Full-Stack-Entwickler aus Karlsruhe. 
-            Schon seit meiner Kindheit habe ich mich fürs Programmieren begeistert, 
-            als ich das erste Mal einen Computer in die Hände bekam. Diese Faszination 
-            hat sich im Laufe der Jahre zu einer echten Leidenschaft entwickelt. 
-             */}
+            Hey! Hier ist André – ein Full-Stack-Entwickler aus Karlsruhe. 
+            Eine Faszination für Computer seit meiner Kindheit hat diesen Weg geebnet, 
+            der sich seitdem zu einer echten Leidenschaft für Softwareentwicklung entwickelt hat.
+            */}
           </p>
           <p>
-            During my training at Developer Akademie, I gained plenty of
-            practical experience through projects and code reviews. I was able
-            to deepen and implement this knowledge in many of my own projects as
-            well as group projects. Symbol of problem-solving
+            Through my training at Developer Akademie, I gained hands-on
+            experience building real-world software, backed by rigorous code
+            reviews. This technical background has been put into practice and
+            expanded across a variety of solo and collaborative group projects.
             {/* 
             German:
             Während meiner Ausbildung an der Developer Akademie habe ich viel praktische 
-            Erfahrung durch Projekte und Code-Reviews gesammelt. Ich konnte dieses Wissen 
-            in vielen meiner eigenen Projekte sowie in Gruppenprojekten vertiefen und umsetzen. 
-             */}
+            Erfahrung beim Bauen von echter Software gesammelt, unterstützt durch gründliche Code-Reviews. 
+            Diesen technischen Hintergrund konnte ich in vielen eigenen Projekten sowie in 
+            Gruppenprojekten direkt in die Praxis umsetzen und vertiefen.
+            */}
           </p>
           <p>
-            In case I've piqued your curiosity, I warmly invite you to take a
-            look at my previous works. This way, you can gain an impression of
-            my skills.
+            Feel free to explore my recent work below to see these skills and
+            problem-solving approaches in action.
             {/* 
             German:
-            Falls ich deine Neugier geweckt habe, lade ich dich herzlich ein, 
-            einen Blick auf meine bisherigen Arbeiten zu werfen. So kannst du 
-            dir einen Eindruck von meinen Fähigkeiten verschaffen. 
-             */}
+            Schau dir gerne unten meine aktuellen Arbeiten an, um meine Fähigkeiten 
+            und Lösungsansätze in Aktion zu sehen.
+            */}
           </p>
         </div>
 
