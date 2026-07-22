@@ -14,8 +14,8 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50 px-6 py-4">
-      <div className="max-w-5xl mx-auto flex justify-between items-center">
+    <header className="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-md border-b border-slate-800 z-50 py-4">
+      <div className="max-w-5xl mx-auto flex justify-between items-center px-4 md:px-6">
         <Link
           href="/"
           className="text-xl font-bold text-white hover:text-blue-400 transition-colors tracking-wider z-50"

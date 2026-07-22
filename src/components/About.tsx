@@ -2,14 +2,16 @@ export default function About() {
   return (
     <section
       id="aboutme"
-      className="relative py-8 px-6 md:px-12 max-w-5xl mx-auto border-t border-slate-900/50 scroll-mt-20"
+      className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto border-t border-slate-900/50 scroll-mt-15"
     >
       {/* Titel */}
-      <div className="flex items-center gap-4 mb-6">
+      <div className="mb-6 space-y-1">
+        <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
+          // 01. Introduction
+        </p>
         <h2 className="text-3xl font-bold text-white tracking-tight">
           About me<span className="text-blue-500">.</span>
         </h2>
-        <div className="h-px bg-slate-800 grow max-w-md" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
@@ -52,49 +54,61 @@ export default function About() {
 
         {/* Right column */}
         <div className="md:col-span-5">
-          <div className="relative group p-6 rounded-2xl border border-slate-800 bg-slate-900/50 backdrop-blur-sm space-y-6 hover:border-slate-700/80 transition-colors duration-300">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-full blur-2xl pointer-events-none group-hover:bg-blue-500/10 transition-colors duration-300" />
+          <div
+            className="group relative p-6 rounded-2xl border border-slate-800/80 bg-slate-900/40 backdrop-blur-sm 
+                       hover:border-blue-500/30 hover:bg-slate-900/80 hover:shadow-xl hover:shadow-blue-500/5 
+                       transition-all duration-300 flex flex-col justify-between overflow-hidden space-y-6"
+          >
+            <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/20 transition-all duration-500 pointer-events-none" />
 
-            <h3 className="text-lg font-semibold text-white mb-4 flex items-center gap-2">
-              <span className="text-blue-500 font-mono text-sm">//</span> Quick
-              Facts
-            </h3>
+            <div>
+              {/* Header Titel */}
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-lg font-semibold text-white flex items-center gap-2">
+                  <span className="text-blue-500 font-mono text-sm">//</span>{" "}
+                  Quick Facts
+                </h3>
+              </div>
 
-            <ul className="space-y-4 text-sm">
-              <li className="flex items-center gap-3">
-                <span className="text-blue-500 font-mono">▸</span>
-                <span className="text-slate-400 font-medium">Location:</span>
-                <span className="text-slate-200 ml-auto">Germany</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-blue-500 font-mono">▸</span>
-                <span className="text-slate-400 font-medium">Languages:</span>
-                <span className="text-slate-200 ml-auto">German, English</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-blue-500 font-mono">▸</span>
-                <span className="text-slate-400 font-medium">Core Stack:</span>
-                <span className="text-slate-200 ml-auto text-right">
-                  Angular (TS), React (Next.js)
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-blue-500 font-mono">▸</span>
-                <span className="text-slate-400 font-medium">Core Focus:</span>
-                <span className="text-slate-200 ml-auto">
-                  Clean Code & Architecture
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-blue-500 font-mono">▸</span>
-                <span className="text-slate-400 font-medium">Status:</span>
-                <span className="text-emerald-400 font-medium ml-auto flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  Available for projects
-                </span>
-              </li>
-            </ul>
+              {/* List Container */}
+              <ul className="space-y-4 text-sm">
+                <li className="flex items-center gap-3">
+                  <span className="text-blue-500 font-mono">▸</span>
+                  <span className="text-slate-400 font-medium">Languages:</span>
+                  <span className="text-slate-200 ml-auto text-right font-mono text-xs">
+                    German, English
+                  </span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-blue-500 font-mono">▸</span>
+                  <span className="text-slate-400 font-medium">
+                    Core Stack:
+                  </span>
+                  <span className="text-slate-200 ml-auto text-right font-mono text-xs">
+                    Angular&nbsp;(TS), React&nbsp;(Next.js)
+                  </span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-blue-500 font-mono">▸</span>
+                  <span className="text-slate-400 font-medium">
+                    Core Focus:
+                  </span>
+                  <span className="text-slate-200 ml-auto text-right font-mono text-xs">
+                    Clean&nbsp;Code & Architecture
+                  </span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="text-blue-500 font-mono">▸</span>
+                  <span className="text-slate-400 font-medium">Status:</span>
+                  <span className="text-emerald-400 ml-auto text-right flex items-center gap-1.5 font-mono text-xs">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                    Available for projects
+                  </span>
+                </li>
+              </ul>
+            </div>
 
+            {/* Footer Quote */}
             <div className="pt-4 border-t border-slate-800/80 text-xs text-slate-500 font-mono text-center">
               `Keep it simple, keep it clean.`
             </div>
