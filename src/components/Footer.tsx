@@ -10,14 +10,14 @@ export default function Footer() {
             href="/imprint"
             className="hover:text-slate-300 transition-colors"
           >
-            Impressum
+            Legal Notice
           </Link>
           <span>|</span>
           <Link
             href="/privacy"
             className="hover:text-slate-300 transition-colors"
           >
-            Datenschutz
+            Privacy Policy
           </Link>
         </div>
       </div>
