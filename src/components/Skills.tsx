@@ -1,4 +1,40 @@
 export default function Skills() {
+  const skillCategories = [
+    {
+      title: "Frontend",
+      skills: [
+        { name: "Angular (RxJS)", featured: true },
+        { name: "HTML5 / SCSS", featured: false },
+        { name: "React (Next.js)", featured: true },
+        { name: "Tailwind CSS", featured: false },
+        { name: "TypeScript", featured: true },
+        { name: "JavaScript (ES6+)", featured: true },
+      ],
+    },
+    {
+      title: "Backend & Data",
+      skills: [
+        { name: "Python", featured: true },
+        { name: "Django", featured: true },
+        { name: "Redis", featured: false },
+        { name: "PostgreSQL / SQL", featured: true },
+        { name: "Firebase", featured: false },
+        { name: "REST APIs", featured: false },
+      ],
+    },
+    {
+      title: "DevOps & Workflow",
+      skills: [
+        { name: "Git / GitHub", featured: true },
+        { name: "Scrum / Agile", featured: false },
+        { name: "Linux", featured: false },
+        { name: "Docker", featured: true },
+        { name: "CI / CD", featured: false },
+        { name: "Cloud Services", featured: false },
+      ],
+    },
+  ];
+
   return (
     <section
       id="myskills"
@@ -15,7 +51,7 @@ export default function Skills() {
       </div>
 
       {/* Description */}
-      <div className="mb-8 text-slate-200 text-base leading-relaxed">
+      <div className="mb-4 text-slate-200 text-base leading-relaxed">
         <p>
           Through hands-on experience in various projects, I continuously expand
           and refine my full-stack development skills. Here is an overview of
@@ -27,6 +63,47 @@ export default function Skills() {
           Hier ist eine Übersicht der Technologien, Frameworks und Tools, mit denen ich arbeite:
           */}
         </p>
+      </div>
+
+      {/* Skill categories */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {skillCategories.map((category) => (
+          <div
+            key={category.title}
+            className="group relative p-4 rounded-2xl border border-slate-800/80 bg-slate-900/40 backdrop-blur-sm 
+                       hover:border-blue-500/30 hover:bg-slate-900/80 hover:shadow-xl hover:shadow-blue-500/5 
+                       transition-all duration-300 flex flex-col justify-between overflow-hidden"
+          >
+            <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/20 transition-all duration-500 pointer-events-none" />
+
+            <div>
+              {/* Header */}
+              <div className="flex items-center justify-between mb-6">
+                <h3 className="text-lg font-semibold text-white flex items-center gap-2">
+                  <span className="text-blue-500 font-mono text-sm">//</span>{" "}
+                  {category.title}
+                </h3>
+                <span className="w-2 h-2 rounded-full bg-blue-500/40 group-hover:bg-blue-400 group-hover:shadow-[0_0_8px_rgba(96,165,250,0.8)] transition-all duration-300" />
+              </div>
+
+              {/* Badgets */}
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill) => (
+                  <span
+                    key={skill.name}
+                    className={`px-3 py-1.5 text-xs font-mono rounded-lg transition-all duration-200 cursor-default hover:-translate-y-0.5 shadow-sm ${
+                      skill.featured
+                        ? "bg-blue-500/10 text-blue-300 border border-blue-500/40 shadow-blue-500/5 hover:bg-blue-500/20 hover:border-blue-400 hover:text-white"
+                        : "bg-slate-800/60 text-slate-400 border border-slate-700/40 hover:border-slate-500 hover:text-slate-200 hover:bg-slate-800"
+                    }`}
+                  >
+                    {skill.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
