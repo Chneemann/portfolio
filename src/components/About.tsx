@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="aboutme"
-      className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto border-t border-slate-900/50 scroll-mt-15"
+      className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto scroll-mt-15"
     >
       {/* Titel */}
       <div className="mb-6 space-y-1">
@@ -16,7 +16,7 @@ export default function About() {
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
         {/* Left column */}
-        <div className="md:col-span-7 space-y-6 text-slate-200 leading-relaxed text-base">
+        <div className="md:col-span-7 space-y-6 leading-relaxed">
           <p>
             Hey there! André here—a full-stack developer based in Karlsruhe. A
             childhood fascination with computers sparked this journey, which has
@@ -55,11 +55,13 @@ export default function About() {
         {/* Right column */}
         <div className="md:col-span-5">
           <div
-            className="group relative p-6 rounded-2xl border border-slate-800/80 bg-slate-900/40 backdrop-blur-sm 
-                       hover:border-blue-500/30 hover:bg-slate-900/80 hover:shadow-xl hover:shadow-blue-500/5 
-                       transition-all duration-300 flex flex-col justify-between overflow-hidden space-y-6"
+            className="group relative p-5 rounded-2xl border border-slate-700/60 bg-slate-900/90 backdrop-blur-md 
+             shadow-lg shadow-black/40 border-t-slate-600/50
+             hover:border-blue-500/50 hover:bg-slate-800/90 
+             hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-0.5 
+             transition-all duration-300 ease-out flex flex-col justify-between overflow-hidden space-y-6"
           >
-            <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/20 transition-all duration-500 pointer-events-none" />
+            <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/15 rounded-full blur-xl group-hover:bg-blue-500/25 transition-all duration-500 pointer-events-none" />
 
             <div>
               {/* Header Titel */}
@@ -75,7 +77,7 @@ export default function About() {
                 <li className="flex items-center gap-3">
                   <span className="text-blue-500 font-mono">▸</span>
                   <span className="text-slate-400 font-medium">Languages:</span>
-                  <span className="text-slate-200 ml-auto text-right font-mono text-xs">
+                  <span className="ml-auto text-right font-mono text-xs">
                     German, English
                   </span>
                 </li>
@@ -84,7 +86,7 @@ export default function About() {
                   <span className="text-slate-400 font-medium">
                     Core Stack:
                   </span>
-                  <span className="text-slate-200 ml-auto text-right font-mono text-xs">
+                  <span className="ml-auto text-right font-mono text-xs">
                     Angular&nbsp;(TS), React&nbsp;(Next.js)
                   </span>
                 </li>
@@ -93,7 +95,7 @@ export default function About() {
                   <span className="text-slate-400 font-medium">
                     Core Focus:
                   </span>
-                  <span className="text-slate-200 ml-auto text-right font-mono text-xs">
+                  <span className="ml-auto text-right font-mono text-xs">
                     Clean&nbsp;Code & Architecture
                   </span>
                 </li>

@@ -38,7 +38,7 @@ export default function Skills() {
   return (
     <section
       id="myskills"
-      className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto border-t border-slate-900/50 scroll-mt-15"
+      className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto scroll-mt-15"
     >
       {/* Titel */}
       <div className="mb-6 space-y-1 text-right flex flex-col items-end">
@@ -51,7 +51,7 @@ export default function Skills() {
       </div>
 
       {/* Description */}
-      <div className="mb-4 text-slate-200 text-base leading-relaxed">
+      <div className="mb-4 leading-relaxed">
         <p>
           Through hands-on experience in various projects, I continuously expand
           and refine my full-stack development skills. Here is an overview of
@@ -70,11 +70,13 @@ export default function Skills() {
         {skillCategories.map((category) => (
           <div
             key={category.title}
-            className="group relative p-4 rounded-2xl border border-slate-800/80 bg-slate-900/40 backdrop-blur-sm 
-                       hover:border-blue-500/30 hover:bg-slate-900/80 hover:shadow-xl hover:shadow-blue-500/5 
-                       transition-all duration-300 flex flex-col justify-between overflow-hidden"
+            className="group relative p-5 rounded-2xl border border-slate-700/60 bg-slate-900/90 backdrop-blur-md 
+             shadow-lg shadow-black/40 border-t-slate-600/50
+             hover:border-blue-500/50 hover:bg-slate-800/90 
+             hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-0.5 
+             transition-all duration-300 ease-out flex flex-col justify-between overflow-hidden"
           >
-            <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl group-hover:bg-blue-500/20 transition-all duration-500 pointer-events-none" />
+            <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/15 rounded-full blur-xl group-hover:bg-blue-500/25 transition-all duration-500 pointer-events-none" />
 
             <div>
               {/* Header */}
