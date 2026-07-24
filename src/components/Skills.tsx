@@ -41,7 +41,7 @@ export default function Skills() {
       className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto scroll-mt-15"
     >
       {/* Titel */}
-      <div className="mb-6 space-y-1 text-right flex flex-col items-end">
+      <div className="mb-4 space-y-1 text-right flex flex-col items-end">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
           // 02. Technical Stack
         </p>
@@ -51,7 +51,7 @@ export default function Skills() {
       </div>
 
       {/* Description */}
-      <div className="mb-4 leading-relaxed">
+      <div className="mb-6 leading-relaxed">
         <p>
           Through hands-on experience in various projects, I continuously expand
           and refine my full-stack development skills. Here is an overview of
@@ -80,7 +80,7 @@ export default function Skills() {
 
             <div>
               {/* Header */}
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-white flex items-center gap-2">
                   <span className="text-blue-500 font-mono text-sm">//</span>{" "}
                   {category.title}
@@ -89,7 +89,7 @@ export default function Skills() {
               </div>
 
               {/* Badgets */}
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2  justify-center sm:justify-start">
                 {category.skills.map((skill) => (
                   <span
                     key={skill.name}

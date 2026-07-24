@@ -5,7 +5,7 @@ export default function About() {
       className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto scroll-mt-15"
     >
       {/* Titel */}
-      <div className="mb-6 space-y-1">
+      <div className="mb-4 space-y-1">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
           // 01. Introduction
         </p>
