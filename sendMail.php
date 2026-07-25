@@ -14,6 +14,12 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $json = file_get_contents('php://input');
         $params = json_decode($json);
 
+        // Honeypot check
+        if (!empty($params->website)) {
+            http_response_code(200); 
+            exit;
+        }
+
         // Extract values
         $email   = $params->email;
         $name    = $params->name;

@@ -6,13 +6,29 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [honeypot, setHoneypot] = useState("");
 
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
+  const [formLoadTime] = useState(Date.now());
+
   const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Bot check
+    const timeTaken = (Date.now() - formLoadTime) / 1000;
+
+    if (timeTaken < 3) {
+      setSubmitted(true);
+      return;
+    }
+
+    if (honeypot !== "") {
+      setSubmitted(true);
+      return;
+    }
 
     setLoading(true);
     setError(false);
@@ -23,7 +39,7 @@ export default function Contact() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, message, honeypot }),
       });
 
       if (response.ok) {
@@ -31,6 +47,7 @@ export default function Contact() {
         setName("");
         setEmail("");
         setMessage("");
+        setHoneypot("");
       } else {
         setError(true);
       }
@@ -122,6 +139,21 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="hidden" aria-hidden="true">
+                  <label className="block text-xs mb-1.5" htmlFor="website">
+                    Website
+                  </label>
+                  <input
+                    type="text"
+                    id="website_hp"
+                    name="website_hp"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                  />
+                </div>
+
                 <div>
                   <label className="block text-xs mb-1.5" htmlFor="name">
                     Name
