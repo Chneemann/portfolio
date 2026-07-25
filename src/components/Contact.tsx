@@ -34,13 +34,16 @@ export default function Contact() {
     setError(false);
 
     try {
-      const response = await fetch("https://andre-kempf.com/sendMail.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://andre-kempf.com/backend/sendMail.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, message, honeypot }),
         },
-        body: JSON.stringify({ name, email, message, honeypot }),
-      });
+      );
 
       if (response.ok) {
         setSubmitted(true);
