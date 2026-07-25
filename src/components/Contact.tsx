@@ -3,13 +3,43 @@
 import { useState } from "react";
 
 export default function Contact() {
-  // Placeholder
-  const [submitted, setSubmitted] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Mailer / Formspree / API Call integration goes here
-    setSubmitted(true);
+
+    setLoading(true);
+    setError(false);
+
+    try {
+      const response = await fetch("https://andre-kempf.com/sendMail.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      console.error("Mail send error:", err);
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -93,44 +123,59 @@ export default function Contact() {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-xs font-bold mb-1.5">Name</label>
+                  <label className="block text-xs mb-1.5" htmlFor="name">
+                    Name
+                  </label>
                   <input
                     type="text"
                     required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     placeholder="John Doe"
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950/60 border border-slate-800 text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-colors text-sm"
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-colors text-sm"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold mb-1.5">
+                  <label className="block text-xs mb-1.5" htmlFor="email">
                     Email
                   </label>
                   <input
                     type="email"
                     required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="john@example.com"
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950/60 border border-slate-800 text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-colors text-sm"
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-colors text-sm"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-bold mb-1.5">
+                  <label className="block text-xs mb-1.5" htmlFor="message">
                     Message
                   </label>
                   <textarea
                     rows={4}
                     required
-                    placeholder="Hi André, I would like to discuss a potential project with you..."
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950/60 border border-slate-800 text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-colors text-sm resize-none"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Hi André, I would like to discuss a potential project..."
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-colors text-sm resize-none"
                   />
                 </div>
 
+                {error && (
+                  <p className="text-red-400 text-xs font-mono">
+                    An error occurred. Please try again later.
+                  </p>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 rounded-lg transition-all hover:-translate-y-0.5 duration-200 cursor-pointer"
+                  disabled={loading}
+                  className="w-full px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 rounded-lg transition-all hover:-translate-y-0.5 duration-200 cursor-pointer disabled:opacity-50"
                 >
-                  Send Message
+                  {loading ? "Sending..." : "Send Message"}
                 </button>
               </form>
             )}
