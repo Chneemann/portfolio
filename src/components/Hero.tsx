@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="relative group h-auto w-70 lg:w-66 md:w-59 aspect-5/6">
             <div className="relative w-full h-full rounded-2xl border-5 border-slate-800 bg-slate-900 overflow-hidden flex items-center justify-center group-hover:border-blue-500/50 transition-colors duration-300">
               <img
-                src="/images/me.png"
+                src="/assets/images/me.png"
                 alt="André Kempf"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-102"
               />

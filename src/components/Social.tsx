@@ -4,17 +4,17 @@ const socialLinks = [
   {
     name: "Codeberg",
     href: "https://codeberg.org/chneemann",
-    icon: "/icons/codeberg.svg",
+    icon: "/assets/icons/codeberg.svg",
   },
   {
     name: "LinkedIn",
     href: "https://linkedin.com/in/andre-kempf",
-    icon: "/icons/linkedin.svg",
+    icon: "/assets/icons/linkedin.svg",
   },
   {
     name: "GitHub (Legacy)",
     href: "https://github.com/chneemann",
-    icon: "/icons/github.svg",
+    icon: "/assets/icons/github.svg",
   },
 ];
 
