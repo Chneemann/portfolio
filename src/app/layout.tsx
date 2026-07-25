@@ -22,6 +22,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "André Kempf | Portfolio",
   description: "My personal portfolio, built with React (Next.js)",
+  icons: {
+    icon: "/assets/icons/favicon.ico",
+    shortcut: "/assets/icons/favicon.ico",
+    apple: "/assets/images/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
