@@ -70,7 +70,7 @@ export default function Contact() {
       {/* Title */}
       <div className="mb-6 space-y-1 text-right flex flex-col items-end">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
-          // 03. Get in Touch
+          // 04. Get in Touch
         </p>
         <h2 className="text-3xl font-bold text-white tracking-tight">
           Contact me<span className="text-blue-500">.</span>
