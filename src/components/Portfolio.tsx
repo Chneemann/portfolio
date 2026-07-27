@@ -75,6 +75,9 @@ export default function Portfolio() {
         {featuredProject && (
           <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/90 backdrop-blur-md shadow-lg shadow-black/40 border-t-slate-600/50 hover:border-blue-500/50 hover:bg-slate-800/90 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-0.5 transition-all duration-300 ease-out overflow-hidden grid md:grid-cols-12 items-center">
             <div className="absolute -top-12 -right-12 w-32 h-32 bg-blue-500/15 rounded-full blur-xl group-hover:bg-blue-500/25 transition-all duration-500 pointer-events-none z-20" />
+            <div className="absolute top-0 right-0 z-20 px-4 py-1.5 bg-blue-950/80 backdrop-blur-md border-b border-l border-blue-500/60 text-blue-300 font-mono text-xs font-semibold rounded-bl-xl shadow-md shadow-blue-500/10">
+              Featured Project
+            </div>
 
             {/* Description */}
             <div className="p-5 md:col-span-7 z-10 flex flex-col justify-between h-full">
@@ -141,9 +144,9 @@ export default function Portfolio() {
                 alt={`${featuredProject.title} Vorschau`}
                 fill
                 sizes="(max-width: 768px) 100vw, 40vw"
-                className="object-cover object-top opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500 ease-out"
+                className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out"
               />
-              <div className="absolute inset-0 bg-linear-to-t md:bg-linear-to-r from-slate-900/90 via-slate-900/30 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-linear-to-b md:bg-linear-to-r from-slate-950/90 via-slate-950/0 to-transparent pointer-events-none" />
             </div>
           </div>
         )}
@@ -164,9 +167,9 @@ export default function Portfolio() {
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-top opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500 ease-out"
+                  className="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-slate-900/90 to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/0 to-transparent pointer-events-none" />
               </div>
 
               {/* Description */}
