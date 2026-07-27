@@ -221,7 +221,7 @@ export default function Portfolio() {
                       <Link
                         href={project.backendLink}
                         target="_blank"
-                        className="text-xs font-mono text-blue-400 hover:underline inline-flex items-center gap-1"
+                        className="text-xs font-mono text-blue-400 hover:underline inline-flex items-center justify-end gap-1 text-right"
                       >
                         Code (Backend) →
                       </Link>
