@@ -4,7 +4,9 @@ import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Background from "../components/Background";
+import CommandPalette from "../components/CommandPalette";
 
+// Load Google Fonts as CSS custom variables
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,6 +21,9 @@ const geistMono = Geist_Mono({
   preload: false,
 });
 
+/**
+ * Global page metadata and branding icons
+ */
 export const metadata: Metadata = {
   title: "André Kempf | Portfolio",
   description: "My personal portfolio, built with React (Next.js)",
@@ -29,6 +34,9 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Root application layout providing global font variables, shell UI, and persistent overlays
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,6 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
+        <CommandPalette />
         <Background />
         <Header />
         <main className="grow">{children}</main>
