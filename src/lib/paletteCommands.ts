@@ -1,3 +1,5 @@
+import { playSudoEasterEgg } from "./playSudoEasterEgg";
+
 /**
  * Command item structure for the Cmd+K palette
  */
@@ -18,7 +20,7 @@ export const getCommands = (
 ): CommandItem[] => [
   {
     id: "copy-email",
-    label: copied ? "Email Copied! ✓" : "Copy Email (dev@andre-kempf.com)",
+    label: copied ? "Email Copied!" : "Copy Email (dev@andre-kempf.com)",
     category: "Quick Actions",
     icon: copied ? "✓" : "✉️",
     action: () => {
@@ -29,15 +31,15 @@ export const getCommands = (
   },
   {
     id: "download-cv",
-    label: "Download Resume / CV (PDF)",
+    label: "Download CV (PDF)",
     category: "Quick Actions",
     icon: "📄",
     action: () => {
-      const link = document.createElement("a");
-      link.href =
-        "https://andre-kempf.com/assets/downloads/Andre_Kempf_Lebenslauf_2025.pdf";
-      link.download = "Andre_Kempf_Lebenslauf.pdf";
-      link.click();
+      window.open(
+        "/assets/downloads/Andre_Kempf_Lebenslauf.pdf",
+        "_blank",
+        "noopener,noreferrer",
+      );
     },
   },
   {
@@ -55,7 +57,11 @@ export const getCommands = (
     category: "Social / Links",
     icon: "🏔️",
     action: () => {
-      window.open("https://codeberg.org/Chneemann", "_blank");
+      window.open(
+        "https://codeberg.org/Chneemann",
+        "_blank",
+        "noopener,noreferrer",
+      );
     },
   },
   {
@@ -64,7 +70,11 @@ export const getCommands = (
     category: "Social / Links",
     icon: "🐙",
     action: () => {
-      window.open("https://github.com/andre-kempf", "_blank");
+      window.open(
+        "https://github.com/andre-kempf",
+        "_blank",
+        "noopener,noreferrer",
+      );
     },
   },
   {
@@ -73,7 +83,11 @@ export const getCommands = (
     category: "Social / Links",
     icon: "💼",
     action: () => {
-      window.open("https://linkedin.com/in/andre-kempf", "_blank");
+      window.open(
+        "https://linkedin.com/in/andre-kempf",
+        "_blank",
+        "noopener,noreferrer",
+      );
     },
   },
   {
@@ -82,7 +96,18 @@ export const getCommands = (
     category: "Social / Links",
     icon: "💻",
     action: () => {
-      window.open("https://codeberg.org/Chneemann/portfolio", "_blank");
+      window.open(
+        "https://codeberg.org/Chneemann/portfolio",
+        "_blank",
+        "noopener,noreferrer",
+      );
     },
+  },
+  {
+    id: "sudo-egg",
+    label: "sudo rm -rf --no-preserve-root /",
+    category: "System & Info",
+    icon: "💀",
+    action: playSudoEasterEgg,
   },
 ];
