@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
+/**
+ * Static list of featured and secondary portfolio project items
+ */
 const PROJECTS = [
   {
     title: "DABubble",
@@ -51,7 +54,11 @@ const PROJECTS = [
   },
 ];
 
+/**
+ * Portfolio showcase section highlighting primary and secondary projects
+ */
 export default function Portfolio() {
+  // Separate featured highlight from remaining secondary project cards
   const featuredProject = PROJECTS.find((p) => p.isFeatured);
   const secondaryProjects = PROJECTS.filter((p) => !p.isFeatured);
 
@@ -60,7 +67,7 @@ export default function Portfolio() {
       id="portfolio"
       className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto scroll-mt-15"
     >
-      {/* Title */}
+      {/* Section Header */}
       <div className="mb-4 space-y-1">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
           // 03. Projects
@@ -71,7 +78,7 @@ export default function Portfolio() {
       </div>
 
       <div className="space-y-6">
-        {/* Featured Project Card */}
+        {/* Featured Main Project Card */}
         {featuredProject && (
           <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/90 backdrop-blur-md shadow-lg shadow-black/40 border-t-slate-600/50 hover:border-blue-500/50 hover:bg-slate-800/90 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-0.5 transition-all duration-300 ease-out overflow-hidden grid md:grid-cols-12 items-center">
             <div className="absolute -top-12 -right-12 w-32 h-32 bg-blue-500/15 rounded-full blur-xl group-hover:bg-blue-500/25 transition-all duration-500 pointer-events-none z-20" />
@@ -79,7 +86,7 @@ export default function Portfolio() {
               Featured Project
             </div>
 
-            {/* Description */}
+            {/* Description & Metadata */}
             <div className="p-5 md:col-span-7 z-10 flex flex-col justify-between h-full">
               <div>
                 <div className="flex items-center justify-between mb-2 pr-28">
@@ -97,7 +104,7 @@ export default function Portfolio() {
               </div>
 
               <div>
-                {/* Badges */}
+                {/* Tech Stack Badges */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {featuredProject.tags.map((tag) => (
                     <span
@@ -113,7 +120,7 @@ export default function Portfolio() {
                   ))}
                 </div>
 
-                {/* Links */}
+                {/* Action Links */}
                 <div className="flex items-center gap-4 text-sm font-semibold">
                   {featuredProject.demoLink && (
                     <Link
@@ -137,7 +144,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Image */}
+            {/* Project Preview Image */}
             <div className="relative md:col-span-5 h-64 md:h-full min-h-260px overflow-hidden border-t md:border-t-0 md:border-l border-slate-800/60">
               <Image
                 src={featuredProject.image}
@@ -151,7 +158,7 @@ export default function Portfolio() {
           </div>
         )}
 
-        {/* Secondary Projects Grid */}
+        {/* Secondary Projects Grid Layout */}
         <div className="grid md:grid-cols-2 gap-6">
           {secondaryProjects.map((project) => (
             <div
@@ -160,7 +167,7 @@ export default function Portfolio() {
             >
               <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/15 rounded-full blur-xl group-hover:bg-blue-500/25 transition-all duration-500 pointer-events-none" />
 
-              {/* Image */}
+              {/* Project Image */}
               <div className="relative h-44 overflow-hidden border-b border-slate-800/60">
                 <Image
                   src={project.image}
@@ -172,7 +179,7 @@ export default function Portfolio() {
                 <div className="absolute inset-0 bg-linear-to-t from-slate-950/90 via-slate-950/0 to-transparent pointer-events-none" />
               </div>
 
-              {/* Description */}
+              {/* Card Details & Stack */}
               <div className="p-5 flex-1 flex flex-col justify-between relative z-10">
                 <div>
                   <div className="flex items-center justify-between mb-1">
@@ -190,7 +197,7 @@ export default function Portfolio() {
                 </div>
 
                 <div>
-                  {/* Badges */}
+                  {/* Tech Badges */}
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag) => (
                       <span
@@ -206,7 +213,7 @@ export default function Portfolio() {
                     ))}
                   </div>
 
-                  {/* Links */}
+                  {/* Repository Links */}
                   <div className="grid grid-cols-2 pt-2 border-t border-slate-800/60">
                     {project.frontendLink && (
                       <Link

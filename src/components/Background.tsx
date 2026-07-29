@@ -1,6 +1,10 @@
+/**
+ * Global ambient background featuring a masked SVG-style grid overlay and subtle glow effect
+ */
 export default function Background() {
   return (
     <>
+      {/* Radial-masked blue grid overlay */}
       <div
         className="fixed inset-0 pointer-events-none z-0 opacity-[0.25]"
         style={{
@@ -13,6 +17,7 @@ export default function Background() {
         }}
       />
 
+      {/* Top ambient glow light */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-1000px h-400px bg-linear-to-tr from-blue-600/10 to-cyan-400/10 blur-[120px] pointer-events-none z-0" />
     </>
   );

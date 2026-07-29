@@ -1,4 +1,7 @@
 export default function Skills() {
+  /**
+   * Technical skill matrix grouped by stack category and highlight priority
+   */
   const skillCategories = [
     {
       title: "Frontend",
@@ -35,12 +38,15 @@ export default function Skills() {
     },
   ];
 
+  /**
+   * Render the technical skills section with responsive category cards and styled skill tags.
+   */
   return (
     <section
       id="myskills"
       className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto scroll-mt-15"
     >
-      {/* Titel */}
+      {/* Section Header */}
       <div className="mb-4 space-y-1 text-right flex flex-col items-end">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
           // 02. Technical Stack
@@ -50,7 +56,7 @@ export default function Skills() {
         </h2>
       </div>
 
-      {/* Description */}
+      {/* Intro Description */}
       <div className="mb-6 leading-relaxed">
         <p>
           Through hands-on experience in various projects, I continuously expand
@@ -65,7 +71,7 @@ export default function Skills() {
         </p>
       </div>
 
-      {/* Skill categories */}
+      {/* Skill Category Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {skillCategories.map((category) => (
           <div
@@ -76,10 +82,11 @@ export default function Skills() {
              hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-0.5 
              transition-all duration-300 ease-out flex flex-col justify-between overflow-hidden"
           >
+            {/* Subtle glow effect */}
             <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/15 rounded-full blur-xl group-hover:bg-blue-500/25 transition-all duration-500 pointer-events-none" />
 
             <div>
-              {/* Header */}
+              {/* Category Header */}
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-lg font-semibold text-white flex items-center gap-2">
                   <span className="text-blue-500 font-mono text-sm">//</span>{" "}
@@ -88,8 +95,8 @@ export default function Skills() {
                 <span className="w-2 h-2 rounded-full bg-blue-500/40 group-hover:bg-blue-400 group-hover:shadow-[0_0_8px_rgba(96,165,250,0.8)] transition-all duration-300" />
               </div>
 
-              {/* Badgets */}
-              <div className="flex flex-wrap gap-2  justify-center sm:justify-start">
+              {/* Skill Badges */}
+              <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
                 {category.skills.map((skill) => (
                   <span
                     key={skill.name}

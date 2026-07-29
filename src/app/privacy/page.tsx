@@ -1,8 +1,12 @@
 import Link from "next/link";
 
+/**
+ * GDPR privacy policy page outlining data collection, self-hosted analytics, and user rights
+ */
 export default function PrivacyPage() {
   return (
     <section className="relative pt-18 py-6 px-4 md:px-6 md:pt-24 max-w-5xl mx-auto">
+      {/* Page Heading & Navigation */}
       <h1 className="text-3xl font-bold text-white mb-2 tracking-tight">
         Privacy Policy<span className="text-blue-500">.</span>
       </h1>
@@ -14,7 +18,7 @@ export default function PrivacyPage() {
       </Link>
 
       <div className="space-y-8 text-slate-300 leading-relaxed text-sm">
-        {/* Overview */}
+        {/* Executive Summary */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-3 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white flex items-center gap-2">
@@ -43,7 +47,7 @@ export default function PrivacyPage() {
           </div>
         </div>
 
-        {/* Responsible Party */}
+        {/* Data Controller Information */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-2 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white mb-2 flex items-center gap-2">
@@ -66,7 +70,7 @@ export default function PrivacyPage() {
           </div>
         </div>
 
-        {/* Hosting & Server Log Files */}
+        {/* External Web Hosting Details */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-3 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white flex items-center gap-2">
@@ -85,7 +89,7 @@ export default function PrivacyPage() {
           </p>
         </div>
 
-        {/* Server Analytics */}
+        {/* Privacy-Preserving Analytics Principles */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-3 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white flex items-center gap-2">
@@ -123,7 +127,7 @@ export default function PrivacyPage() {
           </p>
         </div>
 
-        {/* Your Rights */}
+        {/* Statutory Data Subject Rights */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-3 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white flex items-center gap-2">

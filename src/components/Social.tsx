@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+/**
+ * External social profile link configurations
+ */
 const socialLinks = [
   {
     name: "Codeberg",
@@ -18,6 +21,9 @@ const socialLinks = [
   },
 ];
 
+/**
+ * Renders a row of social media profile links with icons and labels
+ */
 export default function SocialLinks() {
   return (
     <div className="flex items-center justify-center md:justify-start gap-4 pt-3 md:pt-0">

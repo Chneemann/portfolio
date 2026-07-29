@@ -3,21 +3,24 @@
 import Link from "next/link";
 import AnalyticsWidget from "./AnalyticsWidget";
 
+/**
+ * Page footer with copyright notice, live analytics widget, and legal links
+ */
 export default function Footer() {
   return (
     <footer className="w-full bg-slate-950/50 text-xs text-slate-500 px-4 py-4 border-t border-slate-900/40">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-        {/* Left: Copyright */}
+        {/* Left: Copyright Notice */}
         <p className="order-1 md:order-1">
           © {new Date().getFullYear()} André Kempf. All rights reserved.
         </p>
 
-        {/* Center: Analytics */}
+        {/* Center: Live System Metrics Badge */}
         <div className="order-3 md:order-2 opacity-70 hover:opacity-100 transition-opacity">
           <AnalyticsWidget />
         </div>
 
-        {/* Right: Links */}
+        {/* Right: Legal & Compliance Links */}
         <div className="flex gap-4 order-2 md:order-3">
           <Link
             href="/imprint"

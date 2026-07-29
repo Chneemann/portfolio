@@ -1,8 +1,12 @@
 import Link from "next/link";
 
+/**
+ * Legal notice page pursuant to German telemedia law (§ 5 DDG & § 18 MStV)
+ */
 export default function ImprintPage() {
   return (
     <section className="relative pt-18 py-6 px-4 md:px-6 md:pt-24 max-w-5xl mx-auto">
+      {/* Page Heading & Back Navigation */}
       <h1 className="text-3xl font-bold text-white mb-2 tracking-tight">
         Legal Notice<span className="text-blue-500">.</span>
       </h1>
@@ -14,7 +18,7 @@ export default function ImprintPage() {
       </Link>
 
       <div className="space-y-8 text-slate-300 leading-relaxed text-sm">
-        {/* Information in accordance with § 5 DDG & § 18 MStV */}
+        {/* Publisher Identification (§ 5 DDG & § 18 MStV) */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-3 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white mb-2 flex items-center gap-2">
@@ -32,7 +36,7 @@ export default function ImprintPage() {
           </p>
         </div>
 
-        {/* Contact */}
+        {/* Direct Contact Info */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-3 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white flex items-center gap-2">
@@ -48,7 +52,7 @@ export default function ImprintPage() {
           </div>
         </div>
 
-        {/* Disclaimer */}
+        {/* Legal Disclaimer (Content, Links, Copyright) */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-5 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white flex items-center gap-2">
@@ -89,7 +93,7 @@ export default function ImprintPage() {
           </div>
         </div>
 
-        {/* Dispute Resolution */}
+        {/* Consumer Dispute Resolution Disclaimer */}
         <div className="group relative rounded-2xl border border-slate-700/60 bg-slate-900/95 p-6 shadow-2xl shadow-black/60 border-t-slate-600/50 space-y-3 overflow-hidden">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
           <h2 className="text-lg font-semibold text-white flex items-center gap-2">

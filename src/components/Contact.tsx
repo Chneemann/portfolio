@@ -2,29 +2,36 @@
 
 import { useState } from "react";
 
+/**
+ * Contact section with interactive form, bot anti-spam protection, and direct email info
+ */
 export default function Contact() {
+  // Form input states
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
 
+  // Submission UI states
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
+  // Bot detection timestamp (form interaction speed check)
   const [formLoadTime] = useState(Date.now());
 
-  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
+  // Handles contact form submission with bot verification & PHP backend dispatch
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Bot check
+    // Anti-spam check 1: Submissions faster than 3 seconds are treated as automated bots
     const timeTaken = (Date.now() - formLoadTime) / 1000;
-
     if (timeTaken < 3) {
       setSubmitted(true);
       return;
     }
 
+    // Anti-spam check 2: Honeypot field filled out by bots
     if (honeypot !== "") {
       setSubmitted(true);
       return;
@@ -67,7 +74,7 @@ export default function Contact() {
       id="contactme"
       className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto scroll-mt-15"
     >
-      {/* Title */}
+      {/* Section Header */}
       <div className="mb-6 space-y-1 text-right flex flex-col items-end">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
           // 04. Get in Touch
@@ -78,7 +85,7 @@ export default function Contact() {
       </div>
 
       <div className="grid md:grid-cols-12 gap-8 items-start">
-        {/* Left column */}
+        {/* Left Column: Direct Info & Terminal Card */}
         <div className="md:col-span-5 flex flex-col justify-between p-5 rounded-2xl border border-slate-700/60 bg-slate-900/90 backdrop-blur-md shadow-lg shadow-black/40 border-t-slate-600/50 relative overflow-hidden space-y-6">
           <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/15 rounded-full blur-xl pointer-events-none" />
 
@@ -96,6 +103,7 @@ export default function Contact() {
               contribute to your team.
             </p>
 
+            {/* Terminal Status Display */}
             <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/80 font-mono text-[11px] space-y-1.5 shadow-inner">
               <div className="text-slate-500">// Terminal Direct Contact</div>
               <div className="text-slate-300 flex items-center gap-1">
@@ -111,6 +119,7 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Email Shortcut */}
           <div className="pt-3 border-t border-slate-800/80 font-mono text-xs">
             <span className="text-slate-500 block text-[10px] mb-1">
               // Prefer email?
@@ -121,7 +130,7 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Right column */}
+        {/* Right Column: Contact Form / Success Message */}
         <div className="md:col-span-7">
           <div
             className="relative p-4 md:p-6 rounded-2xl border border-slate-700/60 bg-slate-900/90 backdrop-blur-md 
@@ -130,20 +139,23 @@ export default function Contact() {
             <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/10 rounded-full blur-xl pointer-events-none" />
 
             {submitted ? (
+              /* Success Message */
               <div className="py-12 text-center space-y-3">
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/10 text-blue-400 font-mono text-4xl mb-2 border border-blue-500/20">
                   ✓
                 </div>
                 <h3 className="text-xl font-bold text-white">Thank you!</h3>
                 <p className="text-sm max-w-sm mx-auto">
-                  Your message has been sent successfully. I'll get back to you
-                  as soon as possible!
+                  Your message has been sent successfully. I&apos;ll get back to
+                  you as soon as possible!
                 </p>
               </div>
             ) : (
+              /* Form Container */
               <form onSubmit={handleSubmit} className="space-y-4">
+                {/* Hidden Honeypot Field for Bot Catching */}
                 <div className="hidden" aria-hidden="true">
-                  <label className="block text-xs mb-1.5" htmlFor="website">
+                  <label className="block text-xs mb-1.5" htmlFor="website_hp">
                     Website
                   </label>
                   <input
@@ -157,12 +169,14 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Name Input */}
                 <div>
                   <label className="block text-xs mb-1.5" htmlFor="name">
                     Name
                   </label>
                   <input
                     type="text"
+                    id="name"
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -171,12 +185,14 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Email Input */}
                 <div>
                   <label className="block text-xs mb-1.5" htmlFor="email">
                     Email
                   </label>
                   <input
                     type="email"
+                    id="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -185,11 +201,13 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Message Input */}
                 <div>
                   <label className="block text-xs mb-1.5" htmlFor="message">
                     Message
                   </label>
                   <textarea
+                    id="message"
                     rows={4}
                     required
                     value={message}
@@ -199,12 +217,14 @@ export default function Contact() {
                   />
                 </div>
 
+                {/* Submission Error Banner */}
                 {error && (
                   <p className="text-red-400 text-xs font-mono">
                     An error occurred. Please try again later.
                   </p>
                 )}
 
+                {/* Submit Button */}
                 <button
                   type="submit"
                   disabled={loading}

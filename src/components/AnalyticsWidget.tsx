@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 import AnalyticsModal, { AnalyticsData } from "./AnalyticsModal";
 
-/** Footer badge widget that fetches live metrics and triggers the analytics modal */
+/**
+ * Footer badge widget that fetches live metrics and triggers the analytics modal
+ */
 export default function AnalyticsWidget() {
   const [stats, setStats] = useState<AnalyticsData | null>(null);
   const [isOpen, setIsOpen] = useState(false);

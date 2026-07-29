@@ -1,10 +1,13 @@
+/**
+ * Section presenting personal background information, education, and key overview facts
+ */
 export default function About() {
   return (
     <section
       id="aboutme"
       className="relative py-6 px-4 md:px-6 max-w-5xl mx-auto scroll-mt-15"
     >
-      {/* Titel */}
+      {/* Section Header */}
       <div className="mb-4 space-y-1">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
           // 01. Introduction
@@ -15,7 +18,7 @@ export default function About() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
-        {/* Left column */}
+        {/* Personal Bio Paragraphs */}
         <div className="md:col-span-7 space-y-6 leading-relaxed">
           <p>
             Hey there! André here—a full-stack developer based in Karlsruhe. A
@@ -52,7 +55,7 @@ export default function About() {
           </p>
         </div>
 
-        {/* Right column */}
+        {/* Quick Facts Card */}
         <div className="md:col-span-5">
           <div
             className="group relative p-5 rounded-2xl border border-slate-700/60 bg-slate-900/90 backdrop-blur-md 
@@ -64,7 +67,7 @@ export default function About() {
             <div className="absolute -top-12 -right-12 w-24 h-24 bg-blue-500/15 rounded-full blur-xl group-hover:bg-blue-500/25 transition-all duration-500 pointer-events-none" />
 
             <div>
-              {/* Header Titel */}
+              {/* Card Header */}
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-semibold text-white flex items-center gap-2">
                   <span className="text-blue-500 font-mono text-sm">//</span>{" "}
@@ -72,7 +75,7 @@ export default function About() {
                 </h3>
               </div>
 
-              {/* List Container */}
+              {/* Key Highlights List */}
               <ul className="space-y-4 text-sm">
                 <li className="flex items-center gap-3">
                   <span className="text-blue-500 font-mono">▸</span>
@@ -110,7 +113,7 @@ export default function About() {
               </ul>
             </div>
 
-            {/* Footer Quote */}
+            {/* Footer Tagline */}
             <div className="pt-4 border-t border-slate-800/80 text-xs text-slate-500 font-mono text-center">
               `Keep it simple, keep it clean.`
             </div>

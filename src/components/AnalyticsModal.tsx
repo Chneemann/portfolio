@@ -3,7 +3,9 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
-/** Analytics metrics payload returned by the custom backend API */
+/**
+ * Analytics metrics payload returned by the custom backend API
+ */
 export interface AnalyticsData {
   totalViews: number;
   todayViews: number;
@@ -22,7 +24,9 @@ interface AnalyticsModalProps {
   stats: AnalyticsData;
 }
 
-/** Formats unix timestamps into relative time strings (e.g., "5s ago", "2m ago") */
+/**
+ * Formats unix timestamps into relative time strings (e.g., "5s ago", "2m ago")
+ */
 function getTimeAgo(timestamp?: number): string {
   if (!timestamp) return "just now";
   const seconds = Math.floor((Date.now() - timestamp * 1000) / 1000);
@@ -34,7 +38,9 @@ function getTimeAgo(timestamp?: number): string {
   return `${hours}h ago`;
 }
 
-/** Terminal-style modal inspector for viewing live traffic and system health metrics */
+/**
+ * Terminal-style modal inspector for viewing live traffic and system health metric
+ */
 export default function AnalyticsModal({
   isOpen,
   onClose,
