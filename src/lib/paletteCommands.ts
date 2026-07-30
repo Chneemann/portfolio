@@ -52,13 +52,13 @@ export const getCommands = (
     },
   },
   {
-    id: "codeberg",
-    label: "View Codeberg Profile",
+    id: "forgejo",
+    label: "View Self-Hosted Git Profile",
     category: "Social / Links",
-    icon: "🏔️",
+    icon: "🔨",
     action: () => {
       window.open(
-        "https://codeberg.org/Chneemann",
+        "https://git.andre-kempf.com/Chneemann",
         "_blank",
         "noopener,noreferrer",
       );
@@ -92,12 +92,12 @@ export const getCommands = (
   },
   {
     id: "source-code",
-    label: "View Site Source Code (Codeberg)",
+    label: "View Site Source Code (Self-Hosted Git)",
     category: "Social / Links",
     icon: "💻",
     action: () => {
       window.open(
-        "https://codeberg.org/Chneemann/portfolio",
+        "https://git.andre-kempf.com/Chneemann/portfolio",
         "_blank",
         "noopener,noreferrer",
       );
