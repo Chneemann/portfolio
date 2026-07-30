@@ -1,4 +1,4 @@
-name: Deploy Frontend to VPS
+name: Deploy Portfolio to VPS
 
 on:
   push:
@@ -10,12 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Build & Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
+        uses: https://github.com/appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           port: ${{ secrets.VPS_PORT }}
+          script_stop: true
           script: |
             echo "🚀 Deployment gestartet..."
             cd /opt/containers/frontend
