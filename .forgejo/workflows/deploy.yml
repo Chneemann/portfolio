@@ -18,16 +18,16 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           script_stop: true
           script: |
-            echo "🚀 Deployment gestartet..."
-            cd /opt/containers/frontend
+            echo "Starting deployment..."
+            cd /opt/containers/frontend/httpdocs
 
-            echo "📥 Hole neuesten Code..."
+            echo "Pulling latest code..."
             git pull origin main
 
-            echo "🏗️ Baue Docker Image neu..."
+            echo "Rebuilding Docker containers..."
             docker compose up -d --build
 
-            echo "🧹 Alte Docker Images aufräumen..."
+            echo "Cleaning up unused Docker images..."
             docker image prune -f
 
-            echo "✅ Deployment erfolgreich abgeschlossen!"
+            echo "Deployment completed successfully."
