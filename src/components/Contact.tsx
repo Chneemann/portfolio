@@ -24,9 +24,9 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // Anti-spam check 1: Submissions faster than 3 seconds are treated as automated bots
+    // Anti-spam check 1: Submissions faster than 1 seconds are treated as automated bots
     const timeTaken = (Date.now() - formLoadTime) / 1000;
-    if (timeTaken < 3) {
+    if (timeTaken < 1) {
       setSubmitted(true);
       return;
     }
@@ -52,7 +52,6 @@ export default function Contact() {
           name,
           email,
           message,
-          _replyto: email,
           _subject: `Portfolio Contact: ${name}`,
         }),
       });
@@ -158,11 +157,12 @@ export default function Contact() {
             ) : (
               /* Form Container */
               <form onSubmit={handleSubmit} className="space-y-4">
-                {/* Hidden Honeypot Field for Bot Catching */}
-                <div className="hidden" aria-hidden="true">
-                  <label className="block text-xs mb-1.5" htmlFor="website_hp">
-                    Website
-                  </label>
+                {/* Visual Hidden Honeypot Field */}
+                <div
+                  className="absolute opacity-0 pointer-events-none -z-10 h-0 w-0 overflow-hidden"
+                  aria-hidden="true"
+                >
+                  <label htmlFor="website_hp">Website</label>
                   <input
                     type="text"
                     id="website_hp"
