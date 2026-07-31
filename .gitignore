@@ -40,8 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Apache server configuration files
-htaccess
-
 # Ignore all files in downloads directory
 public/assets/downloads/*
