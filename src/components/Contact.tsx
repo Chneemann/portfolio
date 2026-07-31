@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 /**
- * Contact section with interactive form, bot anti-spam protection, and direct email info
+ * Contact section with interactive form, bot anti-spam protection, and Formspree integration
  */
 export default function Contact() {
   // Form input states
@@ -20,7 +20,7 @@ export default function Contact() {
   // Bot detection timestamp (form interaction speed check)
   const [formLoadTime] = useState(Date.now());
 
-  // Handles contact form submission with bot verification & PHP backend dispatch
+  // Handles contact form submission with bot verification & Formspree dispatch
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -41,16 +41,21 @@ export default function Contact() {
     setError(false);
 
     try {
-      const response = await fetch(
-        "https://andre-kempf.com/backend/sendMail.php",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ name, email, message, honeypot }),
+      // Direct POST request to Formspree
+      const response = await fetch(`https://formspree.io/f/mojgbbzp`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-      );
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          _replyto: email,
+          _subject: `Portfolio Contact: ${name}`,
+        }),
+      });
 
       if (response.ok) {
         setSubmitted(true);
@@ -177,6 +182,7 @@ export default function Contact() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -193,6 +199,7 @@ export default function Contact() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -208,6 +215,7 @@ export default function Contact() {
                   </label>
                   <textarea
                     id="message"
+                    name="message"
                     rows={4}
                     required
                     value={message}
@@ -228,7 +236,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 rounded-lg transition-all hover:-translate-y-0.5 duration-200 cursor-pointer disabled:opacity-50"
+                  className="w-full px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 rounded-lg transition-all hover:-translate-y-0.5 duration-200 cursor-pointer disabled:opacity-50 text-slate-100 text-sm font-medium"
                 >
                   {loading ? "Sending..." : "Send Message"}
                 </button>
