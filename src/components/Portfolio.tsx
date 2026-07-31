@@ -18,7 +18,7 @@ const PROJECTS = [
     ],
     isFeatured: true,
     demoLink: "https://dabubble.andre-kempf.com/",
-    githubLink: "https://github.com/Chneemann/dabubble",
+    githubLink: "https://git.andre-kempf.com/Chneemann/dabubble",
   },
   {
     title: "Join",
@@ -33,8 +33,9 @@ const PROJECTS = [
       { name: "PostgreSQL", featured: false },
     ],
     isFeatured: false,
-    frontendLink: "https://github.com/Chneemann/join",
-    backendLink: "https://github.com/Chneemann/join-api",
+    demoLink: "https://join.andre-kempf.com/",
+    frontendLink: "https://git.andre-kempf.com/Chneemann/join",
+    backendLink: "https://git.andre-kempf.com/Chneemann/join-api",
   },
   {
     title: "Videoflix",
@@ -49,8 +50,11 @@ const PROJECTS = [
       { name: "PostgreSQL", featured: false },
     ],
     isFeatured: false,
-    frontendLink: "https://github.com/Chneemann/videoflix/tree/main/frontend",
-    backendLink: "https://github.com/Chneemann/videoflix/tree/main/backend",
+    demoLink: "https://videoflix.andre-kempf.com/",
+    frontendLink:
+      "https://git.andre-kempf.com/Chneemann/videoflix/src/branch/main/frontend",
+    backendLink:
+      "https://git.andre-kempf.com/Chneemann/videoflix/src/branch/main/backend",
   },
 ];
 
@@ -213,26 +217,41 @@ export default function Portfolio() {
                     ))}
                   </div>
 
-                  {/* Repository Links */}
-                  <div className="grid grid-cols-2 pt-2 border-t border-slate-800/60">
-                    {project.frontendLink && (
+                  {/* Actions & Repository Links */}
+                  <div className="pt-3 border-t border-slate-800/60 flex items-center justify-between gap-2">
+                    {project.demoLink && (
                       <Link
-                        href={project.frontendLink}
+                        href={project.demoLink}
                         target="_blank"
-                        className="text-xs font-mono text-blue-400 hover:underline inline-flex items-center gap-1"
+                        className="text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 px-3 py-1.5 rounded-lg transition-colors inline-flex items-center gap-1 shadow-md shadow-blue-600/20 shrink-0"
                       >
-                        Code (Frontend) →
+                        Live Demo ↗
                       </Link>
                     )}
-                    {project.backendLink && (
-                      <Link
-                        href={project.backendLink}
-                        target="_blank"
-                        className="text-xs font-mono text-blue-400 hover:underline inline-flex items-center justify-end gap-1 text-right"
-                      >
-                        Code (Backend) →
-                      </Link>
-                    )}
+
+                    <div className="flex items-center gap-3 text-sm font-semibold text-slate-400 ml-auto">
+                      {project.frontendLink && (
+                        <Link
+                          href={project.frontendLink}
+                          target="_blank"
+                          className="hover:text-white transition-colors"
+                        >
+                          Frontend
+                        </Link>
+                      )}
+                      {project.frontendLink && project.backendLink && (
+                        <span>/</span>
+                      )}
+                      {project.backendLink && (
+                        <Link
+                          href={project.backendLink}
+                          target="_blank"
+                          className="hover:text-white transition-colors"
+                        >
+                          Backend
+                        </Link>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
