@@ -71,7 +71,7 @@ export const getCommands = (
     icon: "🐙",
     action: () => {
       window.open(
-        "https://github.com/andre-kempf",
+        "https://github.com/Chneemann",
         "_blank",
         "noopener,noreferrer",
       );

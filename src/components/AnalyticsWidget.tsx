@@ -24,17 +24,25 @@ export default function AnalyticsWidget() {
       .catch((err) => console.error("Analytics Widget Fetch Error:", err));
   };
 
-  // Initial load on client hydration: track page view
-  useEffect(() => {
-    setMounted(true);
-    fetchStats(true); // track=true on initial page visit
-  }, []);
-
   // Open modal and silently refresh stats without incrementing view count
   const handleOpenModal = () => {
     fetchStats(false); // track=false when clicking badge
     setIsOpen(true);
   };
+
+  // Hydrate client, fetch initial page metrics, and listen for custom Cmd+K palette events
+  useEffect(() => {
+    setMounted(true);
+    fetchStats(true); // Track initial page view
+
+    // Listen for custom trigger event fired from CommandPalette
+    const handleCustomOpen = () => handleOpenModal();
+    window.addEventListener("open-analytics", handleCustomOpen);
+
+    return () => {
+      window.removeEventListener("open-analytics", handleCustomOpen);
+    };
+  }, []);
 
   // Skeleton badge while client hydration occurs or metrics are loading
   if (!mounted || !stats) {
