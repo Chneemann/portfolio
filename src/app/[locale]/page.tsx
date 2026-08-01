@@ -1,8 +1,8 @@
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Contact from "../components/Contact";
-import Portfolio from "../components/Portfolio";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
+import Portfolio from "@/components/Portfolio";
 
 /**
  * Main portfolio landing page assembling all key sections in sequence

@@ -1,6 +1,6 @@
 # André Kempf — Developer Portfolio
 
-A fast, privacy-focused, and accessible developer portfolio built with **Next.js 16 (App Router)**, **Tailwind CSS**, and **React 19**, backed by a custom **lightweight PHP analytics engine**.
+A fast, privacy-focused, and accessible developer portfolio built with **Next.js 16 (App Router)**, **Tailwind CSS**, and **React 19**, backed by multi-language support (`next-intl`) and a custom analytics setup.
 
 [![Deployment Status](https://git.andre-kempf.com/Chneemann/portfolio/badges/workflows/deploy.yml/badge.svg?branch=main)](https://git.andre-kempf.com/Chneemann/portfolio/actions)
 [![Website Status](https://img.shields.io/badge/website-online-brightgreen?style=flat-square&logo=google-chrome&logoColor=white)](https://andre-kempf.com)
@@ -14,7 +14,8 @@ A fast, privacy-focused, and accessible developer portfolio built with **Next.js
 ## 🚀 Key Features
 
 - **Command Palette (`Cmd + K`):** Interactive utility menu with keyboard shortcuts, quick social navigation, resume downloads, and contextual actions.
-- **Privacy-First Analytics Engine:** Custom PHP backend providing real-time page metric tracking using session-based rate limiting and GDPR-compliant IP hashing (no cookie consent required).
+- **Internationalization (`next-intl`):** Fully integrated multi-language support (English and German) with localized routing (`/en`, `/de`) and dynamic message loading.
+- **Privacy-First Analytics Engine:** Custom Next.js API backend providing real-time page metric tracking using session-based rate limiting and GDPR-compliant IP hashing.
 - **Terminal Inspector:** Integrated terminal widget and modal to view live system metrics, device usage ratios, and ping response latency.
 - **Performance & Accessibility:** Zero layout shifts (CLS), optimized font loading, dynamic SSR/client component boundaries, and high contrast Dark/Slate aesthetic.
 
@@ -26,6 +27,7 @@ A fast, privacy-focused, and accessible developer portfolio built with **Next.js
 
 - **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
 - **UI & Styling:** [React 19](https://react.dev/), [Tailwind CSS v4](https://tailwindcss.com/)
+- **Localization:** [next-intl](https://next-intl-docs.vercel.app/) (Routing, Middleware Proxy & Client/Server translation context)
 - **Icons & Components:** Lucide Icons, Custom UI Components
 - **State & Events:** Native CustomEvents, React State
 
@@ -75,22 +77,20 @@ A fast, privacy-focused, and accessible developer portfolio built with **Next.js
 
 ## 📁 Repository Structure
 
-````text
-## 📁 Repository Structure
-
 ```text
 ├── src/                            # Source Code
 │   ├── app/                        # Next.js App Router (Pages, Routes & API)
+│   │   ├── [locale]/               # Localized App Routes (en / de)
+│   │   │   ├── layout.tsx          # Localized Layout (NextIntlClientProvider & Shell UI)
+│   │   │   └── page.tsx            # Landing Page / Main View
 │   │   ├── api/                    # Native Next.js Route Handlers
 │   │   │   └── analytics/
 │   │   │       └── route.ts        # Live Metrics & Traffic Handler (JSON-based)
-│   │   ├── imprint/                # Imprint Page
-│   │   │   └── page.tsx
-│   │   ├── privacy/                # Privacy Policy Page
-│   │   │   └── page.tsx
+│   │   ├── imprint/
+│   │   │   └── page.tsx            # Imprint Page
+│   │   ├── privacy/
+│   │   │   └── page.tsx            # Privacy Policy Page
 │   │   ├── globals.css             # Global Styles & Tailwind Imports
-│   │   ├── layout.tsx              # Root Layout (Fonts, Metadata, Providers)
-│   │   └── page.tsx                # Landing Page / Main View
 │   │
 │   ├── components/                 # Reusable UI & Layout Components
 │   │   ├── About.tsx               # About Me & Bio Section
@@ -106,9 +106,17 @@ A fast, privacy-focused, and accessible developer portfolio built with **Next.js
 │   │   ├── Skills.tsx              # Tech Stack & Skill Matrix
 │   │   └── Social.tsx              # Social Media Links & Bar Component
 │   │
-│   └── lib/                        # Pure Utility Scripts, Configs & Helpers
-│       ├── paletteCommands.ts      # Registered Cmd+K Commands & Actions
-│       └── playSudoEasterEgg.ts    # Easter-Egg Shell Simulation Logic
+│   ├── lib/                        # Pure Utility Scripts, Configs & Helpers
+│   │   ├── paletteCommands.ts      # Registered Cmd+K Commands & Actions
+│   │   └── playSudoEasterEgg.ts    # Easter-Egg Shell Simulation Logic
+│   │
+│   ├── i18n/                       # Localization Core & Configurations
+│   │   ├── messages/               # Translation JSON files (en.json, de.json)
+│   │   ├── navigation.ts           # Localized navigation utilities (Link, redirect, useRouter)
+│   │   ├── request.ts              # Dynamic message loading per request locale
+│   │   └── routing.ts              # Supported locales and default fallback rules
+│   │
+│   └── proxy.ts                    # Next.js Middleware Proxy for next-intl routing
 │
 ├── public/                         # Static Assets (Client Access)
 │   ├── robots.txt                  # Search Engine Directives
@@ -119,8 +127,6 @@ A fast, privacy-focused, and accessible developer portfolio built with **Next.js
 │       ├── images/                 # Profile Assets & Screenshots
 │       └── projects/               # Project Graphics & Previews
 │
-├── AGENTS.md                       # AI Agent Instructions
-├── CLAUDE.md                       # Claude Code Instructions
 ├── Dockerfile                      # Container Build Instructions
 ├── eslint.config.mjs               # ESLint Rules
 ├── next.config.ts                  # Next.js Configuration
@@ -128,7 +134,7 @@ A fast, privacy-focused, and accessible developer portfolio built with **Next.js
 ├── postcss.config.mjs              # PostCSS Setup
 ├── README.md                       # Project Documentation
 └── tsconfig.json                   # TypeScript Compiler Rules
-````
+```
 
 ---
 
