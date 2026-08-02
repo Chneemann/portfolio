@@ -1,3 +1,11 @@
 {
-  "Common": {}
+  "Common": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "Header": {
+    "search": "Suchen"
+  }
 }
