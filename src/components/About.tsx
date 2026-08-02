@@ -1,7 +1,14 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 /**
  * Section presenting personal background information, education, and key overview facts
  */
 export default function About() {
+  const tCommon = useTranslations("Common");
+  const tAbout = useTranslations("About");
+
   return (
     <section
       id="aboutme"
@@ -10,49 +17,20 @@ export default function About() {
       {/* Section Header */}
       <div className="mb-4 space-y-1">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
-          // 01. Introduction
+          // 01. {tAbout("sectionSub")}
         </p>
         <h2 className="text-3xl font-bold text-white tracking-tight">
-          About me<span className="text-blue-500">.</span>
+          {tCommon("about")}
+          <span className="text-blue-500">.</span>
         </h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
         {/* Personal Bio Paragraphs */}
         <div className="md:col-span-7 space-y-6 leading-relaxed">
-          <p>
-            Hey there! André here—a full-stack developer based in Karlsruhe. A
-            childhood fascination with computers sparked this journey, which has
-            since evolved into a true passion for software development.
-            {/* 
-            German:
-            Hey! Hier ist André – ein Full-Stack-Entwickler aus Karlsruhe. 
-            Eine Faszination für Computer seit meiner Kindheit hat diesen Weg geebnet, 
-            der sich seitdem zu einer echten Leidenschaft für Softwareentwicklung entwickelt hat.
-            */}
-          </p>
-          <p>
-            Through my training at Developer Akademie, I gained hands-on
-            experience building real-world software, backed by rigorous code
-            reviews. This technical background has been put into practice and
-            expanded across a variety of solo and collaborative group projects.
-            {/* 
-            German:
-            Während meiner Ausbildung an der Developer Akademie habe ich viel praktische 
-            Erfahrung beim Bauen von echter Software gesammelt, unterstützt durch gründliche Code-Reviews. 
-            Diesen technischen Hintergrund konnte ich in vielen eigenen Projekten sowie in 
-            Gruppenprojekten direkt in die Praxis umsetzen und vertiefen.
-            */}
-          </p>
-          <p>
-            Feel free to explore my recent work below to see these skills and
-            problem-solving approaches in action.
-            {/* 
-            German:
-            Schau dir gerne unten meine aktuellen Arbeiten an, um meine Fähigkeiten 
-            und Lösungsansätze in Aktion zu sehen.
-            */}
-          </p>
+          <p>{tAbout("bio1")}</p>
+          <p>{tAbout("bio2")}</p>
+          <p>{tAbout("bio3")}</p>
         </div>
 
         {/* Quick Facts Card */}
@@ -71,7 +49,7 @@ export default function About() {
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-semibold text-white flex items-center gap-2">
                   <span className="text-blue-500 font-mono text-sm">//</span>{" "}
-                  Quick Facts
+                  {tAbout("quickFactsTitle")}
                 </h3>
               </div>
 
@@ -79,15 +57,17 @@ export default function About() {
               <ul className="space-y-4 text-sm">
                 <li className="flex items-center gap-3">
                   <span className="text-blue-500 font-mono">▸</span>
-                  <span className="text-slate-400 font-medium">Languages:</span>
+                  <span className="text-slate-400 font-medium">
+                    {tAbout("languagesLabel")}:
+                  </span>
                   <span className="ml-auto text-right font-mono text-xs">
-                    German, English
+                    {tAbout("languagesValue")}
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="text-blue-500 font-mono">▸</span>
                   <span className="text-slate-400 font-medium">
-                    Core Stack:
+                    {tAbout("stackLabel")}:
                   </span>
                   <span className="ml-auto text-right font-mono text-xs">
                     Angular&nbsp;(TS), React&nbsp;(Next.js)
@@ -96,10 +76,10 @@ export default function About() {
                 <li className="flex items-center gap-3">
                   <span className="text-blue-500 font-mono">▸</span>
                   <span className="text-slate-400 font-medium">
-                    Core Focus:
+                    {tAbout("focusLabel")}:
                   </span>
                   <span className="ml-auto text-right font-mono text-xs">
-                    Clean&nbsp;Code & Architecture
+                    {tAbout("focusValue")}:
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -107,7 +87,7 @@ export default function About() {
                   <span className="text-slate-400 font-medium">Status:</span>
                   <span className="text-emerald-400 ml-auto text-right flex items-center gap-1.5 font-mono text-xs">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                    Available for projects
+                    {tAbout("statusValue")}
                   </span>
                 </li>
               </ul>

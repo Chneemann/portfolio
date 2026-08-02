@@ -14,5 +14,18 @@
     "roleSuffix": "Entwickler",
     "description": "Ich konzipiere und entwickle moderne Web-Anwendungen. Mit einem klaren Auge fürs Detail und einem Fokus auf sauberen Code erwecke ich digitale Ideen zum Leben.",
     "downloadCv": "Lebenslauf"
+  },
+  "About": {
+    "sectionSub": "Einführung",
+    "bio1": "Hey! Hier ist André – ein Full-Stack-Entwickler aus Karlsruhe. Eine Faszination für Computer seit meiner Kindheit hat diesen Weg geebnet, der sich seitdem zu einer echten Leidenschaft für Softwareentwicklung entwickelt hat.",
+    "bio2": "Während meiner Ausbildung an der Developer Akademie habe ich viel praktische Erfahrung beim Bauen von echter Software gesammelt, unterstützt durch gründliche Code-Reviews. Diesen technischen Hintergrund konnte ich in vielen eigenen Projekten sowie in Gruppenprojekten direkt in die Praxis umsetzen und vertiefen.",
+    "bio3": "Schau dir gerne unten meine aktuellen Arbeiten an, um meine Fähigkeiten und Lösungsansätze in Aktion zu sehen.",
+    "quickFactsTitle": "Auf einen Blick",
+    "languagesLabel": "Sprachen",
+    "languagesValue": "Deutsch, Englisch",
+    "stackLabel": "Technologien",
+    "focusLabel": "Schwerpunkt",
+    "focusValue": "Sauberer Code & Architektur",
+    "statusValue": "Verfügbar für Projekte"
   }
 }

@@ -14,5 +14,18 @@
     "roleSuffix": "Developer",
     "description": "I conceptualize and develop modern web applications. With a sharp eye for detail and a focus on clean code, I bring digital ideas to life.",
     "downloadCv": "Download CV"
+  },
+  "About": {
+    "sectionSub": "Introduction",
+    "bio1": "Hey there! André here—a full-stack developer based in Karlsruhe. A childhood fascination with computers sparked this journey, which has since evolved into a true passion for software development.",
+    "bio2": "Through my training at Developer Akademie, I gained hands-on experience building real-world software, backed by rigorous code reviews. This technical background has been put into practice and expanded across a variety of solo and collaborative group projects.",
+    "bio3": "Feel free to explore my recent work below to see these skills and problem-solving approaches in action.",
+    "quickFactsTitle": "Quick Facts",
+    "languagesLabel": "Languages",
+    "languagesValue": "German, English",
+    "stackLabel": "Core Stack",
+    "focusLabel": "Core Focus",
+    "focusValue": "Clean Code & Architektur",
+    "statusValue": "Available for projects"
   }
 }
