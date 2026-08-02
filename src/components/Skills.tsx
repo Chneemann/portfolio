@@ -1,4 +1,11 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function Skills() {
+  const tCommon = useTranslations("Common");
+  const tSkills = useTranslations("Skills");
+
   /**
    * Technical skill matrix grouped by stack category and highlight priority
    */
@@ -49,26 +56,17 @@ export default function Skills() {
       {/* Section Header */}
       <div className="mb-4 space-y-1 text-right flex flex-col items-end">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
-          // 02. Technical Stack
+          // 02. {tSkills("sectionSub")}
         </p>
         <h2 className="text-3xl font-bold text-white tracking-tight">
-          My Skills<span className="text-blue-500">.</span>
+          {tCommon("skills")}
+          <span className="text-blue-500">.</span>
         </h2>
       </div>
 
       {/* Intro Description */}
       <div className="mb-6 leading-relaxed">
-        <p>
-          Through hands-on experience in various projects, I continuously expand
-          and refine my full-stack development skills. Here is an overview of
-          the technologies, frameworks, and tools I work with:
-          {/* 
-          German:
-          Durch die praktische Arbeit an verschiedenen Projekten erweitere 
-          und vertiefe ich meine Fähigkeiten in der Full-Stack-Entwicklung kontinuierlich. 
-          Hier ist eine Übersicht der Technologien, Frameworks und Tools, mit denen ich arbeite:
-          */}
-        </p>
+        <p>{tSkills("description")}</p>
       </div>
 
       {/* Skill Category Cards */}

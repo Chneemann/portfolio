@@ -27,5 +27,9 @@
     "focusLabel": "Core Focus",
     "focusValue": "Clean Code & Architektur",
     "statusValue": "Available for projects"
+  },
+  "Skills": {
+    "sectionSub": "Technical Stack",
+    "description": "Through hands-on experience in various projects, I continuously expand and refine my full-stack development skills. Here is an overview of the technologies, frameworks, and tools I work with."
   }
 }

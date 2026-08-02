@@ -27,5 +27,9 @@
     "focusLabel": "Schwerpunkt",
     "focusValue": "Sauberer Code & Architektur",
     "statusValue": "Verfügbar für Projekte"
+  },
+  "Skills": {
+    "sectionSub": "Technologien",
+    "description": "Durch die praktische Arbeit an verschiedenen Projekten erweitere und vertiefe ich meine Fähigkeiten in der Full-Stack-Entwicklung kontinuierlich. Hier ist eine Übersicht der Technologien, Frameworks und Tools, mit denen ich arbeite."
   }
 }
