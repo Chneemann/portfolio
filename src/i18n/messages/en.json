@@ -7,5 +7,12 @@
   },
   "Header": {
     "search": "Search"
+  },
+  "Hero": {
+    "greeting": "Hi, my name is",
+    "rolePrefix": "Full-Stack",
+    "roleSuffix": "Developer",
+    "description": "I conceptualize and develop modern web applications. With a sharp eye for detail and a focus on clean code, I bring digital ideas to life.",
+    "downloadCv": "Download CV"
   }
 }

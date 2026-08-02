@@ -1,16 +1,22 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import SocialLinks from "./Social";
 
 /**
  * Hero section showcasing intro title, call-to-action links, and personal portrait
  */
 export default function Hero() {
+  const tCommon = useTranslations("Common");
+  const tHero = useTranslations("Hero");
+
   return (
     <section className="relative pt-18 py-6 px-4 md:px-6 md:pt-24 max-w-5xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-3 items-center z-10 w-full">
         {/* Main Content & Call to Actions */}
         <div className=" self-start md:col-span-8 lg:space-y-5 md:space-y-4 space-y-3 text-left">
           <span className="text-blue-500 font-mono text-sm tracking-wider uppercase">
-            // Hi, my name is
+            //&nbsp;{tHero("greeting")}
           </span>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-none">
@@ -18,20 +24,14 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-400 tracking-tight">
-            Full-Stack{" "}
-            <span className="text-blue-400/80 font-medium">Developer</span>
+            {tHero("rolePrefix")}{" "}
+            <span className="text-blue-400/80 font-medium">
+              {tHero("roleSuffix")}
+            </span>
           </h2>
 
           <p className="text-lg leading-relaxed max-w-xl">
-            I conceptualize and develop modern web applications. With a sharp
-            eye for detail and a focus on clean code, I bring digital ideas to
-            life.
-            {/* 
-            German:
-            Ich konzipiere und entwickle moderne Web-Anwendungen. Mit einem klaren
-            Auge fürs Detail und einem Fokus auf sauberen Code erwecke ich
-            digitale Ideen zum Leben.
-             */}
+            {tHero("description")}
           </p>
 
           {/* Action Buttons */}
@@ -40,7 +40,7 @@ export default function Hero() {
               href="#contactme"
               className="px-6 py-3 bg-slate-900 text-blue-500 font-semibold rounded-lg border border-blue-500/40 hover:border-blue-400 hover:bg-blue-600 hover:text-white shadow-md shadow-blue-950/50 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/20 inline-block text-center"
             >
-              Contact me
+              {tCommon("contact")}
             </a>
             <a
               href="/assets/downloads/Andre_Kempf_Lebenslauf.pdf"
@@ -48,7 +48,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 font-semibold rounded-lg transition-all hover:-translate-y-0.5 duration-200 inline-block text-center"
             >
-              Download CV
+              {tHero("downloadCv")}
             </a>
           </div>
         </div>

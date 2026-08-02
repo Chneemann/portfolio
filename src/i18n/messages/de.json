@@ -7,5 +7,12 @@
   },
   "Header": {
     "search": "Suchen"
+  },
+  "Hero": {
+    "greeting": "Hi, mein Name ist",
+    "rolePrefix": "Full-Stack",
+    "roleSuffix": "Entwickler",
+    "description": "Ich konzipiere und entwickle moderne Web-Anwendungen. Mit einem klaren Auge fürs Detail und einem Fokus auf sauberen Code erwecke ich digitale Ideen zum Leben.",
+    "downloadCv": "Lebenslauf"
   }
 }
