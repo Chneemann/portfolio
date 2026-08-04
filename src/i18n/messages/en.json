@@ -31,5 +31,23 @@
   "Skills": {
     "sectionSub": "Technical Stack",
     "description": "Through hands-on experience in various projects, I continuously expand and refine my full-stack development skills. Here is an overview of the technologies, frameworks, and tools I work with."
+  },
+  "Portfolio": {
+    "sectionSub": "Projects",
+    "featuredBadge": "Featured Project",
+    "projects": {
+      "dabubble": {
+        "type": "Web Application",
+        "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+      },
+      "join": {
+        "type": "Full-Stack App",
+        "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories to ensure efficient management."
+      },
+      "videoflix": {
+        "type": "Full-Stack App",
+        "description": "Video platform for sharing and discovering videos. Upload, view, and stream content in various quality levels, all within a user-friendly interface designed to enhance the video experience."
+      }
+    }
   }
 }

@@ -31,5 +31,23 @@
   "Skills": {
     "sectionSub": "Technologien",
     "description": "Durch die praktische Arbeit an verschiedenen Projekten erweitere und vertiefe ich meine Fähigkeiten in der Full-Stack-Entwicklung kontinuierlich. Hier ist eine Übersicht der Technologien, Frameworks und Tools, mit denen ich arbeite."
+  },
+  "Portfolio": {
+    "sectionSub": "Projekte",
+    "featuredBadge": "Ausgewähltes Projekt",
+    "projects": {
+      "dabubble": {
+        "type": "Web-Anwendung",
+        "description": "Eine Slack-Klon-App, die die Teamkommunikation und -zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeit-Messaging und robuste Kanalorganisation revolutioniert."
+      },
+      "join": {
+        "type": "Full-Stack-App",
+        "description": "Vom Kanban-System inspiriertes Task-Management. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu und sorge für effizientes Management."
+      },
+      "videoflix": {
+        "type": "Full-Stack-App",
+        "description": "Videoplattform zum Teilen und Entdecken von Videos. Lade Inhalte hoch, betrachte und streame sie in verschiedenen Qualitätsstufen – in einer benutzerfreundlichen Oberfläche."
+      }
+    }
   }
 }
