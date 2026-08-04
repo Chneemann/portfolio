@@ -49,5 +49,20 @@
         "description": "Videoplattform zum Teilen und Entdecken von Videos. Lade Inhalte hoch, betrachte und streame sie in verschiedenen Qualitätsstufen – in einer benutzerfreundlichen Oberfläche."
       }
     }
+  },
+  "Contact": {
+    "sectionSub": "Lass von dir hören",
+    "cardTitle": "Projekt im Kopf?",
+    "cardDescription": "Schreib mir gerne über dieses Formular. Ich bin immer offen für neue Projekte, kreative Ideen oder Möglichkeiten, dein Team zu unterstützen.",
+    "preferEmail": "Lieber per E-Mail?",
+    "successTitle": "Vielen Dank!",
+    "successText": "Deine Nachricht wurde erfolgreich gesendet. Ich melde mich schnellstmöglich bei dir!",
+    "formName": "Name",
+    "formEmail": "E-Mail",
+    "formMessage": "Nachricht",
+    "formMessagePlaceholder": "Hi André, ich würde gerne ein potenzielles Projekt besprechen...",
+    "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
+    "submitting": "Wird gesendet...",
+    "submit": "Nachricht senden"
   }
 }

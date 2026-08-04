@@ -1,11 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 /**
  * Contact section with interactive form, bot anti-spam protection, and Formspree integration
  */
 export default function Contact() {
+  const tCommon = useTranslations("Common");
+  const tContact = useTranslations("Contact");
+
   // Form input states
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -21,7 +25,7 @@ export default function Contact() {
   const [formLoadTime] = useState(Date.now());
 
   // Handles contact form submission with bot verification & Formspree dispatch
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     // Anti-spam check 1: Submissions faster than 1 seconds are treated as automated bots
@@ -81,10 +85,11 @@ export default function Contact() {
       {/* Section Header */}
       <div className="mb-6 space-y-1 text-right flex flex-col items-end">
         <p className="text-xs font-mono text-blue-500 tracking-wider uppercase">
-          // 04. Get in Touch
+          // 04. {tContact("sectionSub")}
         </p>
         <h2 className="text-3xl font-bold text-white tracking-tight">
-          Contact me<span className="text-blue-500">.</span>
+          {tCommon("contact")}
+          <span className="text-blue-500">.</span>
         </h2>
       </div>
 
@@ -96,15 +101,13 @@ export default function Contact() {
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h3 className="text-lg font-semibold text-white flex items-center gap-2">
-                <span className="text-blue-500 font-mono text-sm">//</span> Got
-                a project in mind?
+                <span className="text-blue-500 font-mono text-sm">//</span>{" "}
+                {tContact("cardTitle")}
               </h3>
             </div>
 
             <p className="text-xs text-slate-300 leading-relaxed">
-              Feel free to reach out using this form. I am always open to
-              discussing new projects, creative ideas, or opportunities to
-              contribute to your team.
+              {tContact("cardDescription")}
             </p>
 
             {/* Terminal Status Display */}
@@ -126,7 +129,7 @@ export default function Contact() {
           {/* Email Shortcut */}
           <div className="pt-3 border-t border-slate-800/80 font-mono text-xs">
             <span className="text-slate-500 block text-[10px] mb-1">
-              // Prefer email?
+              // {tContact("preferEmail")}
             </span>
             <span className="text-slate-300 hover:text-blue-400 transition-colors flex items-center gap-1.5 text-xs cursor-pointer">
               <span className="text-blue-500">▸</span> dev@andre-kempf.com
@@ -148,10 +151,11 @@ export default function Contact() {
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-500/10 text-blue-400 font-mono text-4xl mb-2 border border-blue-500/20">
                   ✓
                 </div>
-                <h3 className="text-xl font-bold text-white">Thank you!</h3>
+                <h3 className="text-xl font-bold text-white">
+                  {tContact("successTitle")}
+                </h3>
                 <p className="text-sm max-w-sm mx-auto">
-                  Your message has been sent successfully. I&apos;ll get back to
-                  you as soon as possible!
+                  {tContact("successText")}
                 </p>
               </div>
             ) : (
@@ -177,7 +181,7 @@ export default function Contact() {
                 {/* Name Input */}
                 <div>
                   <label className="block text-xs mb-1.5" htmlFor="name">
-                    Name
+                    {tContact("formName")}
                   </label>
                   <input
                     type="text"
@@ -194,7 +198,7 @@ export default function Contact() {
                 {/* Email Input */}
                 <div>
                   <label className="block text-xs mb-1.5" htmlFor="email">
-                    Email
+                    {tContact("formEmail")}
                   </label>
                   <input
                     type="email"
@@ -211,7 +215,7 @@ export default function Contact() {
                 {/* Message Input */}
                 <div>
                   <label className="block text-xs mb-1.5" htmlFor="message">
-                    Message
+                    {tContact("formMessage")}
                   </label>
                   <textarea
                     id="message"
@@ -220,7 +224,7 @@ export default function Contact() {
                     required
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
-                    placeholder="Hi André, I would like to discuss a potential project..."
+                    placeholder={tContact("formMessagePlaceholder")}
                     className="w-full px-4 py-2.5 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-100 placeholder:text-slate-600 focus:outline-none focus:border-blue-500/80 focus:ring-1 focus:ring-blue-500/80 transition-colors text-sm resize-none"
                   />
                 </div>
@@ -228,7 +232,7 @@ export default function Contact() {
                 {/* Submission Error Banner */}
                 {error && (
                   <p className="text-red-400 text-xs font-mono">
-                    An error occurred. Please try again later.
+                    {tContact("errorMessage")}
                   </p>
                 )}
 
@@ -238,7 +242,7 @@ export default function Contact() {
                   disabled={loading}
                   className="w-full px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 rounded-lg transition-all hover:-translate-y-0.5 duration-200 cursor-pointer disabled:opacity-50 text-slate-100 text-sm font-medium"
                 >
-                  {loading ? "Sending..." : "Send Message"}
+                  {loading ? tContact("submitting") : tContact("submit")}
                 </button>
               </form>
             )}

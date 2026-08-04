@@ -49,5 +49,20 @@
         "description": "Video platform for sharing and discovering videos. Upload, view, and stream content in various quality levels, all within a user-friendly interface designed to enhance the video experience."
       }
     }
+  },
+  "Contact": {
+    "sectionSub": "Get in Touch",
+    "cardTitle": "Got a project in mind?",
+    "cardDescription": "Feel free to reach out using this form. I am always open to discussing new projects, creative ideas, or opportunities to contribute to your team.",
+    "preferEmail": "Prefer email?",
+    "successTitle": "Thank you!",
+    "successText": "Your message has been sent successfully. I'll get back to you as soon as possible!",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formMessage": "Message",
+    "formMessagePlaceholder": "Hi André, I would like to discuss a potential project...",
+    "errorMessage": "An error occurred. Please try again later.",
+    "submitting": "Sending...",
+    "submit": "Send Message"
   }
 }
