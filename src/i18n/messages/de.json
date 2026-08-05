@@ -3,7 +3,9 @@
     "about": "Über mich",
     "skills": "Fähigkeiten",
     "portfolio": "Portfolio",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
   },
   "Header": {
     "search": "Suchen"
@@ -64,5 +66,8 @@
     "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
     "submitting": "Wird gesendet...",
     "submit": "Nachricht senden"
+  },
+  "Footer": {
+    "rights": "Alle Rechte vorbehalten."
   }
 }
