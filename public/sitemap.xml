@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home (Default / English) -->
   <url>
-    <loc>https://andre-kempf.com/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://andre-kempf.com/en</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- Home (German) -->
   <url>
-    <loc>https://andre-kempf.com/imprint</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://andre-kempf.com/de</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Imprint (English) -->
+  <url>
+    <loc>https://andre-kempf.com/en/imprint</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <!-- Imprint (German) -->
   <url>
-    <loc>https://andre-kempf.com/privacy</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://andre-kempf.com/de/imprint</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- Privacy (English) -->
+  <url>
+    <loc>https://andre-kempf.com/en/privacy</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <!-- Privacy (German) -->
+  <url>
+    <loc>https://andre-kempf.com/de/privacy</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
