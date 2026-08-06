@@ -72,6 +72,30 @@
   "Footer": {
     "rights": "All rights reserved."
   },
+  "AnalyticsWidget": {
+    "loading": "loading_stats...",
+    "tooltip": "Open analytics terminal",
+    "today": "today",
+    "total": "total"
+  },
+  "AnalyticsModal": {
+    "tooltipClose": "Close window",
+    "tooltipMinimize": "Minimize window",
+    "tooltipActive": "Active Process",
+    "tooltipEsc": "Close modal (Esc)",
+    "statusOnline": "STATUS: ONLINE",
+    "latency": "LATENCY",
+    "metricViewsToday": "views_today",
+    "metricUniqueVisitors": "unique_visitors",
+    "metricTotalHits": "total_hits",
+    "metricDeviceRatio": "device_ratio",
+    "gdprAnonymized": "GDPR_ANONYMIZED: TRUE",
+    "lastPing": "LAST_PING",
+    "timeJustNow": "just now",
+    "timeSecondsAgo": "{seconds}s ago",
+    "timeMinutesAgo": "{minutes}m ago",
+    "timeHoursAgo": "{hours}h ago"
+  },
   "Imprint": {
     "section1Title": "Information Pursuant to § 5 DDG",
     "section1Sub": "Also responsible for content pursuant to § 18 Abs. 2 MStV.",

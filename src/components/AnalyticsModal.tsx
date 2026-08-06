@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
+import { useTranslations } from "next-intl";
 
 /**
  * Analytics metrics payload returned by the custom backend API
@@ -25,20 +26,6 @@ interface AnalyticsModalProps {
 }
 
 /**
- * Formats unix timestamps into relative time strings (e.g., "5s ago", "2m ago")
- */
-function getTimeAgo(timestamp?: number): string {
-  if (!timestamp) return "just now";
-  const seconds = Math.floor((Date.now() - timestamp * 1000) / 1000);
-  if (seconds < 10) return "just now";
-  if (seconds < 60) return `${seconds}s ago`;
-  const minutes = Math.floor(seconds / 60);
-  if (minutes < 60) return `${minutes}m ago`;
-  const hours = Math.floor(minutes / 60);
-  return `${hours}h ago`;
-}
-
-/**
  * Terminal-style modal inspector for viewing live traffic and system health metric
  */
 export default function AnalyticsModal({
@@ -46,6 +33,22 @@ export default function AnalyticsModal({
   onClose,
   stats,
 }: AnalyticsModalProps) {
+  const tAnalyticsModal = useTranslations("AnalyticsModal");
+
+  /**
+   * Formats unix timestamps into relative time strings based on locale
+   */
+  const getTimeAgo = (timestamp?: number): string => {
+    if (!timestamp) return tAnalyticsModal("timeJustNow");
+    const seconds = Math.floor((Date.now() - timestamp * 1000) / 1000);
+    if (seconds < 10) return tAnalyticsModal("timeJustNow");
+    if (seconds < 60) return tAnalyticsModal("timeSecondsAgo", { seconds });
+    const minutes = Math.floor(seconds / 60);
+    if (minutes < 60) return tAnalyticsModal("timeMinutesAgo", { minutes });
+    const hours = Math.floor(minutes / 60);
+    return tAnalyticsModal("timeHoursAgo", { hours });
+  };
+
   // Global hotkeys to dismiss the modal (ESC)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -86,16 +89,16 @@ export default function AnalyticsModal({
               <button
                 onClick={onClose}
                 className="w-2.5 h-2.5 rounded-full bg-rose-500/80 hover:bg-rose-500 transition-colors cursor-pointer"
-                title="Close window"
+                title={tAnalyticsModal("tooltipClose")}
               />
               <button
                 onClick={onClose}
                 className="w-2.5 h-2.5 rounded-full bg-amber-500/80 hover:bg-amber-500 transition-colors cursor-pointer"
-                title="Minimize window"
+                title={tAnalyticsModal("tooltipMinimize")}
               />
               <span
                 className="w-2.5 h-2.5 rounded-full bg-emerald-500/80 hover:bg-emerald-500 transition-colors cursor-default"
-                title="Active Process"
+                title={tAnalyticsModal("tooltipActive")}
               />
             </div>
 
@@ -112,7 +115,7 @@ export default function AnalyticsModal({
           <button
             onClick={onClose}
             className="text-slate-500 hover:text-rose-400 transition-colors font-mono text-[11px] px-1.5 py-0.5 rounded hover:bg-rose-500/10 border border-transparent hover:border-rose-500/20 cursor-pointer"
-            title="Close modal (Esc)"
+            title={tAnalyticsModal("tooltipEsc")}
           >
             [esc ✕]
           </button>
@@ -126,10 +129,10 @@ export default function AnalyticsModal({
           </div>
           <div className="text-[10px] text-slate-500 mt-1 flex items-center gap-2">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            <span>STATUS: ONLINE</span>
+            <span>{tAnalyticsModal("statusOnline")}</span>
             <span className="text-slate-700">•</span>
             <span className="text-slate-500">
-              LATENCY:{" "}
+              {tAnalyticsModal("latency")}:{" "}
               <span className="text-slate-300">
                 {stats.latencyMs ?? "<1"}ms
               </span>
@@ -141,7 +144,7 @@ export default function AnalyticsModal({
         <div className="grid grid-cols-2 gap-3 mb-4 relative z-10">
           <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700/80 transition-colors">
             <div className="flex justify-between items-center text-[10px] text-slate-500 mb-1">
-              <span>views_today</span>
+              <span>{tAnalyticsModal("metricViewsToday")}</span>
               <span className="text-blue-400/80">#1</span>
             </div>
             <div className="text-2xl font-bold text-blue-400 tracking-tight">
@@ -151,7 +154,7 @@ export default function AnalyticsModal({
 
           <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/80 hover:border-slate-700/80 transition-colors">
             <div className="flex justify-between items-center text-[10px] text-slate-500 mb-1">
-              <span>unique_visitors</span>
+              <span>{tAnalyticsModal("metricUniqueVisitors")}</span>
               <span className="text-emerald-400/80">#2</span>
             </div>
             <div className="text-2xl font-bold text-emerald-400 tracking-tight">
@@ -163,7 +166,9 @@ export default function AnalyticsModal({
         {/* Total Hits & Device Breakdown */}
         <div className="p-3.5 rounded-xl bg-slate-950/80 border border-slate-800/80 space-y-3 relative z-10">
           <div className="flex justify-between items-center text-xs">
-            <span className="text-slate-400">total_hits:</span>
+            <span className="text-slate-400">
+              {tAnalyticsModal("metricTotalHits")}:
+            </span>
             <span className="font-bold text-slate-100 bg-slate-900 px-2 py-0.5 rounded border border-slate-800">
               {stats.totalViews}
             </span>
@@ -172,7 +177,9 @@ export default function AnalyticsModal({
           {/* Device ratio progress bar */}
           <div className="pt-2 border-t border-slate-800/80 space-y-1.5">
             <div className="flex justify-between text-[11px]">
-              <span className="text-slate-500">device_ratio:</span>
+              <span className="text-slate-500">
+                {tAnalyticsModal("metricDeviceRatio")}:
+              </span>
               <span className="text-slate-300 font-medium">
                 💻 {desktopCount} <span className="text-slate-600">/</span> 📱{" "}
                 {mobileCount}
@@ -196,9 +203,9 @@ export default function AnalyticsModal({
 
         {/* GDPR & Activity Footer */}
         <div className="mt-4 text-[10px] text-slate-600 flex justify-between items-center relative z-10 pt-2 border-t border-slate-800/40">
-          <span>GDPR_ANONYMIZED: TRUE</span>
+          <span>{tAnalyticsModal("gdprAnonymized")}</span>
           <span className="text-slate-400 font-medium">
-            LAST_PING:{" "}
+            {tAnalyticsModal("lastPing")}:{" "}
             <span className="text-slate-300">{getTimeAgo(stats.lastPing)}</span>
           </span>
         </div>

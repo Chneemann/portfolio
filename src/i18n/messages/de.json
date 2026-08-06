@@ -71,6 +71,30 @@
   "Footer": {
     "rights": "Alle Rechte vorbehalten."
   },
+  "AnalyticsWidget": {
+    "loading": "laden_statistiken...",
+    "tooltip": "Statistik-Terminal öffnen",
+    "today": "heute",
+    "total": "insgesamt"
+  },
+  "AnalyticsModal": {
+    "tooltipClose": "Fenster schließen",
+    "tooltipMinimize": "Fenster minimieren",
+    "tooltipActive": "Aktiver Prozess",
+    "tooltipEsc": "Modal schließen (Esc)",
+    "statusOnline": "STATUS: ONLINE",
+    "latency": "LATENZ",
+    "metricViewsToday": "aufrufe_heute",
+    "metricUniqueVisitors": "einmalige_besucher",
+    "metricTotalHits": "gesamte_zugriffe",
+    "metricDeviceRatio": "geraete_verteilung",
+    "gdprAnonymized": "DSGVO_ANONYMISIERT: TRUE",
+    "lastPing": "LETZTER_PING",
+    "timeJustNow": "gerade eben",
+    "timeSecondsAgo": "vor {seconds}s",
+    "timeMinutesAgo": "vor {minutes}m",
+    "timeHoursAgo": "vor {hours}h"
+  },
   "Imprint": {
     "backHome": "Zurück zur Startseite",
     "section1Title": "Angaben gemäß § 5 DDG",
