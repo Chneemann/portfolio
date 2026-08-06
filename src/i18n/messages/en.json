@@ -86,5 +86,29 @@
     "section4Title": "Dispute Resolution",
     "disputeText1": "The European Commission provides a platform for online dispute resolution (OS):",
     "disputeText2": "I am neither willing nor obligated to participate in dispute resolution proceedings before a consumer arbitration board."
+  },
+  "Privacy": {
+    "section1Title": "Data Protection at a Glance",
+    "generalInfoTitle": "General Information",
+    "generalInfoText": "The following notes provide a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to personally identify you.",
+    "dataCollectionTitle": "Data Collection on This Website",
+    "dataCollectionText": "Data processing on this website is carried out by the website operator. Your data is collected when you provide it to us, or automatically by our IT systems when you visit the site.",
+    "section2Title": "Responsible Party (Controller)",
+    "section2Intro": "The controller responsible for data processing on this website is:",
+    "section3Title": "Hosting & Server Infrastructure",
+    "hostingText1": "This website is hosted externally on web servers operated by Netcup GmbH. Personal data processed on this website is stored on the host's secure servers.",
+    "hostingText2": "The hosting provider automatically processes technical access data in server environment variables necessary to establish a stable connection and deliver page assets securely.",
+    "section4Title": "Server Analytics & Privacy-First Tracking",
+    "analyticsText1": "To evaluate website reach and optimize user experience, this website processes minimal access metrics (e.g., total daily views, coarse device category, and daily visitor counts).",
+    "analyticsGuaranteesTitle": "Key privacy guarantees:",
+    "cookieTitle": "No Cookies",
+    "cookieText": "We do not store cookies or local storage identifiers on your device.",
+    "ipTitle": "Anonymized IPs",
+    "ipText": "IP addresses are instantly hashed with a daily salt and never stored in plain text.",
+    "thirdPartyTitle": "Zero Third Parties",
+    "thirdPartyText": "Analytics data is processed locally on our own server and never shared with external tracking services.",
+    "analyticsText2": "The legal basis for this processing is our legitimate interest in maintaining and optimizing our online portfolio (Art. 6(1)(f) GDPR).",
+    "section5Title": "Your Rights",
+    "section5Text": "You have the right at any time to receive information free of charge about the origin, recipient, and purpose of your stored personal data. You also have a right to request the correction or deletion of this data."
   }
 }

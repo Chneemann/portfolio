@@ -86,5 +86,30 @@
     "section4Title": "Streitschlichtung",
     "disputeText1": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
     "disputeText2": "Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
+  },
+  "Privacy": {
+    "backHome": "Zurück zur Startseite",
+    "section1Title": "Datenschutz auf einen Blick",
+    "generalInfoTitle": "Allgemeine Hinweise",
+    "generalInfoText": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.",
+    "dataCollectionTitle": "Datenerfassung auf dieser Website",
+    "dataCollectionText": "Die Datenverarbeitung auf dieser Website erfolgt durch den Website-Betreiber. Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen, zum anderen automatisch beim Besuch der Website durch unsere IT-Systeme erfasst.",
+    "section2Title": "Verantwortliche Stelle",
+    "section2Intro": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
+    "section3Title": "Hosting & Server-Infrastruktur",
+    "hostingText1": "Diese Website wird extern auf Webservern der Netcup GmbH gehostet. Personenbezogene Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.",
+    "hostingText2": "Der Hosting-Anbieter verarbeitet automatisch technische Zugriffsdaten in Server-Umgebungsvariablen, die erforderlich sind, um eine stabile Verbindung aufzubauen und Seiteninhalte sicher auszuliefern.",
+    "section4Title": "Server-Analyse & Datenschutzfreundliches Tracking",
+    "analyticsText1": "Zur Auswertung der Reichweite und Optimierung der Nutzererfahrung verarbeitet diese Website minimale Zugriffsmetriken (z. B. tägliche Gesamtaufrufe, grobe Gerätekategorien und tägliche Besucherzahlen).",
+    "analyticsGuaranteesTitle": "Wichtige Datenschutzgarantien:",
+    "cookieTitle": "Keine Cookies",
+    "cookieText": "Wir speichern keine Cookies oder Local-Storage-Identifier auf Ihrem Endgerät.",
+    "ipTitle": "Anonymisierte IP-Adressen",
+    "ipText": "IP-Adressen werden sofort mit einem täglichen Salt gehasht und niemals im Klartext gespeichert.",
+    "thirdPartyTitle": "Keine Drittanbieter",
+    "thirdPartyText": "Analysedaten werden lokal auf unserem eigenen Server verarbeitet und niemals an externe Tracking-Dienste weitergegeben.",
+    "analyticsText2": "Die Rechtsgrundlage für diese Verarbeitung ist unser berechtigtes Interesse an der Pflege und Optimierung unseres Online-Portfolios (Art. 6 Abs. 1 lit. f DSGVO).",
+    "section5Title": "Ihre Rechte",
+    "section5Text": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Außerdem haben Sie das Recht, die Berichtigung oder Löschung dieser Daten zu verlangen."
   }
 }
