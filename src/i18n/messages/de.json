@@ -5,15 +5,17 @@
     "portfolio": "Portfolio",
     "contact": "Kontakt",
     "imprint": "Impressum",
-    "privacy": "Datenschutz"
+    "privacy": "Datenschutz",
+    "rolePrefix": "Full-Stack",
+    "roleSuffix": "Entwickler",
+    "emailLabel": "E-Mail",
+    "backHome": "Zurück zur Startseite"
   },
   "Header": {
     "search": "Suchen"
   },
   "Hero": {
     "greeting": "Hi, mein Name ist",
-    "rolePrefix": "Full-Stack",
-    "roleSuffix": "Entwickler",
     "description": "Ich konzipiere und entwickle moderne Web-Anwendungen. Mit einem klaren Auge fürs Detail und einem Fokus auf sauberen Code erwecke ich digitale Ideen zum Leben.",
     "downloadCv": "Lebenslauf"
   },
@@ -60,7 +62,6 @@
     "successTitle": "Vielen Dank!",
     "successText": "Deine Nachricht wurde erfolgreich gesendet. Ich melde mich schnellstmöglich bei dir!",
     "formName": "Name",
-    "formEmail": "E-Mail",
     "formMessage": "Nachricht",
     "formMessagePlaceholder": "Hi André, ich würde gerne ein potenzielles Projekt besprechen...",
     "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
@@ -69,5 +70,21 @@
   },
   "Footer": {
     "rights": "Alle Rechte vorbehalten."
+  },
+  "Imprint": {
+    "backHome": "Zurück zur Startseite",
+    "section1Title": "Angaben gemäß § 5 DDG",
+    "section1Sub": "Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV.",
+    "section2Title": "Kontakt",
+    "section3Title": "Haftungsausschluss",
+    "liabilityContentTitle": "Haftung für Inhalte",
+    "liabilityContentText": "Als Diensteanbieter bin ich gemäß § 7 Abs.1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+    "liabilityLinksTitle": "Haftung für Links",
+    "liabilityLinksText": "Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+    "copyrightTitle": "Urheberrecht",
+    "copyrightText": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+    "section4Title": "Streitschlichtung",
+    "disputeText1": "Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:",
+    "disputeText2": "Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen."
   }
 }

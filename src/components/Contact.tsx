@@ -198,7 +198,7 @@ export default function Contact() {
                 {/* Email Input */}
                 <div>
                   <label className="block text-xs mb-1.5" htmlFor="email">
-                    {tContact("formEmail")}
+                    {tCommon("emailLabel")}
                   </label>
                   <input
                     type="email"

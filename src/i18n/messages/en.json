@@ -5,15 +5,18 @@
     "portfolio": "Portfolio",
     "contact": "Contact me",
     "imprint": "Legal Notice",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "rolePrefix": "Full-Stack",
+    "roleSuffix": "Developer",
+    "emailLabel": "Email",
+    "backHome": "Back to Homepage"
   },
   "Header": {
     "search": "Search"
   },
   "Hero": {
     "greeting": "Hi, my name is",
-    "rolePrefix": "Full-Stack",
-    "roleSuffix": "Developer",
+
     "description": "I conceptualize and develop modern web applications. With a sharp eye for detail and a focus on clean code, I bring digital ideas to life.",
     "downloadCv": "Download CV"
   },
@@ -60,7 +63,6 @@
     "successTitle": "Thank you!",
     "successText": "Your message has been sent successfully. I'll get back to you as soon as possible!",
     "formName": "Name",
-    "formEmail": "Email",
     "formMessage": "Message",
     "formMessagePlaceholder": "Hi André, I would like to discuss a potential project...",
     "errorMessage": "An error occurred. Please try again later.",
@@ -69,5 +71,20 @@
   },
   "Footer": {
     "rights": "All rights reserved."
+  },
+  "Imprint": {
+    "section1Title": "Information Pursuant to § 5 DDG",
+    "section1Sub": "Also responsible for content pursuant to § 18 Abs. 2 MStV.",
+    "section2Title": "Contact",
+    "section3Title": "Disclaimer & Legal Notes",
+    "liabilityContentTitle": "Liability for Content",
+    "liabilityContentText": "As a service provider, I am responsible for my own content on these pages according to general laws pursuant to § 7 Abs. 1 DDG. However, according to §§ 8 to 10 DDG, I am not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+    "liabilityLinksTitle": "Liability for Links",
+    "liabilityLinksText": "My website contains links to external third-party websites over whose content I have no control. Therefore, I cannot accept any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
+    "copyrightTitle": "Copyright",
+    "copyrightText": "The content and works created on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization beyond the scope of copyright law require the prior written consent of the author or creator.",
+    "section4Title": "Dispute Resolution",
+    "disputeText1": "The European Commission provides a platform for online dispute resolution (OS):",
+    "disputeText2": "I am neither willing nor obligated to participate in dispute resolution proceedings before a consumer arbitration board."
   }
 }

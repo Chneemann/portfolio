@@ -24,9 +24,9 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-400 tracking-tight">
-            {tHero("rolePrefix")}{" "}
+            {tCommon("rolePrefix")}{" "}
             <span className="text-blue-400/80 font-medium">
-              {tHero("roleSuffix")}
+              {tCommon("roleSuffix")}
             </span>
           </h2>
 
