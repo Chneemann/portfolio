@@ -116,9 +116,13 @@ export default function CommandPalette() {
             onKeyDown={handleInputKeyDown}
             className="w-full bg-transparent text-slate-100 placeholder-slate-500 outline-none text-sm tracking-wide font-mono"
           />
-          <kbd className="text-[10px] font-mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700">
+          <button
+            type="button"
+            onClick={() => setIsOpen(false)}
+            className="text-[10px] font-mono bg-slate-900/80 border border-slate-800 text-slate-400 px-2 py-0.5 rounded hover:text-white hover:border-slate-700 hover:bg-slate-900 transition-colors cursor-pointer"
+          >
             ESC
-          </kbd>
+          </button>
         </div>
 
         {/* Command List */}
@@ -171,20 +175,20 @@ export default function CommandPalette() {
         <div className="px-4 py-2.5 border-t border-slate-800/60 bg-slate-950/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
           <span>
             {tCommands("navHint1")}{" "}
-            <kbd className="text-slate-400 bg-slate-900 px-1 rounded border border-slate-800">
+            <kbd className="text-slate-400 bg-slate-900/80 px-1 rounded border border-slate-800">
               ↑
             </kbd>{" "}
-            <kbd className="text-slate-400 bg-slate-900 px-1 rounded border border-slate-800">
+            <kbd className="text-slate-400 bg-slate-900/80 px-1 rounded border border-slate-800">
               ↓
             </kbd>{" "}
             {tCommands("navHint2")}
           </span>
           <span>
-            <kbd className="text-slate-400 bg-slate-900 px-1 rounded border border-slate-800">
+            <kbd className="text-slate-400 bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
               ⌘K
             </kbd>{" "}
             /{" "}
-            <kbd className="text-slate-400 bg-slate-900 px-1 rounded border border-slate-800">
+            <kbd className="text-slate-400 bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
               Ctrl+K
             </kbd>
           </span>
