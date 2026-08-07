@@ -1,20 +1,23 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
 import { getCommands } from "../lib/paletteCommands";
 
 /**
  * Interactive Cmd+K modal for quick navigation, actions, and social links
  */
 export default function CommandPalette() {
+  const tCommands = useTranslations("Commands");
+
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState("");
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [copied, setCopied] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Load action definitions from lib helper
-  const commands = getCommands(copied, setCopied);
+  // Load action definitions from lib helper safely inside the component
+  const commands = getCommands(copied, setCopied, tCommands);
 
   // Filter commands dynamically by search query or category
   const filteredCommands = commands.filter(
@@ -104,7 +107,7 @@ export default function CommandPalette() {
           <input
             ref={inputRef}
             type="text"
-            placeholder="Type a command or action..."
+            placeholder={tCommands("searchPlaceholder")}
             value={search}
             onChange={(e) => {
               setSearch(e.target.value);
@@ -122,7 +125,7 @@ export default function CommandPalette() {
         <div className="max-h-100 overflow-y-auto p-2 space-y-1">
           {filteredCommands.length === 0 ? (
             <p className="p-4 text-center text-xs font-mono text-slate-500">
-              No matching commands found.
+              {tCommands("noResults")}
             </p>
           ) : (
             filteredCommands.map((cmd, index) => {
@@ -167,14 +170,14 @@ export default function CommandPalette() {
         {/* Footer Hint */}
         <div className="px-4 py-2.5 border-t border-slate-800/60 bg-slate-950/60 flex items-center justify-between text-[11px] font-mono text-slate-500">
           <span>
-            Use{" "}
+            {tCommands("navHint1")}{" "}
             <kbd className="text-slate-400 bg-slate-900 px-1 rounded border border-slate-800">
               ↑
             </kbd>{" "}
             <kbd className="text-slate-400 bg-slate-900 px-1 rounded border border-slate-800">
               ↓
             </kbd>{" "}
-            to navigate
+            {tCommands("navHint2")}
           </span>
           <span>
             <kbd className="text-slate-400 bg-slate-900 px-1 rounded border border-slate-800">

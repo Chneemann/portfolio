@@ -95,6 +95,23 @@
     "timeMinutesAgo": "vor {minutes}m",
     "timeHoursAgo": "vor {hours}h"
   },
+  "Commands": {
+    "catQuickActions": "Schnellzugriff",
+    "catSocial": "Soziale Medien / Links",
+    "catSystem": "System & Info",
+    "copyEmail": "E-Mail kopieren (dev@andre-kempf.com)",
+    "emailCopied": "E-Mail kopiert!",
+    "downloadCV": "Lebenslauf herunterladen (PDF)",
+    "openTerminal": "Statistik-Terminal öffnen",
+    "viewForgejo": "Git-Profil (Self-Hosted) ansehen",
+    "viewGitHub": "GitHub-Profil (Legacy) ansehen",
+    "viewLinkedIn": "LinkedIn-Profil ansehen",
+    "viewSource": "Quellcode ansehen (Self-Hosted Git)",
+    "searchPlaceholder": "Befehl oder Aktion eingeben...",
+    "noResults": "Keine passenden Befehle gefunden.",
+    "navHint1": "Mit",
+    "navHint2": "navigieren"
+  },
   "Imprint": {
     "backHome": "Zurück zur Startseite",
     "section1Title": "Angaben gemäß § 5 DDG",

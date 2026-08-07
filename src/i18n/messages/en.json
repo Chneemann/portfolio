@@ -96,6 +96,23 @@
     "timeMinutesAgo": "{minutes}m ago",
     "timeHoursAgo": "{hours}h ago"
   },
+  "Commands": {
+    "catQuickActions": "Quick Actions",
+    "catSocial": "Social / Links",
+    "catSystem": "System & Info",
+    "copyEmail": "Copy Email (dev@andre-kempf.com)",
+    "emailCopied": "Email Copied!",
+    "downloadCV": "Download CV (PDF)",
+    "openTerminal": "Open Analytics Terminal",
+    "viewForgejo": "View Self-Hosted Git Profile",
+    "viewGitHub": "View GitHub (Legacy) Profile",
+    "viewLinkedIn": "View LinkedIn Profile",
+    "viewSource": "View Site Source Code (Self-Hosted Git)",
+    "searchPlaceholder": "Type a command or action...",
+    "noResults": "No matching commands found.",
+    "navHint1": "Use",
+    "navHint2": "to navigate"
+  },
   "Imprint": {
     "section1Title": "Information Pursuant to § 5 DDG",
     "section1Sub": "Also responsible for content pursuant to § 18 Abs. 2 MStV.",

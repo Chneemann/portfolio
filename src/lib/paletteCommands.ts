@@ -6,7 +6,7 @@ import { playSudoEasterEgg } from "./playSudoEasterEgg";
 export type CommandItem = {
   id: string;
   label: string;
-  category: "Quick Actions" | "System & Info" | "Social / Links";
+  category: string;
   icon?: string;
   action: () => void;
 };
@@ -17,11 +17,12 @@ export type CommandItem = {
 export const getCommands = (
   copied: boolean,
   setCopied: (value: boolean) => void,
+  tCommands: (key: string) => string,
 ): CommandItem[] => [
   {
     id: "copy-email",
-    label: copied ? "Email Copied!" : "Copy Email (dev@andre-kempf.com)",
-    category: "Quick Actions",
+    label: copied ? tCommands("emailCopied") : tCommands("copyEmail"),
+    category: tCommands("catQuickActions"),
     icon: copied ? "✓" : "✉️",
     action: () => {
       navigator.clipboard.writeText("dev@andre-kempf.com");
@@ -31,8 +32,8 @@ export const getCommands = (
   },
   {
     id: "download-cv",
-    label: "Download CV (PDF)",
-    category: "Quick Actions",
+    label: tCommands("downloadCV"),
+    category: tCommands("catQuickActions"),
     icon: "📄",
     action: () => {
       window.open(
@@ -44,8 +45,8 @@ export const getCommands = (
   },
   {
     id: "terminal",
-    label: "Open Analytics Terminal",
-    category: "Quick Actions",
+    label: tCommands("openTerminal"),
+    category: tCommands("catQuickActions"),
     icon: "⚡",
     action: () => {
       window.dispatchEvent(new CustomEvent("open-analytics"));
@@ -53,8 +54,8 @@ export const getCommands = (
   },
   {
     id: "forgejo",
-    label: "View Self-Hosted Git Profile",
-    category: "Social / Links",
+    label: tCommands("viewForgejo"),
+    category: tCommands("catSocial"),
     icon: "🔨",
     action: () => {
       window.open(
@@ -66,8 +67,8 @@ export const getCommands = (
   },
   {
     id: "github",
-    label: "View GitHub (Legacy) Profile",
-    category: "Social / Links",
+    label: tCommands("viewGitHub"),
+    category: tCommands("catSocial"),
     icon: "🐙",
     action: () => {
       window.open(
@@ -79,8 +80,8 @@ export const getCommands = (
   },
   {
     id: "linkedin",
-    label: "View LinkedIn Profile",
-    category: "Social / Links",
+    label: tCommands("viewLinkedIn"),
+    category: tCommands("catSocial"),
     icon: "💼",
     action: () => {
       window.open(
@@ -92,8 +93,8 @@ export const getCommands = (
   },
   {
     id: "source-code",
-    label: "View Site Source Code (Self-Hosted Git)",
-    category: "Social / Links",
+    label: tCommands("viewSource"),
+    category: tCommands("catSocial"),
     icon: "💻",
     action: () => {
       window.open(
@@ -106,7 +107,7 @@ export const getCommands = (
   {
     id: "sudo-egg",
     label: "sudo rm -rf --no-preserve-root /",
-    category: "System & Info",
+    category: tCommands("catSystem"),
     icon: "💀",
     action: playSudoEasterEgg,
   },
