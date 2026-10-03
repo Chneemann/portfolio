@@ -112,6 +112,16 @@
     "navHint1": "Mit",
     "navHint2": "navigieren"
   },
+  "CvModal": {
+    "badge": "// direkt ins postfach",
+    "title": "Lebenslauf anfordern",
+    "privacyNotice": "Kurzer Check gegen Datenkraken: Hinterlass mir deine E-Mail und ich schicke dir meinen CV direkt zu.",
+    "submit": "CV anfordern",
+    "submitting": "Wird gesendet...",
+    "successTitle": "Anfrage gesendet!",
+    "successText": "Vielen Dank für dein Interesse! Ich schicke dir den Lebenslauf in Kürze per E-Mail.",
+    "close": "Schließen"
+  },
   "Imprint": {
     "backHome": "Zurück zur Startseite",
     "section1Title": "Angaben gemäß § 5 DDG",

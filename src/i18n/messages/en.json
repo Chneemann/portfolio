@@ -113,6 +113,16 @@
     "navHint1": "Use",
     "navHint2": "to navigate"
   },
+  "CvModal": {
+    "badge": "// straight to your inbox",
+    "title": "Request Resume",
+    "privacyNotice": "A quick check against data scrapers: Leave your email and I’ll send my CV straight to your inbox.",
+    "submit": "Request CV",
+    "submitting": "Sending...",
+    "successTitle": "Request Sent!",
+    "successText": "Thanks for reaching out! I will send you my resume via email shortly.",
+    "close": "Close"
+  },
   "Imprint": {
     "section1Title": "Information Pursuant to § 5 DDG",
     "section1Sub": "Also responsible for content pursuant to § 18 Abs. 2 MStV.",

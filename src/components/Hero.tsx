@@ -2,6 +2,8 @@
 
 import { useTranslations } from "next-intl";
 import SocialLinks from "./Social";
+import { useState } from "react";
+import CvRequestModal from "./CvRequestModal";
 
 /**
  * Hero section showcasing intro title, call-to-action links, and personal portrait
@@ -9,6 +11,8 @@ import SocialLinks from "./Social";
 export default function Hero() {
   const tCommon = useTranslations("Common");
   const tHero = useTranslations("Hero");
+
+  const [isCvModalOpen, setIsCvModalOpen] = useState(false);
 
   return (
     <section className="relative pt-18 py-6 px-4 md:px-6 md:pt-24 max-w-5xl mx-auto">
@@ -42,14 +46,13 @@ export default function Hero() {
             >
               {tCommon("contact")}
             </a>
-            <a
-              href="/assets/downloads/Andre_Kempf_Lebenslauf.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 font-semibold rounded-lg transition-all hover:-translate-y-0.5 duration-200 inline-block text-center"
+            <button
+              type="button"
+              onClick={() => setIsCvModalOpen(true)}
+              className="px-6 py-3 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-850 font-semibold rounded-lg transition-all hover:-translate-y-0.5 duration-200 inline-block text-center text-white cursor-pointer"
             >
               {tHero("downloadCv")}
-            </a>
+            </button>
           </div>
         </div>
 
@@ -69,6 +72,12 @@ export default function Hero() {
 
       {/* Social Media Links Bar */}
       <SocialLinks />
+
+      {/* CV Request Modal */}
+      <CvRequestModal
+        isOpen={isCvModalOpen}
+        onClose={() => setIsCvModalOpen(false)}
+      />
     </section>
   );
 }
