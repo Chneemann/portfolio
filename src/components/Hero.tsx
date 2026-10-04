@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import SocialLinks from "./Social";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CvRequestModal from "./CvRequestModal";
 
 /**
@@ -13,6 +13,12 @@ export default function Hero() {
   const tHero = useTranslations("Hero");
 
   const [isCvModalOpen, setIsCvModalOpen] = useState(false);
+
+  useEffect(() => {
+    const handleOpenCvModal = () => setIsCvModalOpen(true);
+    window.addEventListener("open-cv-modal", handleOpenCvModal);
+    return () => window.removeEventListener("open-cv-modal", handleOpenCvModal);
+  }, []);
 
   return (
     <section className="relative pt-18 py-6 px-4 md:px-6 md:pt-24 max-w-5xl mx-auto">

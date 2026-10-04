@@ -31,16 +31,12 @@ export const getCommands = (
     },
   },
   {
-    id: "download-cv",
+    id: "request-cv",
     label: tCommands("downloadCV"),
     category: tCommands("catQuickActions"),
     icon: "📄",
     action: () => {
-      window.open(
-        "/assets/downloads/Andre_Kempf_Lebenslauf.pdf",
-        "_blank",
-        "noopener,noreferrer",
-      );
+      window.dispatchEvent(new CustomEvent("open-cv-modal"));
     },
   },
   {

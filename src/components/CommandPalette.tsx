@@ -26,7 +26,7 @@ export default function CommandPalette() {
       cmd.category.toLowerCase().includes(search.toLowerCase()),
   );
 
-  // Global hotkeys listener (Cmd/Ctrl + K to toggle, ESC to close)
+  // Global hotkeys listener (Cmd/Ctrl + K to toggle, ESC to close, close on CV modal)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
@@ -38,13 +38,16 @@ export default function CommandPalette() {
     };
 
     const handleCustomToggle = () => setIsOpen((prev) => !prev);
+    const handleCloseModal = () => setIsOpen(false);
 
     window.addEventListener("keydown", handleKeyDown);
     window.addEventListener("toggle-cmd-k", handleCustomToggle);
+    window.addEventListener("open-cv-modal", handleCloseModal);
 
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("toggle-cmd-k", handleCustomToggle);
+      window.removeEventListener("open-cv-modal", handleCloseModal);
     };
   }, []);
 
