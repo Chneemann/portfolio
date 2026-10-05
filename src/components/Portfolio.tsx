@@ -14,18 +14,37 @@ export default function Portfolio() {
   // Static list of featured and secondary portfolio project items with translation keys
   const PROJECTS = [
     {
-      title: "DABubble",
-      type: tPortfolio("projects.dabubble.type"),
-      description: tPortfolio("projects.dabubble.description"),
-      image: "/assets/projects/dabubble.png",
+      title: "Waveform",
+      type: tPortfolio("projects.waveform.type"),
+      description: tPortfolio("projects.waveform.description"),
+      image: "/assets/projects/waveform.png",
       tags: [
-        { name: "Angular", featured: true },
-        { name: "TypeScript", featured: true },
-        { name: "Google Firebase", featured: false },
+        { name: "Next.js", featured: true },
+        { name: "React", featured: true },
+        { name: "Tailwind CSS", featured: false },
+        { name: "PostgreSQL", featured: false },
+        { name: "Auth.js", featured: true },
       ],
       isFeatured: true,
-      demoLink: "https://dabubble.andre-kempf.com/",
-      gitLink: "https://git.andre-kempf.com/Chneemann/dabubble",
+      demoLink: "https://waveform.andre-kempf.com/",
+      gitLink: "https://git.andre-kempf.com/Chneemann/waveform",
+    },
+    {
+      title: "Flowstate",
+      type: tPortfolio("projects.flowstate.type"),
+      description: tPortfolio("projects.flowstate.description"),
+      image: "/assets/projects/flowstate.png",
+      tags: [
+        { name: "Next.js", featured: true },
+        { name: "React", featured: true },
+        { name: "Tailwind CSS", featured: false },
+        { name: "PostgreSQL", featured: false },
+        { name: "Drizzle ORM", featured: false },
+        { name: "Auth.js", featured: true },
+      ],
+      isFeatured: false,
+      demoLink: "https://flowstate.andre-kempf.com/",
+      gitLink: "https://git.andre-kempf.com/Chneemann/flowstate",
     },
     {
       title: "Join",
@@ -42,24 +61,6 @@ export default function Portfolio() {
       demoLink: "https://join.andre-kempf.com/",
       frontendLink: "https://git.andre-kempf.com/Chneemann/join",
       backendLink: "https://git.andre-kempf.com/Chneemann/join-api",
-    },
-    {
-      title: "Videoflix",
-      type: tPortfolio("projects.videoflix.type"),
-      description: tPortfolio("projects.videoflix.description"),
-      image: "/assets/projects/videoflix.png",
-      tags: [
-        { name: "Angular (TS)", featured: true },
-        { name: "Django REST", featured: true },
-        { name: "Python", featured: false },
-        { name: "PostgreSQL", featured: false },
-      ],
-      isFeatured: false,
-      demoLink: "https://videoflix.andre-kempf.com/",
-      frontendLink:
-        "https://git.andre-kempf.com/Chneemann/videoflix/src/branch/main/frontend",
-      backendLink:
-        "https://git.andre-kempf.com/Chneemann/videoflix/src/branch/main/backend",
     },
   ];
 
@@ -251,6 +252,15 @@ export default function Portfolio() {
                           className="hover:text-white transition-colors"
                         >
                           Backend
+                        </Link>
+                      )}
+                      {project.gitLink && (
+                        <Link
+                          href={project.gitLink}
+                          target="_blank"
+                          className="text-slate-400 hover:text-white transition-colors"
+                        >
+                          Git Repo
                         </Link>
                       )}
                     </div>

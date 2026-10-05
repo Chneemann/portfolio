@@ -41,17 +41,17 @@
     "sectionSub": "Projects",
     "featuredBadge": "Featured Project",
     "projects": {
-      "dabubble": {
-        "type": "Web Application",
-        "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+      "flowstate": {
+        "type": "Full-Stack-App",
+        "description": "Flowstate is a modern, high-performance Kanban and workflow web application designed for effortless productivity management. Built with Next.js 16, React 19, PostgreSQL, and Drizzle ORM, it features a secure dashboard, flexible board management, and a fully automated Docker deployment pipeline."
+      },
+      "waveform": {
+        "type": "Full-Stack-App",
+        "description": "Waveform is a modern, high-performance real-time chat application designed for seamless communication. Built with Next.js 16, React 19, PostgreSQL, and Drizzle ORM, it features modular chat interfaces, secure Auth.js v5 authentication, and an automated CI/CD deployment pipeline."
       },
       "join": {
         "type": "Full-Stack App",
         "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories to ensure efficient management."
-      },
-      "videoflix": {
-        "type": "Full-Stack App",
-        "description": "Video platform for sharing and discovering videos. Upload, view, and stream content in various quality levels, all within a user-friendly interface designed to enhance the video experience."
       }
     }
   },
